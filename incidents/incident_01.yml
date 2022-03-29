@@ -1,0 +1,14 @@
+meta_data:
+  title: update of storage system software
+  start_date: 2022-01-20 09:00:00
+  end_date: 2022-01-21 13:00:00
+  affected: tier2_leuven
+  level: high
+  planned: yes
+content: >
+  The drivers for the parallel file system need to be updated, hence
+  
+    * the scratch file system will not be available;
+  
+    * jobs can be submitted, but will not run.
+  

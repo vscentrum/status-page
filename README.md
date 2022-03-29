@@ -1,2 +1,3 @@
-# status-page
-Status page for VSC infrastructure
+# VSC status page
+
+Repository that drives the VSC status page.

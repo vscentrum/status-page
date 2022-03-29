@@ -1,0 +1,18 @@
+<h3><a id="{id}">{title}</a></h3>
+
+<table>
+    <tr>
+        <td><span class="td_name">Start:</span></td>
+        <td>{start_date}</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">End:</span></td>
+        <td>{end_date}</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">Level:</span></td>
+        <td>{level}</td>
+    </tr>
+</table>
+
+{description}

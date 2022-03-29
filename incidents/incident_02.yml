@@ -1,0 +1,13 @@
+meta_data:
+  title: rack 5 down
+  start_date: 2022-01-21 11:30:00
+  end_date: 2022-01-21 13:00:00
+  affected: tier2_leuven
+  level: intermediate
+  planned: no
+  labels:
+      - compute_nodes
+      - queue_times
+content: >
+  The nodes in rack 5 are currently down, expect longer queue times.
+  

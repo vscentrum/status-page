@@ -1,0 +1,6 @@
+# editor backup file
+*~
+
+# Python cache and checkpoint files
+__pycache__/
+.ipynb_checkpoints/

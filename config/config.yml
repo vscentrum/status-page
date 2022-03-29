@@ -1,0 +1,43 @@
+incident_dirs:
+    - incidents/
+template_dir: templates/
+build_dir: build/
+no_news_message: <p>All systems running fine.</p>
+current_overview_columns:
+    - end_date
+    - updated
+    - affected
+    - title
+    - level
+planned_overview_columns: 
+    - start_date
+    - end_date
+    - affected
+    - title
+    - level
+resource_files:
+    - style.css
+incident_template_file: incident_tmpl.txt
+service_template_file: service_tmpl.html
+meta_data_fields:
+    - title
+    - start_date
+    - end_date
+    - affected
+    - level
+    - planned
+affected:
+    - tier1_compute
+    - tier1_data
+    - tier1_cloud
+    - tier2_antwerp
+    - tier2_brussels
+    - tier2_gent
+    - tier2_leuven
+    - vsc_backbone
+level:
+    - low
+    - medium
+    - high
+sep: \s*,\s*
+none_date_str: Unknown
