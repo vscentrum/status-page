@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>VSC status page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 class="page_title">VSC status page</h1>
+        
+        <h2>Current incidents</h2>
+        
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>End date</th>
+      <th>Updated</th>
+      <th>Affected</th>
+      <th>Title</th>
+      <th>Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2022-01-21 13:00:00</td>
+      <td>2022-03-29 17:55:00+02:00</td>
+      <td>tier2_leuven</td>
+      <td><a href="tier2_leuven.html#incident_0001">update of storage system software</a></td>
+      <td>high</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>2022-03-29 17:55:00+02:00</td>
+      <td>tier2_leuven</td>
+      <td><a href="tier2_leuven.html#incident_0002">login nodes down</a></td>
+      <td>high</td>
+    </tr>
+  </tbody>
+</table>
+        
+        <h2>Planned maintenance</h2>
+        
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Start date</th>
+      <th>End date</th>
+      <th>Affected</th>
+      <th>Title</th>
+      <th>Level</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2022-01-22 11:30:00</td>
+      <td>2022-01-22 13:00:00</td>
+      <td>vsc_backbone</td>
+      <td>Belnet maintenance</td>
+      <td>high</td>
+    </tr>
+    <tr>
+      <td>2022-01-22 11:30:00</td>
+      <td>2022-01-22 13:00:00</td>
+      <td>tier1_compute</td>
+      <td>Belnet maintenance</td>
+      <td>high</td>
+    </tr>
+  </tbody>
+</table>
+        
+        
+        <hr/>
+        <p class="navigation">
+            <a href="tier1_compute.html">Tier-1 compute</a> |
+            <a href="tier1_cloud.html">Tier-1 cloud</a> |
+            <a href="tier1_data.html">Tier-1 data</a> |
+            <a href="vsc_backbone.html">VSC backbone</a>
+        </p>
+        <p class="navigation">
+            <a href="tier2_antwerp.html">Tier-2 Antwerpen</a> |
+            <a href="tier2_brussels.html">Tier-2 Brussel</a> |
+            <a href="tier2_gent.html">Tier-2 Gent</a> |
+            <a href="tier2_leuven.html">Tier-2 Leuven</a>
+        </p>
+        <hr/>
+
+    </body>
+</html>
+

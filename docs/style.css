@@ -1,0 +1,25 @@
+/* page headings, use class page_title to apply */
+h1.page_title {
+    color: white;
+    background-color: red;
+}
+
+span.td_name {
+    font-weight: bold;
+}
+
+/* table style */
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 3px;
+}
+
+/* navigation bar */
+p.navigation {
+    text-align: center;
+}
