@@ -1,5 +1,6 @@
 # editor backup file
 *~
+*.swp
 
 # Python cache and checkpoint files
 __pycache__/
