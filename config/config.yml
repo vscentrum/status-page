@@ -17,6 +17,7 @@ planned_overview_columns:
     - level
 resource_files:
     - style.css
+    - images/
 incident_template_file: incident_tmpl.txt
 service_template_file: service_tmpl.html
 meta_data_fields:
