@@ -1,7 +1,12 @@
+/* VSC logo */
+img.logo {
+	max-width: 300px;
+}
+
 /* page headings, use class page_title to apply */
 h1.page_title {
     color: white;
-    background-color: red;
+    background-color: #d96c31;
 }
 
 span.td_name {
