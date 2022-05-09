@@ -45,12 +45,15 @@ def main():
     arg_parser.add_argument('--now', help='fix datetime for debug and testing purposes')
     arg_parser.add_argument('--config', default='config/config.yml',
                             help="configuratin file to use")
+    arg_parser.add_argument('--verbose', action='store_true',
+                            help='verbose output for monitoring/debugging')
     options = arg_parser.parse_args()
     if options.now is not None:
         now = datetime.datetime.fromisoformat(options.now)
     else:
         now = datetime.datetime.now()
-
+    if options.verbose:
+        print(f'time: {now}')
     config = read_config(options.config)
 
     # set constant
@@ -61,7 +64,7 @@ def main():
         meta_data_fields=config['meta_data_fields'],
         affected=config['affected'],
         level=config['level'],
-        is_verbose=True
+        is_verbose=options.verbose
     )
     for dir_path in config['incident_dirs']:
         parser.parse(dir_path)
