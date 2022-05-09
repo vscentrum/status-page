@@ -24,7 +24,7 @@ def create_service_page(service, current_incidents, planned_maintenance, config)
     service_name = utils.format_name(service)
     incident_tmpl = utils.read_template(config['template_dir'] / config['incident_template_file'])
     current_incidents_text = utils.dataframe_to_html_text(current_incidents, incident_tmpl, config['no_news_message'])
-    planned_maintenance_text = utils.dataframe_to_html_text(current_incidents, incident_tmpl, config['no_news_message'])
+    planned_maintenance_text = utils.dataframe_to_html_text(planned_maintenance, incident_tmpl, config['no_news_message'])
     utils.process_template(config['template_dir'] / config['service_template_file'], config['build_dir'] / f'{service}.html',
                            {'service_name': service_name,
                             'current_text': current_incidents_text,
@@ -70,9 +70,10 @@ def main():
         parser.parse(dir_path)
     incidents = parser.incidents
 
-    current_incidents = utils.select_current_incidents(incidents, date=now)
-    planned_maintenance = utils.select_planned_maintenance(incidents, date=now)
-    
+    current_incidents = utils.select_current_incidents(incidents,
+                                                       date=now)
+    planned_maintenance = utils.select_planned_maintenance(incidents,
+                                                           date=now)
     index_current_incidents = utils.add_href(current_incidents)
 
     create_overview_page(current_incidents=index_current_incidents,
