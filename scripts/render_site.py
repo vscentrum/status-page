@@ -33,7 +33,11 @@ def create_service_page(service, current_incidents, planned_maintenance, config)
 
 def copy_resources(config):
     for resource in config['resource_files']:
-        shutil.copy(config['template_dir'] / resource, config['build_dir'])
+        resource_path = config['template_dir'] / resource
+        if resource_path.is_file():
+            shutil.copy(resource_path, config['build_dir'])
+        elif resource_path.is_dir():
+            shutil.copytree(resource_path, config['build_dir'] / resource, dirs_exist_ok=True)
 
 
 def main():
