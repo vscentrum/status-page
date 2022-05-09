@@ -35,7 +35,7 @@ affected:
     - tier2_brussels
     - tier2_gent
     - tier2_leuven
-    - vsc_backbone
+    - backbone
 level:
     - low
     - medium
