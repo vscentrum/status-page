@@ -22,7 +22,7 @@ def select_current_incidents(incidents, date=None):
     return incidents[(incidents.start_date <= date) & (date <= incidents.end_date)].copy()
 
 def format_name(tech_name):
-    return tech_name.replace('_', ' ').capitalize()
+    return tech_name.replace('_', ' ').title()
 
 def format_headers(df):
     df.columns = list(map(format_name, df.columns))
