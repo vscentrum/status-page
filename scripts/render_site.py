@@ -72,12 +72,13 @@ def main():
 
     current_incidents = utils.select_current_incidents(incidents,
                                                        date=now)
+    index_current_incidents = utils.add_href(current_incidents)
     planned_maintenance = utils.select_planned_maintenance(incidents,
                                                            date=now)
-    index_current_incidents = utils.add_href(current_incidents)
+    index_planned_maintenance = utils.add_href(planned_maintenance)
 
     create_overview_page(current_incidents=index_current_incidents,
-                         planned_maintenance=planned_maintenance,
+                         planned_maintenance=index_planned_maintenance,
                          config=config)
 
     for service in parser.services:
