@@ -15,3 +15,4 @@ Repository that drives the VSC status page.
 1. `Dockerfile`: docker file that contains all software required to
    to run the scripts.
 1. `.github`: CI/CD workflows.
+1. `example_incidents`: some example incident files.
