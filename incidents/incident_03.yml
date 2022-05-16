@@ -9,6 +9,9 @@ meta_data:
       - network
       - external
 content: >
+
+  **Note: this is a test incident**
+
   The Belnet VSC backbone will be down for maintenance and file systems will not
   be mounted on the Tier-1 system.
   

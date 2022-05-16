@@ -9,5 +9,9 @@ meta_data:
       - compute_nodes
       - queue_times
 content: >
+
+  **Note: this is a test incident, parsing is supposed to fail on
+  invalid incident level**
+
   The nodes in rack 5 are currently down, expect longer queue times.
   

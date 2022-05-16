@@ -6,6 +6,9 @@ meta_data:
   level: high
   planned: yes
 content: >
+
+  **Note: this is a test incident**
+
   The drivers for the parallel file system need to be updated, hence
   
     * the scratch file system will not be available;
