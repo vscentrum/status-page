@@ -17,7 +17,7 @@ jobs:
       - run: mkdir -p build
       - name: render
         run: |
-          python scripts/render_site.py --now '2022-01-20 10:00:00'
+          python scripts/render_site.py
       - uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
           branch: main
