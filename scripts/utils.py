@@ -28,29 +28,38 @@ def format_headers(df):
     df.columns = list(map(format_name, df.columns))
 
 def add_href(input_df):
-    df = input_df.copy()
-    df['href'] = df['affected'] + '.html#' + df['id']
-    df['title'] = '<a href="' + df['href'] + '">' + df['title'] + '</a>'
-    return df
+    if len(input_df) > 0:
+        df = input_df.copy()
+        df['href'] = df['affected'] + '.html#' + df['id']
+        df['title'] = '<a href="' + df['href'] + '">' + df['title'] + '</a>'
+        return df
+    else:
+        return input_df
 
 def dataframe_to_html_table(input_df, alt_text):
-    df = input_df.copy()
-    df.loc[:, ['end_date']] = df.end_date.apply(lambda x: str(x) if x < NONE_DATE else NONE_DATE_STR)
-    if len(df) == 0:
+    if len(input_df) > 0:
+        df = input_df.copy()
+        df.loc[:, ['end_date']] = df.end_date.apply(lambda x: str(x) if x < NONE_DATE else NONE_DATE_STR)
+        if len(df) == 0:
+            return alt_text
+        format_headers(df)
+        return df.to_html(index=False, escape=False)
+    else:
         return alt_text
-    format_headers(df)
-    return df.to_html(index=False, escape=False)
 
 def dataframe_to_html_text(input_df, template, alt_text):
-    df = input_df.copy()
-    df.loc[:, ['end_date']] = df.end_date.apply(lambda x: str(x) if x < NONE_DATE else NONE_DATE_STR)
-    if len(df) == 0:
+    if len(input_df) > 0:
+        df = input_df.copy()
+        df.loc[:, ['end_date']] = df.end_date.apply(lambda x: str(x) if x < NONE_DATE else NONE_DATE_STR)
+        if len(df) == 0:
+            return alt_text
+        incident_texts = []
+        for _, row in df.iterrows():
+            row['description'] = markdown.markdown(row['content'])
+            incident_texts.append(template.format(**row))
+        return '\n\n'.join(incident_texts)
+    else:
         return alt_text
-    incident_texts = []
-    for _, row in df.iterrows():
-        row['description'] = markdown.markdown(row['content'])
-        incident_texts.append(template.format(**row))
-    return '\n\n'.join(incident_texts)
 
 def read_template(template_path):
     with open(template_path, 'r') as file:
