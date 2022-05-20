@@ -16,3 +16,24 @@ Repository that drives the VSC status page.
    to run the scripts.
 1. `.github`: CI/CD workflows.
 1. `example_incidents`: some example incident files.
+
+## How to use it?
+
+Two workflows have been defined:
+1. a workflow triggered by a push to the main branch, and
+1. a workflow that is executed every 30 minutes.
+
+Both workflows render the site into the `docs` directory.  This
+directory is exposed by Github Pages and will be linked to
+https://status.vscentrum.be/
+
+To create an incident:
+1. do a git pull of the main branch;
+1. add your incident description as a YAML file in the `incidents`
+   directory;
+1. commit your change and push;
+
+The push event triggers rendering the website.
+
+The script that runs every 30 minutes will ensure that an incident with
+and end date will no longer show up when that date is reached.
