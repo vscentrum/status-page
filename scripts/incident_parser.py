@@ -13,7 +13,8 @@ def get_modification_date(file_name):
                              check=True, capture_output=True, text=True)
     date_strs = str(process.stdout).split('\n')
     return datetime.datetime.strptime(date_strs[0],
-                                      '%Y-%m-%d %H:%M:%S %z')
+                                      '%Y-%m-%d %H:%M:%S %z') \
+            .strftime('%Y-%m-%d %H:%M:%S')
 
 
 class IncidentParser:
