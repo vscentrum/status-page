@@ -47,7 +47,7 @@ class IncidentParser:
                 print(f"validating file '{incident_file_name}'", file=sys.stderr)
             self.validate_incident(incident_file_name, incident)
             # since incidents can have an impact on multiple domains, they are
-            #added to the list of incidents for each domain separately.
+            # added to the list of incidents for each domain separately.
             for domain in re.split(self._sep, incident['meta_data']['affected']):
                 for field in self._meta_data_fields:
                     if field == 'affected':
