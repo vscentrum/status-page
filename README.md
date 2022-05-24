@@ -37,3 +37,14 @@ The push event triggers rendering the website.
 
 The script that runs every 30 minutes will ensure that an incident with
 and end date will no longer show up when that date is reached.
+
+## Development
+
+The `config/dev_config.yml` configuration file is intended for development
+and testing.  The render script takes an options `--now` that can be used
+to set the "current time".  The example incidents in the `example_incidents`
+directory can be used with `--now '2022-01-20 10:00:00'`, e.g,.
+```bash
+$ ./scripts/render_site.py  --now '2022-01-20 10:00:00'  --config config/dev_config.yml
+```
+Note that one of those example incidents contains an error on purpose.
