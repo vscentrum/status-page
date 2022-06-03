@@ -13,6 +13,8 @@ def main():
                             help='file or directory for incidents')
     arg_parser.add_argument('--config', default='config/config.yml',
                             help="configuratin file to use")
+    arg_parser.add_argument('--verbose', action='store_true',
+                            help='provide verbose output')
     options = arg_parser.parse_args()
     config = read_config(options.config)
 
@@ -21,7 +23,7 @@ def main():
         meta_data_fields=config['meta_data_fields'],
         affected=config['affected'],
         level=config['level'],
-        is_verbose=True
+        is_verbose=options.verbose
     )
     if options.incidents is None:
         for dir_path in config['incident_dirs']:
