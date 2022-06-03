@@ -1,5 +1,5 @@
 incident_dirs:
-    - example_incidents/
+    - dev_incidents/
 template_dir: templates/
 build_dir: build/
 no_news_message: <p>All systems running fine.</p>

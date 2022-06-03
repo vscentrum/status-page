@@ -1,0 +1,17 @@
+meta_data:
+  title: Belnet maintenance
+  start_date: 2022-01-22 11:30:00
+  end_date: 2022-01-22 13:00:00
+  affected: backbone, tier1_compute
+  level: high
+  planned: yes
+  labels:
+      - network
+      - external
+content: >
+
+  **Note: this is a test incident**
+
+  The Belnet VSC backbone will be down for maintenance and file systems will not
+  be mounted on the Tier-1 system.
+  
