@@ -34,6 +34,9 @@ To create an incident:
    directory;
 1. commit your change and push;
 
+You will find some example incidents in the
+[example_incidents/](`example_incidents`) directory.
+
 The push event triggers rendering the website.
 
 The script that runs every 30 minutes will ensure that an incident with
