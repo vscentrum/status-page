@@ -63,13 +63,16 @@ class IncidentParser:
         if self._is_verbose:
             print(f"parsing directory '{incident_dir_name}'", file=sys.stderr)
         incident_dir = pathlib.Path(incident_dir_name)
+        all_succeed = True
         for incident_file in incident_dir.glob('*.yml'):
             try:
                 self.parse_file(incident_file)
             except ValueError as error:
                 print(f'### error: {error}', file=sys.stderr)
+                all_succeed = False
                 if not self._is_permissive:
                     raise error
+        return all_succeed
             
     @property
     def incidents(self):

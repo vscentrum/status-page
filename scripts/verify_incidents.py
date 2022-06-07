@@ -26,14 +26,19 @@ def main():
         is_verbose=options.verbose
     )
     if options.incidents is None:
-        for dir_path in config['incident_dirs']:
-            parser.parse(dir_path)
+        return 0 if all(map(lambda dir_path: parser.parse(dir_path),
+                            config['incident_dirs'])) else 1
     else:
         path = Path(options.incidents)
         if path.is_dir():
-            parser.parse(path)
+            return 0 if parser.parse(path) else 1
         else:
-            parser.parse_file(path)
+            try:
+                parser.parse_file(path)
+                return 0
+            except ValueError as error:
+                print(f'### error: {error}', file=sys.stderr)
+                return 1
     return 0
 
 
