@@ -1,0 +1,17 @@
+meta_data:
+  title: update of storage system software
+  start_date: 2022-06-15 09:00:00
+  end_date: 2022-06-17 13:00:00
+  affected: tier2_leuven
+  level: low
+  planned: yes
+content: >
+
+  **Note: first test incident for Leuven Tier2**
+
+  We will integrate new Tier-2 nodes in the cluster. low impact is expected
+  
+    * login node will need a reboot;
+  
+    * enclosure r24i13 will be reserved.
+  
