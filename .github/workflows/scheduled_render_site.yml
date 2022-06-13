@@ -24,9 +24,9 @@ jobs:
       - name: render
         run: |
           python scripts/render_site.py
-      - uses: JamesIves/github-pages-deploy-action@v4.2.2
-        with:
-          branch: main
-          folder: build
-          target-folder: docs
+          #      - uses: JamesIves/github-pages-deploy-action@v4.2.2
+          #        with:
+          #          branch: main
+          #          folder: build
+          #          target-folder: docs
       - run: echo "🍏 This job's status is ${{ job.status }}."
