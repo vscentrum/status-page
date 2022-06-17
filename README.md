@@ -52,3 +52,14 @@ directory can be used with `--now '2022-01-20 10:00:00'`, e.g,.
 $ ./scripts/render_site.py  --now '2022-01-20 10:00:00'  --config config/dev_config.yml
 ```
 Note that one of those example incidents contains an error on purpose.
+
+## Semantics
+
+Incident level:
+1. low: you can expect reduced performance, but functionality is intact.
+   For instance, parts of the system are offline for maintenance.
+2. medium: performance is reduced, and some functionality may not be
+  available.  For instance some node types may not be available, or non-critical
+  storage could be impacted.
+3. high: functionality is impacted to a large extent.  You may be able to log
+  in, but not to launch jobs, and your data may be temporarily inaccessible.
