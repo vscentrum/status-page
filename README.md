@@ -63,3 +63,12 @@ Incident level:
   storage could be impacted.
 3. high: functionality is impacted to a large extent.  You may be able to log
   in, but not to launch jobs, and your data may be temporarily inaccessible.
+
+This is a rough indication, the description of the incident should detail its
+scope and impact for the user.
+
+The domain are fairly self-explanatory.  Note however that a problem with
+local storage may have impact on other systems.  If the storage system that
+hosts the home and data directories of users at an institute is down, these
+users will not be able to use infrastructure on other sites either.  You may
+want to lists such issues also for the VSC sotrage domain.
