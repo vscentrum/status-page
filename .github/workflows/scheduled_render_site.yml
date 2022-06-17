@@ -1,7 +1,7 @@
 name: Scheduled render site
 on:
   schedule:
-    - cron: "30 * * * *"
+    - cron: "13/15 * * * *"
 jobs:
   Render-site:
     runs-on: ubuntu-latest
