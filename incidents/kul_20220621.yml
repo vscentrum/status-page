@@ -4,7 +4,7 @@ meta_data:
   end_date: 2022-06-22 00:00:00
   affected: tier2_leuven
   level: high
-  planned: yes
+  planned: no
 content: >
 
   We are experiencing some delays on lustre (scratch and staging). 
