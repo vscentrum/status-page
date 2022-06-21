@@ -1,17 +1,18 @@
 meta_data:
   title: a train drove through the data center
   start_date: 2022-06-20 10:00:00
-  end_date: 2022-06-21 12:00:00
+  end_date: 2022-07-01 00:00:00
   affected: tier2_leuven
   level: high
-  planned: yes
+  planned: no
 content: >
 
   **Note: this is a test incident**
 
   The data center is experiencing some technical difficulties as result of a train passing through...
   
-    * All of Genius will be temporarily unavailable;
+    * All of Genius will be temporarily unavailable.
  
     * All user data can be recovered.
   
+    * Recovery of the hardware and user data is taking longer than expected.
