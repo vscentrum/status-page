@@ -1,0 +1,15 @@
+meta_data:
+  title: Lustre problems, scratch and staging experiencing delays
+  start_date: 2022-06-21 16:30:00
+  end_date: 2022-06-22 00:00:00
+  affected: tier2_leuven
+  level: high
+  planned: yes
+content: >
+
+  We are experiencing some delays on lustre (scratch and staging). 
+    
+    * System is now recovered and responding, however as some scripts are still running 
+    
+    * no new jobs will start on the system.
+  
