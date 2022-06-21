@@ -1,0 +1,30 @@
+meta_data:
+  title: VUB admins are unavailable today due to the VSC User Day
+  start_date: 2022-06-21 14:00:00
+  end_date: 2022-07-01 13:00:00
+  affected: tier2_brussel
+  level: high
+  planned: yes
+content: >
+
+  **Note:** High impact meeting
+
+  Use the Hydra cluster at your own risk. There be dragons.
+
+  **Bold suits you**
+
+  *Italic makes you stand out*
+
+  ```python
+  print('hello world')
+  ```
+
+  * item1
+  * item2
+
+  checkboxes can be checked
+
+  - [ ] check it
+  - [ ] uncheck it
+
+
