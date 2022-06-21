@@ -1,0 +1,17 @@
+meta_data:
+  title: Maintenance: Update Job Scheduler
+  start_date: 2022-06-20 13:00:00
+  end_date: 2022-06-21 14:00:00
+  affected: tier2_Leuven
+  level: low
+  planned: yes
+content: >
+
+  **Note: this is a test incident**
+
+  Because we are updating the job scheduler a reservation has been placed on all Genius nodes. As a result,
+  
+    * New jobs can still be submitted but will not start queuing until after the maintenance.
+  
+    * Jobs that are currently running will continue running.
+  
