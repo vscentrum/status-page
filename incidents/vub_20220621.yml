@@ -36,4 +36,14 @@ content: >
 
     > more quoted text
     
-    Please consult our <a href="https://hpc.vub.be/posts/category/news/" target="_blank">news page</a> for more info.
+  Please consult our <a href="https://hpc.vub.be/posts/category/news/" target="_blank">news page</a> for more info.
+  
+  
+  Please consult our [news page][vub-news] for more info.
+
+
+  End of message - over to you Bavo!
+  
+
+  [vub-news]: https://hpc.vub.be/posts/category/news/
+
