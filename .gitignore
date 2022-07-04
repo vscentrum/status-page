@@ -8,3 +8,6 @@ __pycache__/
 
 # build directory
 build/
+
+# direnv file
+.envrc
