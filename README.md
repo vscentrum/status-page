@@ -72,3 +72,8 @@ local storage may have impact on other systems.  If the storage system that
 hosts the home and data directories of users at an institute is down, these
 users will not be able to use infrastructure on other sites either.  You may
 want to lists such issues also for the VSC sotrage domain.
+
+Note that the `planned` field is intended for bookkeeping purposes only.  By
+construction, an incident is planned when its start date is in the future.
+As soon as the start date is in the past, and the end date still in the future,
+it is a current event.
