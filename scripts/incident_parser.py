@@ -9,7 +9,7 @@ import yaml
 
 
 def get_modification_date(file_name):
-    process = subprocess.run(["git", "log", "--format=%ci", file_name],
+    process = subprocess.run(['git', '--no-pager', 'log', '--format=%ci', file_name],
                              check=True, capture_output=True, text=True)
     date_strs = str(process.stdout).split('\n')
     return datetime.datetime.strptime(date_strs[0],
