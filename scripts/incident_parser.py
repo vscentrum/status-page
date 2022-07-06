@@ -11,10 +11,15 @@ import yaml
 def get_modification_date(file_name):
     process = subprocess.run(['git', '--no-pager', 'log', '--format=%ci', file_name],
                              check=True, capture_output=True, text=True)
-    date_strs = str(process.stdout).split('\n')
-    return datetime.datetime.strptime(date_strs[0],
-                                      '%Y-%m-%d %H:%M:%S %z') \
-            .strftime('%Y-%m-%d %H:%M:%S')
+    date_str = str(process.stdout)
+    if date_str:
+        date_strs = date_str.split('\n')
+        return datetime.datetime.strptime(date_strs[0],
+                                          '%Y-%m-%d %H:%M:%S %z') \
+                .strftime('%Y-%m-%d %H:%M:%S')
+    else:
+        mtime = pathlib.Path(file_name).stat().st_mtime
+        return datetime.datetime.fromtimestamp(mtime).strftime('%Y-%m-%d %H:%M:S')
 
 
 class IncidentParser:
