@@ -7,13 +7,16 @@ meta_data:
   planned: yes
 content: >
 
-  We schedule a downtime for all CalcUA clusters between Sunday 10 July, 2 pm, and Thursday 14 July, noon (at latest).
+  We schedule a downtime for all CalcUA clusters between Sunday 10 July, 2 pm, and Thursday 14 July, noon (at latest).<br />
   This is needed is for a scheduled power cut on CGB on Monday.
-  
+
+
   After the power has been restored, we will do some maintenance and run several tests.
-  
-  Access to other VSC Tier-2 sites will not be possible between Sunday 10 July, 2 pm and Tuesday 12 July, 5 pm.
+
+
+  Access to other VSC Tier-2 sites will not be possible between Sunday 10 July, 2 pm and Tuesday 12 July, 5 pm.<br />
   Access to VSC Tier-1 is possible but $VSC_HOME and $VSC_SCRATCH will not be available.
- 
+
+
   Our apologies for the inconvenience.
  
