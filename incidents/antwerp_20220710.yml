@@ -15,7 +15,7 @@ content: >
 
 
   Access to other VSC Tier-2 sites will not be possible between Sunday 10 July, 2 pm and Tuesday 12 July, 5 pm.<br />
-  Access to VSC Tier-1 is possible but $VSC_HOME and $VSC_SCRATCH will not be available.
+  Access to VSC Tier-1 is possible but $VSC_HOME and $VSC_DATA will not be available.
 
 
   Our apologies for the inconvenience.
