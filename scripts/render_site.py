@@ -12,8 +12,8 @@ import utils
 
 
 def create_overview_page(current_incidents, planned_maintenance, config):
-    current_table = utils.dataframe_to_html_table(current_incidents[config['current_overview_columns']], config['no_news_message'])
-    planned_table = utils.dataframe_to_html_table(planned_maintenance[config['planned_overview_columns']], config['no_news_message'])
+    current_table = utils.dataframe_to_html_table(current_incidents[config['current_overview_columns']], config['no_news_message_incidents'])
+    planned_table = utils.dataframe_to_html_table(planned_maintenance[config['planned_overview_columns']], config['no_news_message_maintenance'])
     config['build_dir'].mkdir(exist_ok=True)
     utils.process_template(config['template_dir'] / 'index.html', config['build_dir'] / 'index.html',
                            {'overview_table_current': current_table,
@@ -23,8 +23,8 @@ def create_overview_page(current_incidents, planned_maintenance, config):
 def create_service_page(service, current_incidents, planned_maintenance, config):
     service_name = utils.format_name(service)
     incident_tmpl = utils.read_template(config['template_dir'] / config['incident_template_file'])
-    current_incidents_text = utils.dataframe_to_html_text(current_incidents, incident_tmpl, config['no_news_message'])
-    planned_maintenance_text = utils.dataframe_to_html_text(planned_maintenance, incident_tmpl, config['no_news_message'])
+    current_incidents_text = utils.dataframe_to_html_text(current_incidents, incident_tmpl, config['no_news_message_incidents'])
+    planned_maintenance_text = utils.dataframe_to_html_text(planned_maintenance, incident_tmpl, config['no_news_message_incidents'])
     utils.process_template(config['template_dir'] / config['service_template_file'], config['build_dir'] / f'{service}.html',
                            {'service_name': service_name,
                             'current_text': current_incidents_text,
