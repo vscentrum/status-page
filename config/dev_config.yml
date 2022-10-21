@@ -2,7 +2,8 @@ incident_dirs:
     - dev_incidents/
 template_dir: templates/
 build_dir: build/
-no_news_message: <p>All systems running fine.</p>
+no_news_message_incidents: <p>All systems running fine.</p>
+no_news_message_maintenance: <p>No maintenance planned currently.</p>
 current_overview_columns:
     - end_date
     - updated
