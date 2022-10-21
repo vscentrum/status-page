@@ -1,5 +1,5 @@
 name: Render site
-on: [push]
+on: [push, pull_request]
 jobs:
   Render-site:
     runs-on: ubuntu-latest
