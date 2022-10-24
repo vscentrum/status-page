@@ -1,0 +1,13 @@
+meta_data:
+  title: VSC network maintenance
+  start_date: 2022-11-09 20:00:00
+  end_date: 2022-11-09 23:59:59
+  affected: backbone, tier2_brussels
+  level: high
+  planned: yes
+content: >
+
+  Belnet has planned a maintenance update on the VSC network impacting the VUB HPC cluster.
+
+
+  All connections to the VUB HPC cluster from the other VSC sites will be down.
