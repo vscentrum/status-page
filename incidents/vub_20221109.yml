@@ -10,4 +10,4 @@ content: >
   Belnet has planned a maintenance update on the VSC network impacting the VUB HPC cluster.
 
 
-  All connections to the VUB HPC cluster from the other VSC sites will be down.
+  All connections between the VUB HPC cluster and the other VSC sites will be down.
