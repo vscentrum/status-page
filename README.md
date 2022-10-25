@@ -42,17 +42,6 @@ The push event triggers rendering the website.
 The script that runs every 30 minutes will ensure that an incident with
 and end date will no longer show up when that date is reached.
 
-## Development
-
-The `config/dev_config.yml` configuration file is intended for development
-and testing.  The render script takes an options `--now` that can be used
-to set the "current time".  The example incidents in the `example_incidents`
-directory can be used with `--now '2022-01-20 10:00:00'`, e.g,.
-```bash
-$ ./scripts/render_site.py  --now '2022-01-20 10:00:00'  --config config/dev_config.yml
-```
-Note that one of those example incidents contains an error on purpose.
-
 ## Semantics
 
 Incident level:
@@ -67,13 +56,30 @@ Incident level:
 This is a rough indication, the description of the incident should detail its
 scope and impact for the user.
 
-The domain are fairly self-explanatory.  Note however that a problem with
-local storage may have impact on other systems.  If the storage system that
+Affected:
+The domain are fairly self-explanatory (eg. tier1_compute, tier1_data, tier1_cloud, tier2_antwerp, tier2_xxx, backbone) and are define in the config.yml file. 
+Note however that a problem with local storage may have impact on other systems.  If the storage system that
 hosts the home and data directories of users at an institute is down, these
 users will not be able to use infrastructure on other sites either.  You may
-want to lists such issues also for the VSC sotrage domain.
+want to lists such issues also for the VSC storage domain.
 
+Planned:
 Note that the `planned` field is intended for bookkeeping purposes only.  By
 construction, an incident is planned when its start date is in the future.
 As soon as the start date is in the past, and the end date still in the future,
 it is a current event.
+
+Incident naming scheme:
+To keep it a bit organised, start the incident filename with the site that reported the incident followed by the date of report and in case of multiple incidents on a day, add an index (eg. kul_20221021_01)
+
+## Development
+
+The `config/dev_config.yml` configuration file is intended for development
+and testing.  The render script takes an options `--now` that can be used
+to set the "current time".  The example incidents in the `example_incidents`
+directory can be used with `--now '2022-01-20 10:00:00'`, e.g,.
+```bash
+$ ./scripts/render_site.py  --now '2022-01-20 10:00:00'  --config config/dev_config.yml
+```
+Note that one of those example incidents contains an error on purpose.
+
