@@ -7,7 +7,5 @@ meta_data:
   planned: yes
 content: >
 
-  **Note: Planned Belnet Maintenance UA POP**
-
-  Belnet has scheduled a maintanance which includes short downtimes of the UAntwerp connection.Therefor no jobs from UAntwerp accounts will be able to run on BrENIAC during this time window.
-
+  Belnet has scheduled a maintanance which includes short downtimes of the UAntwerp connection.
+  Therefor no jobs from UAntwerp accounts will be able to run on BrENIAC during this time window.
