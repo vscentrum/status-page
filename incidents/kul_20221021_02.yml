@@ -1,11 +1,11 @@
 meta_data:
-  title: Belnet Maintenance
+  title: VSC Network maintenance -  UAntwerp connection
   start_date: 2022-11-07 20:00:00
   end_date: 2022-11-07 23:59:59
-  affected: tier1_leuven
+  affected: tier1_compute, backbone
   level: low 
   planned: yes
 content: >
 
-  Belnet has scheduled a maintanance which includes short downtimes of the UAntwerp connection.
-  Therefor no jobs from UAntwerp accounts will be able to run on BrENIAC during this time window.
+  Belnet has scheduled a maintanance which includes short downtimes of the UAntwerp connection. This affects mounts of the VSC_HOME and VSC_DATA from vsc2* users to other VSC clusters. 
+  Therefor no jobs from UAntwerp accounts will be able to run on BrENIAC during this time window. Users running jobs on Hortense with local user/data setup are not affected.

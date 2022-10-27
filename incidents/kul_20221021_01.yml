@@ -1,5 +1,5 @@
 meta_data:
-  title: Belnet Maintenance
+  title: VSC Network maintenance - UGent connection
   start_date: 2022-10-27 20:00:00
   end_date: 2022-10-27 23:59:59
   affected: tier1_leuven, backbone
@@ -7,5 +7,5 @@ meta_data:
   planned: yes
 content: >
 
-  Belnet has scheduled a maintanance which includes short downtimes of the UGent connection.
-  Therefor no jobs from UGent accounts will be able to run on BrENIAC during this time window.
+  Belnet has scheduled a maintanance which includes short downtimes of the UGent connection. This affects mounts of the VSC_HOME and VSC_DATA from vsc4* users to other VSC clusters.
+  Therefor no jobs from UGent accounts will be able to run on BrENIAC during this time window. 
