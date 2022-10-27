@@ -2,7 +2,7 @@ meta_data:
   title: VSC Network maintenance - UGent connection
   start_date: 2022-10-27 20:00:00
   end_date: 2022-10-27 23:59:59
-  affected: tier1_leuven, backbone
+  affected: tier1_compute, backbone
   level: low 
   planned: yes
 content: >
