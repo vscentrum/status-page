@@ -1,0 +1,13 @@
+meta_data:
+  title: Belnet Maintenance
+  start_date: 2022-11-07 20:00:00
+  end_date: 2022-11-07 23:59:59
+  affected: tier1_leuven
+  level: low 
+  planned: yes
+content: >
+
+  **Note: Planned Belnet Maintenance UA POP**
+
+  Belnet has scheduled a maintanance which includes short downtimes of the UAntwerp connection.Therefor no jobs from UAntwerp accounts will be able to run on BrENIAC during this time window.
+
