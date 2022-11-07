@@ -2,7 +2,7 @@ meta_data:
   title: HPC-UGent Tier2 scheduled maintenance
   start_date: 2022-11-28 08:00:00
   end_date: 2022-12-2 17:00:00
-  affected: tier2_ugent
+  affected: tier2_gent
   level: high
   planned: yes
 content: >
