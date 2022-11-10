@@ -6,9 +6,14 @@ meta_data:
   level: high
   planned: yes
 content: >
-  Scheduled maintenance work to Tier2 systems HPC-UGent (28 November - 2 December 2022)
+  Scheduled maintenance work to HPC-UGent Tier-2 systems (28 November - 2 December 2022)
+  
   Will be unavailable during this period:
-    - all Tier2 login nodes
-    - all Tier2 clusters
-    - the shared storage
-  We will mainly perform updates in this maintenance window, including firmware, shared filesystems, OS, Slurm and the central software stack provided through modules.
+  
+  * all HPC-UGent Tier-2 login nodes
+  
+  * all HPC-UGent Tier-2 clusters
+  
+  * the shared storage (`$VSC_HOME`, `$VSC_DATA`, `$VSC_SCRATCH*`)
+    
+  We will mainly perform updates in this maintenance window, including firmware, shared filesystems, OS, Slurm, and the central software stack provided through modules.
