@@ -1,7 +1,7 @@
 meta_data:
   title: VSC network unavailable
   start_date: 2022-11-18 09:37:00
-  end_date:
+  end_date: 2022-11-18 16:05:00
   affected: backbone, tier2_brussels
   level: high
   planned: no
