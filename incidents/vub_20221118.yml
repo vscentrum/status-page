@@ -1,0 +1,12 @@
+meta_data:
+  title: VSC network unavailable
+  start_date: 2022-11-18 09:37:00
+  end_date:
+  affected: backbone, tier2_brussels
+  level: high
+  planned: no
+content: >
+
+  An upgrade of network equipement has caused the VSC network to be unavailable. The
+  connection between Hydra and the rest of the VSC is down at this moment. We are
+  working with the network vendor to fix the issue as soon as possible.
