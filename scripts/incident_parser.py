@@ -1,5 +1,6 @@
 import copy
 import datetime
+import os
 import pandas as pd
 import pathlib
 import re
@@ -69,14 +70,23 @@ class IncidentParser:
             print(f"parsing directory '{incident_dir_name}'", file=sys.stderr)
         incident_dir = pathlib.Path(incident_dir_name)
         all_succeed = True
-        for incident_file in incident_dir.glob('*.yml'):
-            try:
-                self.parse_file(incident_file)
-            except ValueError as error:
-                print(f'### error: {error}', file=sys.stderr)
+        for incident_file in incident_dir.glob('*'):
+            incident_file_name = str(incident_file)
+            if incident_file_name.endswith('.yml'):
+                try:
+                    self.parse_file(incident_file)
+                except ValueError as error:
+                    print(f'### error: {error}', file=sys.stderr)
+                    all_succeed = False
+                    if not self._is_permissive:
+                        raise error
+            # all non-hidden files in incidents dir must me *.yml files
+            elif not os.path.basename(incident_file).startswith('.'):
                 all_succeed = False
+                error_msg = f"Found indicent file that does not have .yml extension: {incident_file}"
+                print(f'### error: {error_msg}', file=sys.stderr)
                 if not self._is_permissive:
-                    raise error
+                    raise ValueError(error_msg)
         return all_succeed
             
     @property
