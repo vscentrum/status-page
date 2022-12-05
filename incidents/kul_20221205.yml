@@ -1,0 +1,12 @@
+meta_data:
+  title: Breniac nodes offline
+  start_date: 2022-12-05 08:20:00
+  end_date: 
+  affected: tier1_compute
+  level: medium
+  planned: no
+content: >
+
+  Half of Breniac nodes are offline due to the power problems. 
+    
+    * Submitted jobs are running, but the system does not have a full capacity.

@@ -1,7 +1,7 @@
 meta_data:
   title: Superdome offline
   start_date: 2022-11-15 15:20:00
-  end_date: 
+  end_date: 2022-12-01 10:20:00
   affected: tier2_leuven
   level: medium
   planned: no
@@ -12,3 +12,5 @@ content: >
     * We are waiting for replacement parts and further investigtion. 
     
     * The submitted jobs will remain in the queue until the problem is solved.
+    
+    * Superdome is back online.
