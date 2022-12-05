@@ -15,22 +15,22 @@ content: >
   * all HPC-UGent Tier-2 clusters
   
   * the shared storage (`$VSC_HOME`, `$VSC_DATA`, `$VSC_SCRATCH*`)
-    
-We are confronted with unexpected filesystem or network stability issues, making the clusters unreliable at the moment.
-The Tier2 login nodes and all Tier2 clusters will remain unavailable until the problem is resolved.
-
-What is going on?
-During routine stress tests, we are seeing filesystem issues that can trigger an entire cluster to go offline.
-Likely, this is the result of a bug in the parallel filesystem software, in unique combination with the kernel and network software stack versions.
-In accord with our vendor IBM we are debugging this issue and hope to fix it as soon as possible.
-At the same time, we are researching and preparing other scenarios to bring the clusters back up again.
-
-Is the data safe on the HOME, DATA or SCRATCH filesystems?
-The integrity of the storage is not at risk.
-Only the clusters are unusable at the moment because of this bug.
-
-Why wasn’t this tested beforehand?
-It was.
-We have migrated to a fully supported software stack.
-And tested this software stack thoroughly well before the maintenance.
-However, this bug seemingly is triggered by a unique IO pattern that only occurs in a real live system.
+  
+  We are confronted with unexpected filesystem or network stability issues, making the clusters unreliable at the moment.
+  The Tier2 login nodes and all Tier2 clusters will remain unavailable until the problem is resolved.
+  
+  What is going on?
+  During routine stress tests, we are seeing filesystem issues that can trigger an entire cluster to go offline.
+  Likely, this is the result of a bug in the parallel filesystem software, in unique combination with the kernel and network software stack versions.
+  In accord with our vendor IBM we are debugging this issue and hope to fix it as soon as possible.
+  At the same time, we are researching and preparing other scenarios to bring the clusters back up again.
+  
+  Is the data safe on the HOME, DATA or SCRATCH filesystems?
+  The integrity of the storage is not at risk.
+  Only the clusters are unusable at the moment because of this bug.
+  
+  Why wasn’t this tested beforehand?
+  It was.
+  We have migrated to a fully supported software stack.
+  And tested this software stack thoroughly well before the maintenance.
+  However, this bug seemingly is triggered by a unique IO pattern that only occurs in a real live system.
