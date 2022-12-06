@@ -1,6 +1,5 @@
 import copy
 import datetime
-import os
 import pandas as pd
 import pathlib
 import re
@@ -71,17 +70,20 @@ class IncidentParser:
         incident_dir = pathlib.Path(incident_dir_name)
         all_succeed = True
         for incident_file in incident_dir.glob('*'):
-            incident_file_name = str(incident_file)
-            if incident_file_name.endswith('.yml'):
+            # ignore non-files and hidden files
+            if (not incident_file.is_file() or
+                incident_file.stem.startswith('.')):
+                continue
+            if incident_file.suffix == '.yml':
                 try:
                     self.parse_file(incident_file)
                 except ValueError as error:
-                    print(f'### error: {error}', file=sys.stderr)
                     all_succeed = False
+                    print(f'### error: {error}', file=sys.stderr)
                     if not self._is_permissive:
                         raise error
             # all non-hidden files in incidents dir must me *.yml files
-            elif not os.path.basename(incident_file).startswith('.'):
+            else:
                 all_succeed = False
                 error_msg = f"Found indicent file that does not have .yml extension: {incident_file}"
                 print(f'### error: {error_msg}', file=sys.stderr)
