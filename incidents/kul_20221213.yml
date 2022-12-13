@@ -1,0 +1,12 @@
+meta_data:
+  title: VSC HPC firewall page maintenance 
+  start_date: 2022-12-14 08:00:00
+  end_date: 2022-12-14 12:00:00 
+  affected: backbone
+  level: low
+  planned: yes
+content: >
+
+  VSC HPC firewall page maintenance 
+    
+    * There will be a maintenance on the storage used by the HPC firewall service. There should be no impact, but users might need to reload the firewall page after the maintenance.
