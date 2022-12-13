@@ -1,0 +1,18 @@
+meta_data:
+  title: CalcUA downtime
+  start_date: 2022-12-16 16:00:00
+  end_date: 2022-12-19 12:00:00
+  affected: tier2_antwerp, backbone
+  level: high
+  planned: yes
+content: >
+
+  We schedule a downtime for all CalcUA clusters and our storage infrastructure between Friday 16 December, 4 pm, and Monday 19 December, noon
+  (expected).<br />
+  This is needed due to a scheduled intervention on the CGB high-voltage cabin on Saturday.
+
+  Access to other VSC sites (both Tier-2 and Tier-1) will not be possible, since our storage will be down.<br />
+
+
+  Our apologies for the inconvenience.
+ 
