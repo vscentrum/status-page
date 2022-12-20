@@ -1,7 +1,7 @@
 meta_data:
   title: Tier-2 NX server upgrade 
   start_date: 2022-12-21 17:00:00
-  end_date: 2022-12-21 24:00:00 
+  end_date: 2022-12-21 23:59:59 
   affected: tier2_leuven
   level: low
   planned: yes
