@@ -1,0 +1,14 @@
+meta_data:
+  title: Tier-1 BrENIAC End of Life 
+  start_date: 2023-01-01 00:00:00
+  end_date: 2023-01-15 23:59:59 
+  affected: tier1_compute
+  level: high
+  planned: yes
+content: >
+
+  Tier-1 BrENIAC Enf Of Life
+    
+    * After 6 year we will turn off BrENIAC. From 1/1/2023 the compute nodes will no longer be available.
+
+    * If you still have data on BrENIAC should be kept, please copy it to another location. The login nodes and access to the storage will be available until 15/01/2023. Contact servicedesk compute@vscentrum.be / hpcinfo@kuleuven.be if you have any questions.
