@@ -1,0 +1,14 @@
+meta_data:
+  title: Tier-2 wICE Slurm update 
+  start_date: 2023-01-16 09:00:00
+  end_date: 2023-01-16 14:00:00 
+  affected: tier2_leuven
+  level: high
+  planned: yes
+content: >
+
+  Tier-2 wICE Slurm update
+    
+    * The Slurm installation on wICE will be updated next Monday morning. A reservation has been put in place so that no jobs are running during the update.  This is because Slurm daemons need to be restarted, which could result in job crashes (queueing jobs should not be affected). Note that Genius is not affected by this maintenance. 
+
+    * This is the last step towards the production phase of wICE. wICE will enter production phase from 1/2/2023 . This is not a big change, most important is that the pilot projects will no longer be available. From 1/2/2023 on you will need to use the same projects as what you are using on Genius in your Slurm job scripts. To start, we will transfer 20% of the available credits from MAM to Slurm. For a short while there will be separate accounting systems on Genius (MAM/MOAB) and wICE (Slurm). This is only a temporary situation. When we migrate Genius to Slurm, there will again be only one accounting system. You can always request to transfer more credits from MAM to Slurm, or from Slurm to MAM if needed. We will send more details about this in a later communication.
