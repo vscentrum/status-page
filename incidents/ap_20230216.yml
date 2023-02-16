@@ -1,0 +1,10 @@
+meta_data:
+  title: Authentication via VSC accountpage broken for VSC accounts using UA, KUL, VUB IDP
+  start_date: 2023-02-16 13:20:00
+  end_date:
+  affected: backbone
+  level: high
+  planned: no
+content: >
+  Authenticating via the VSC accountpage is currently broken for VSC accounts using UA, KUL, VUB IDP,
+  error message says ``Unknown or Unusable identity provider``.
