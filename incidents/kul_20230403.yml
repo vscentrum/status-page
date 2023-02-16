@@ -1,0 +1,24 @@
+meta_data:
+  title: Tier-2 maintenance downtime
+  start_date: 2023-04-03 08:00:00
+  end_date: 2023-04-07 22:00:00 
+  affected: tier2_leuven
+  level: high
+  planned: yes
+content: >
+
+  Tier-2 maintenance downtime
+  
+  We are planning a larger Tier-2 downtime from April 3 till April 7 (inclusive). Both Genius and wICE will be unavailable in this period.
+
+  This downtime is needed to perform the following work:
+
+    * Enlarging the Lustre storage capacity (+130 TB SSD, +1.5 PB HDD)
+    
+    * Upgrading the Clusterstor firmware (to v6.2) and Lustre clients (to v2.15)
+    
+    * Migrating Genius to the Slurm scheduler
+
+  This also means that jobs on Genius will need to be submitted via Slurm after the downtime. At the start of the migration to Slurm, any still-queueing jobs that were submitted with the current scheduler (PBS/Torque) will be lost. You will hence need to resubmit these as Slurm jobs after the downtime, if you happen to have any.
+
+  If you are not yet familiar with Slurm, you can already try it out now on the wICE cluster, so that you will be ready to continue working after the downtime.
