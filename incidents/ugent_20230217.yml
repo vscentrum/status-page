@@ -10,3 +10,8 @@ content: >
   Power has been restored in the mean while.
   HPC-UGent team is investigating the system.
   As soon as we are confident that everything is fine, we will put the system back online.
+
+  Updates:
+
+  [Fri 17 Feb'23 - 14:00] There has been a general failure of the water pump system of the Tier-1 Hortense cooling infrastructure.
+  To protect the system it has been completely powered down (incl. scratch storage and access to login nodes).
