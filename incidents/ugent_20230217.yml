@@ -1,0 +1,10 @@
+meta_data:
+  title: Tier1 Hortense down
+  start_date: 2023-02-17 08:00:00
+  end_date: 2023-02-17 17:00:00
+  affected: tier1_compute
+  level: high
+  planned: no
+content: >
+  All Tier1 Hortense racks have suffered an unexpected power failure. All Tier1 Compute systems and services are currently down.
+  HPC-UGent team is first examining what happened to prevent a repeat event, and will then attempt to power up the system.
