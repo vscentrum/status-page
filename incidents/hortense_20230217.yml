@@ -13,3 +13,9 @@ content: >
   <p>To protect the system it has been completely powered down (incl. scratch storage and access to login nodes).</p>
 
   <p>As soon as we are confident that everything is fine, we will put the system back online.</p>
+
+  <p><strong>Update (Mon 20 Feb'23 14:40)</strong></p>
+  <p>The Tier-1 login nodes, web portal, and scratch storage are now available again.</p>
+  <p>Worker nodes have been powered up again but job scheduling remains paused for now,
+  while we monitor the stability of the cooling infrastructure in the coming hours.
+  </p>
