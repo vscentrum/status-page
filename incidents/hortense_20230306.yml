@@ -1,0 +1,23 @@
+meta_data:
+  title: Scheduled maintenance Tier-1 Hortense
+  start_date: 2023-03-06 07:00:00
+  end_date: 2023-03-15 20:00:00
+  affected: tier1_compute
+  level: high
+  planned: yes
+content: >
+
+  <p>A maintenance period is required to expand Tier-1 Hortense with (much) more hardware, roughly doubling the capacity of the system.</p>
+
+  <p><strong>Impacted:</strong> all login nodes, all compute nodes and the shared scratch filesystem will be offline.</p>
+
+  <p><strong>Update Fri 10 March 2023 - 15:00</strong></p>
+
+  <p>
+  Unfortunately, maintenance work to Tier-1 Hortense is not completed yet.
+  Currently, the machine is not yet released by the vendor.
+  After that, still quite a bit of validating work and stress testing is needed before we can safely release the cluster.
+
+  We expect to be able and release a stable system in the course of next week.
+  It goes without saying that we are trying our best to speed up availability for the users as much as possible.
+  </p>
