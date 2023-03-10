@@ -1,0 +1,16 @@
+meta_data:
+  title: CalcUA power interruption
+  start_date: 2023-03-09 20:40:00
+  end_date:
+  affected: tier2_antwerp
+  level: high
+  planned: no
+content: >
+
+  A large power interruption cause our compute infrastructure to go down.<br />
+
+  Except for the scratch filesystem, our storage infrastructure is back up. This means that access to other VSC sites (both Tier-2 and Tier-1) is possible.<br />
+
+
+  Our apologies for the inconvenience.
+ 
