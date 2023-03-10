@@ -1,0 +1,18 @@
+meta_data:
+  title: Shutdown JupyterHub nodes
+  start_date: 2023-03-10 08:00:00
+  end_date: 2023-03-24 22:00:00
+  affected: tier2_leuven
+  level: high
+  planned: current
+content: >
+
+  Shutdown JupyterHub nodes
+
+  The JupyterHub service that has been hosted on our Tier-2 cluster will be permanently closed down on 17/03/2023. This service will be
+  completely replaced by the JupyterLab interactive app that is available in our Open Ondemand (https://ondemand.hpc.kuleuven.be/).
+
+  You should be able to see and use your existing kernels in JupyterLab immediately. All of your storage is available there as well, so
+  you should also be able to open and use your notebooks without any issue.
+
+  Note that Open Ondemand only runs on wICE, so you will need to use Slurm credits to start a session.
