@@ -4,7 +4,7 @@ meta_data:
   end_date: 2023-03-24 22:00:00
   affected: tier2_leuven
   level: high
-  planned: current
+  planned: no
 content: >
 
   Shutdown JupyterHub nodes
