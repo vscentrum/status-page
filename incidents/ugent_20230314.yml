@@ -6,6 +6,7 @@ meta_data:
   level: medium
   planned: no
 content: >
+  <p>
   Due to a stability problem with the HPC-UGent shared filesystems, we have paused the job schedulers for all HPC-UGent Tier-2 clusters.
 
   You can still submit jobs to the queue, but they will not start until the job schedulers are resumed.
@@ -15,4 +16,7 @@ content: >
   Jobs that were running already may have crashed due to instability problems with the shared filesystems ($VSC_DATA, $VSC_SCRATCH, ...).
 
   We are working on resolving the problems ASAP.
+  </p>
 
+ <p><strong>Update Tue 14 March 2023 - 15:00</strong></p>
+ <p>Schedulers are getting resumed.</p>
