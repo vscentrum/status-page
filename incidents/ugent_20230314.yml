@@ -12,4 +12,7 @@ content: >
 
   While job schedulers are paused, the status of jobs will appear as 'F' in the output of the qstat command (because they can not get started currently).
 
+  Jobs that were running already may have crashed due to instability problems with the shared filesystems ($VSC_DATA, $VSC_SCRATCH, ...).
+
   We are working on resolving the problems ASAP.
+
