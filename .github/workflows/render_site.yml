@@ -8,19 +8,19 @@ jobs:
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
       - name: Check out repository code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
             fetch-depth: 0
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - name: Install Python dependencies
-        uses: py-actions/py-dependency-install@v3
+        uses: py-actions/py-dependency-install@v4
         with:
           path: "requirements.txt"
       - run: mkdir -p build
       - name: render
         run: |
           python scripts/render_site.py
-      - uses: JamesIves/github-pages-deploy-action@v4.2.2
+      - uses: JamesIves/github-pages-deploy-action@v4.4.1
         if: ${{ github.event_name == 'push' }}
         with:
           branch: main
