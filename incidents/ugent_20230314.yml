@@ -6,5 +6,13 @@ meta_data:
   level: medium
   planned: no
 content: >
-  Job schedulers for all HPC-UGent Tier-2 clusters were paused, because of a problem with the data storage infrastructure in the HPC-UGent datacenter S10.
-  Investigation of the issue is under way.
+  Due to a stability problem with the HPC-UGent shared filesystems, we have paused the job schedulers for all HPC-UGent Tier-2 clusters.
+
+  You can still submit jobs to the queue, but they will not start until the job schedulers are resumed.
+
+  While job schedulers are paused, the status of jobs will appear as 'F' in the output of the qstat command (because they can not get started currently).
+
+  Jobs that were running already may have crashed due to instability problems with the shared filesystems ($VSC_DATA, $VSC_SCRATCH, ...).
+
+  We are working on resolving the problems ASAP.
+
