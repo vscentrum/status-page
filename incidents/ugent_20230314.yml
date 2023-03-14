@@ -1,7 +1,7 @@
 meta_data:
   title: HPC-UGent Tier2 job schedulers paused
   start_date: 2023-03-14 13:00:00
-  end_date:
+  end_date: 2023-03-14 16:00:00
   affected: tier2_gent
   level: medium
   planned: no
@@ -20,3 +20,6 @@ content: >
 
   <p><strong>Update Tue 14 March 2023 - 15:00</strong></p>
   <p>Schedulers are getting resumed.</p>
+
+  <p><strong>Update Tue 14 March 2023 - 16:00</strong></p>
+  <p>All schedulers have been resumed. We continue to monitor the situation.</p>
