@@ -1,0 +1,10 @@
+meta_data:
+  title: HPC-UGent Tier2 job schedulers paused
+  start_date: 2023-03-14 13:00:00
+  end_date:
+  affected: tier2_gent
+  level: medium
+  planned: no
+content: >
+  Job schedulers for all HPC-UGent Tier-2 clusters were paused, because of a problem with the data storage infrastructure in the HPC-UGent datacenter S10.
+  Investigation of the issue is under way.
