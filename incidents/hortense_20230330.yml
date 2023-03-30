@@ -1,0 +1,14 @@
+meta_data:
+  title: Instabile cooling of Tier1 Hortense
+  start_date: 2023-03-28 17:20:00
+  end_date: 
+  affected: tier1_compute
+  level: high
+  planned: no
+content: >
+
+  <p>We experiencing cooling problems on Tier1 Hortense, the reason is unknown, we are investigating the problem.</p>
+
+  <p><strong>Impacted:</strong> entire racks might get down, interrupting jobs running on the affected nodes. Users have to restart their lost jobs </p>
+
+  <p><strong>Update Thu 30 March 2023 - 16:00</strong></p>
