@@ -6,15 +6,17 @@ meta_data:
   level: high
   planned: yes
 content: >
-  Repairs will be done to the existing nodes and preparatory work is planned to the datacenter and hardware in view of the second phase of Tier-1 Hortense.
-  Impacted: all login nodes, all compute nodes and the shared scratch filesystem will be offline.
+  <p>Repairs will be done to the existing nodes and preparatory work is planned to the datacenter and hardware in view of the second phase of Tier-1 Hortense.<br/>
+  Impacted: all login nodes, all compute nodes and the shared scratch filesystem will be offline.</p>
   
-  As a next step towards integrating the second phase of Tier1 Hortense, we have to schedule another maintenance window.
+  <p>As a next step towards integrating the second phase of Tier1 Hortense, we have to schedule another maintenance window.<br/>
   Please already take this into account when planning your further computational experiments.
   The works involve a.o.:
-    - more extensive testing of phase2 hardware
-    - making sure that cooling systems can feed phase 1+2 in a stable fashion
-    - further configuration of the scratch storage system extension
-
-  Impacted: all login nodes, all compute nodes, and the shared scratch filesystem will be offline.
+  <ul>
+  <li>more extensive testing of phase2 hardware</li>
+  <li>making sure that cooling systems can feed phase 1+2 in a stable fashion</li>
+  <li>further configuration of the scratch storage system extension</li>
+  </ul>
+  </p>
+  <p>Impacted: all login nodes, all compute nodes, and the shared scratch filesystem will be offline.</p>
 
