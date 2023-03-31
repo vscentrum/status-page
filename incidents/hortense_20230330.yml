@@ -7,7 +7,7 @@ meta_data:
   planned: no
 content: >
 
-  <p>We are experiencing cooling problems on Tier1 Hortense.Thus far, the reason is unknown, we are investigating the problem together the vendor.</p>
+  <p>We are experiencing cooling problems on Tier1 Hortense. Thus far, the reason is unknown. We are investigating the problem together with the vendor.</p>
 
   <p><strong>Impacted:</strong> entire racks might go down, thereby interrupting jobs running on the affected nodes. Users will have to restart their lost jobs.</p>
 
