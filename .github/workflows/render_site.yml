@@ -4,9 +4,16 @@ jobs:
   Render-site:
     runs-on: ubuntu-latest
     steps:
+      - name: Set timezone
+        uses: szenius/set-timezone@v1.2
+        with:
+            timezoneLinux: "Europe/Brussels"
+            timezoneMacos: "Europe/Brussels"
+            timezoneWindows: "Brussels standard time"
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
+      - run: echo "Current time is $(date)."
       - name: Check out repository code
         uses: actions/checkout@v3
         with:
