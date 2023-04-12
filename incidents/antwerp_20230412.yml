@@ -1,0 +1,17 @@
+meta_data:
+  title: CalcUA downtime
+  start_date: 2023-04-18 07:00:00
+  end_date: 2023-04-19 18:00:00
+  affected: tier2_antwerp, backbone
+  level: high
+  planned: yes
+content: >
+
+  We schedule a downtime for all CalcUA clusters and our storage infrastructure between Tuesday 18 April, 7 am, and Wednesday 19 April, evening.<br />
+  This is needed due to a shutdown of the cooling system to add additional piping for the upcoming Vaughan extension.
+
+  Access to other VSC sites (both Tier-2 and Tier-1) will not be possible in the same time window.<br />
+
+
+  Our apologies for the inconvenience.
+ 
