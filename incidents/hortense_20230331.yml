@@ -1,7 +1,7 @@
 meta_data:
   title: Scheduled maintenance Tier-1 Hortense
-  start_date: 2023-04-20 06:00:00
-  end_date: 2023-04-26 18:00:00
+  start_date: 2023-05-02 06:00:00
+  end_date: 2023-05-12 18:00:00
   affected: tier1_compute
   level: high
   planned: yes
