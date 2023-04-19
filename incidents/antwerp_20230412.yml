@@ -1,11 +1,13 @@
 meta_data:
   title: CalcUA downtime
   start_date: 2023-04-18 07:00:00
-  end_date: 2023-04-19 18:00:00
+  end_date: 2023-04-20 12:00:00
   affected: tier2_antwerp, backbone
   level: high
   planned: yes
 content: >
+
+  <p><strong>Update Wed 19 April 2023 - 15:30</strong> Because of issues with the cooling, we have decided to extend the downtime until Thursday 12 pm (noon).</p>
 
   <p>We schedule a downtime for all CalcUA clusters and our storage infrastructure between Tuesday 18 April, 7 am, and Wednesday 19 April, evening.<br/>
 
@@ -14,4 +16,3 @@ content: >
   <p>Access to other VSC sites (both Tier-2 and Tier-1) will not be possible in the same time window.</p>
 
   <p>Our apologies for the inconvenience.</p>
- 
