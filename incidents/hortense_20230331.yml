@@ -1,7 +1,7 @@
 meta_data:
   title: Scheduled maintenance Tier-1 Hortense
   start_date: 2023-05-02 06:00:00
-  end_date: 2023-05-12 18:00:00
+  end_date: 2023-05-15 18:00:00
   affected: tier1_compute
   level: high
   planned: yes
@@ -18,5 +18,11 @@ content: >
   <li>further configuration of the scratch storage system extension</li>
   </ul>
   </p>
+  <p>Update 12/05/2023</p>
+  <p>The vendor has largely handed over the system, but is still resolving some residual hardware issues.</p>
+  <p>Currently, additional stability tests and benchmarks are running on the available nodes.</p>
+  <p>And we are gradually releasing jobs that were queued before the downtime, which will run over the weekend.</p>
+  <p>If all goes well, we aim to release phase 1 of Tier1 Hortense and the login nodes in the course of next Monday 15 May.</p>
+  
   <p>Impacted: all login nodes, all compute nodes, and the shared scratch filesystem will be offline.</p>
 
