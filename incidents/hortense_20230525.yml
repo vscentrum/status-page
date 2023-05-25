@@ -1,0 +1,13 @@
+meta_data:
+  title: Crashing Slurm daemons
+  start_date: 2023-05-25 09:10:00
+  end_date: 
+  affected: tier1_compute
+  level: medium
+  planned: no
+content: >
+
+  <p>We are observing crashing Slurm daemons, which are resulting in workernodes being unavailable for running jobs.</p>
+
+  <p>The problem is actively being investigated by the HPC-UGent team.<br/>
+  We will try and resolve the problems as soon as possible.</p>
