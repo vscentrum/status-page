@@ -1,7 +1,7 @@
 meta_data:
   title: Unstable cooling of Tier1 Hortense
   start_date: 2023-03-28 17:20:00
-  end_date: 
+  end_date: 2023-04-07 17:00:00
   affected: tier1_compute
   level: high
   planned: no
