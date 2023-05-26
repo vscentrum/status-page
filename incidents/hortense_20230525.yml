@@ -1,13 +1,18 @@
 meta_data:
-  title: Crashing Slurm daemons
+  title: Crashing Slurm daemons on Tier-1 Hortense and HPC-UGent Tier-2 clusters
   start_date: 2023-05-25 09:10:00
-  end_date: 
-  affected: tier1_compute
+  end_date: 2023-05-25 14:30:00
+  affected: tier1_compute, ugent_tier2
   level: medium
   planned: no
 content: >
 
   <p>We are observing crashing Slurm daemons, which are resulting in workernodes being unavailable for running jobs.</p>
 
+  <p>Slurm output files for jobs may be missing for jobs that completed while the Slurm daemon the the workernode was down at that time.</p>
+
   <p>The problem is actively being investigated by the HPC-UGent team.<br/>
   We will try and resolve the problems as soon as possible.</p>
+
+  <p>Update Thu 25 May 2023, 14:30: A workaround has been put in place to mitigate the impact of this issue,
+  until a proper fix is available.</p>
