@@ -2,7 +2,7 @@ meta_data:
   title: Crashing Slurm daemons on Tier-1 Hortense and HPC-UGent Tier-2 clusters
   start_date: 2023-05-25 09:10:00
   end_date: 2023-05-25 14:30:00
-  affected: tier1_compute, ugent_tier2
+  affected: tier1_compute, tier2_gent
   level: medium
   planned: no
 content: >
