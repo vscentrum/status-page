@@ -1,0 +1,11 @@
+meta_data:
+  title: Schedulers paused on Tier-1 Hortense
+  start_date: 2023-05-30 10:30:00
+  affected: tier1_compute
+  level: high
+  planned: no
+content: >
+
+  <p>Due to an issue with a server, we had to pause Tier1 schedulers.</p>
+  <p>Jobs can still be submitted, but these won't be executed while the schedulers are paused.</p>
+  <p>We are investigating and will try to amend this situation as soon as reasonably possible.</p>
