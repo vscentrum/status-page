@@ -9,4 +9,4 @@ content: >
 
   <p>Due to an issue with the cooling, we had to shut down all Milan nodes of Tier1.</p>
   <p>The dedicated cooling infrastructure for Tier-1 is currently not coping well with the load of phase1 + phase2.</p>
-  <p>To protect the integrity of all Tier-1 infrastructure, we are shutting down all Milan nodes of phase2./p>
+  <p>To protect the integrity of all Tier-1 infrastructure, we are shutting down all Milan nodes of phase2.</p>
