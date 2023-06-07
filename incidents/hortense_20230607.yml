@@ -1,0 +1,15 @@
+meta_data:
+  title: Tier-1 Milan nodes partly shut down
+  start_date: 2023-06-07 10:50:00
+  end_date: 
+  affected: tier1_compute
+  level: medium
+  planned: no
+content: >
+
+  <p>Due to an issue with the cooling, we have to shut down half of the Milan nodes of Tier1.</p>
+  <p>The dedicated cooling infrastructure for Tier-1 is currently not coping well with the load of phase1 + phase2.</p>
+  <p>To protect the integrity of all Tier-1 infrastructure, we are shutting down part of the Milan nodes of phase2.</p>
+  <p>Stability of the cooling system is closely being monitored.</p>
+  <p>In communication with our vendor, we are looking for a solution.</p>
+ 
