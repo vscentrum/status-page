@@ -1,0 +1,14 @@
+meta_data:
+  title: Tier-1 Maintenance
+  start_date: 2023-06-26 06:00:00
+  end_date: 2023-06-30 17:00:00 
+  affected: tier1_compute
+  level: high
+  planned: yes
+content: >
+
+  <p>Another downtime of the entire Tier1 Hortense system is needed.</p>
+  <p>Purpose is to bring online a more powerful cooling system for Tier1 Hortense.</p>
+  <p>We anticipate this will bring more stability to the system.</p>
+  <p></p>
+  <p>All login nodes, all compute nodes, and the shared scratch filesystem will be offline.</p>
