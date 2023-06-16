@@ -20,7 +20,35 @@
         
         <h2>Current incidents</h2>
         
-        <h3><a id="incident_0017">Tier-1 Milan nodes partly shut down</a></h3>
+        <h3><a id="incident_0042">Power outage in UGent datacenter S10 [resolved]</a></h3>
+
+<table>
+    <tr>
+        <td><span class="td_name">Start:</span></td>
+        <td>2023-06-16 02:50:00</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">End:</span></td>
+        <td>2023-06-16 17:00:00</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">Updated:</span></td>
+        <td>2023-06-16 14:14:05</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">Level:</span></td>
+        <td>high</td>
+    </tr>
+</table>
+
+<p> An unexpected power outage has occurred in the Ghent area which also affected the UGent datacenter S10 around 02:50 CEST on Friday 16 June 2023. </p>
+<p> As a result of this, most of the HPC-UGent and VSC infrastructure housed in the UGent datacenter became unavailable.<br/> This included: <ul> <li>VSC Tier-1 Hortense, including login nodes and scratch storage;</li> <li>The Tier-1 cloud infrastructure that is not on backup power</li> <li>All HPC-UGent Tier-2 clusters;</li> <li>Home directories for VSC accounts affiliated with UGent;</li> <li>HPC-UGent shared filesystems ($VSC_DATA, $VSC_SCRATCH);</li> </ul> </p>
+<p> Problems with the Tier-1 cloud infrastructure were fixed by 10:10 CEST. </p>
+<p> The HPC-UGent Tier-2 infrastructure and Tier-1 Hortense were fully operational again around 14:00 CEST. </p>
+<p> The login nodes, web portal, and Globus service nodes for both the HPC-UGent Tier-2 infrastructure and Tier-1 Hortense were rebooted in the process, to eliminate any problems caused by the shared filesystems ($VSC_HOME, $VSC_DATA, $VSC_SCRATCH) being unavailable for a while (roughly between 02:50 and 10:00 CEST). </p>
+
+
+<h3><a id="incident_0017">Tier-1 Milan nodes partly shut down</a></h3>
 
 <table>
     <tr>
@@ -33,7 +61,7 @@
     </tr>
     <tr>
         <td><span class="td_name">Updated:</span></td>
-        <td>2023-06-16 13:46:26</td>
+        <td>2023-06-07 11:03:39</td>
     </tr>
     <tr>
         <td><span class="td_name">Level:</span></td>
@@ -46,33 +74,6 @@
 <p>To protect the integrity of all Tier-1 infrastructure, we are shutting down part of the Milan nodes of phase2.</p>
 <p>Stability of the cooling system is closely being monitored.</p>
 <p>In communication with our vendor, we are looking for a solution.</p>
-
-
-<h3><a id="incident_0042">Power outage in UGent datacenter S10</a></h3>
-
-<table>
-    <tr>
-        <td><span class="td_name">Start:</span></td>
-        <td>2023-06-16 02:50:00</td>
-    </tr>
-    <tr>
-        <td><span class="td_name">End:</span></td>
-        <td>Unknown</td>
-    </tr>
-    <tr>
-        <td><span class="td_name">Updated:</span></td>
-        <td>2023-06-16 13:46:26</td>
-    </tr>
-    <tr>
-        <td><span class="td_name">Level:</span></td>
-        <td>high</td>
-    </tr>
-</table>
-
-<p> An unexpected power outage has occurred in the UGent datacenter S10 around 02:50 CEST on Friday 16 June 2023. </p>
-<p> As a result of this, most of the HPC-UGent and VSC infrastructure housed in the UGent datacenter is currently down.<br/> This includes: <ul> <li>VSC Tier-1 Hortense, including login nodes and scratch storage;</li> <li>The Tier-1 cloud infrastructure <strong>(problems fixed now, since 10:10 CEST)</strong>;</li> <li>All HPC-UGent Tier-2 clusters;</li> <li>Home directories for VSC accounts affiliated with UGent;</li> <li>HPC-UGent shared filesystems ($VSC_DATA, $VSC_SCRATCH);</li> </ul> </p>
-<p> We are working on mitigating the problems, and making all infrastructure available again as soon as possible. </p>
-<p> <strong>Update 09:45</strong><br/> Access to HPC-UGent Tier-2 login nodes is now closed, while we mitigate the problems with the HPC-UGent shared filesystems. </p>
 
         
         <h2>Planned maintenance</h2>
@@ -90,7 +91,7 @@
     </tr>
     <tr>
         <td><span class="td_name">Updated:</span></td>
-        <td>2023-06-16 13:46:26</td>
+        <td>2023-06-12 08:40:43</td>
     </tr>
     <tr>
         <td><span class="td_name">Level:</span></td>
@@ -118,7 +119,7 @@
     </tr>
     <tr>
         <td><span class="td_name">Updated:</span></td>
-        <td>2023-06-16 13:46:26</td>
+        <td>2023-05-25 20:18:49</td>
     </tr>
     <tr>
         <td><span class="td_name">Level:</span></td>
