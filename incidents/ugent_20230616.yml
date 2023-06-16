@@ -1,30 +1,35 @@
 meta_data:
-  title: Power outage in UGent datacenter S10
+  title: Power outage in UGent datacenter S10 [resolved]
   start_date: 2023-06-16 02:50:00
-  end_date: 
+  end_date: 2023-06-16 17:00:00
   affected: tier1_compute, tier2_gent
   level: high
   planned: yes
 content: >
   <p>
-  An unexpected power outage has occurred in the UGent datacenter S10 around 02:50 CEST on Friday 16 June 2023.
+  An unexpected power outage has occurred in the Ghent area which also affected the UGent datacenter S10
+  around 02:50 CEST on Friday 16 June 2023.
   </p>
   <p>
   As a result of this, most of the HPC-UGent and VSC infrastructure housed in the UGent datacenter
-  is currently down.<br/>
-  This includes:
+  became unavailable.<br/>
+  This included:
   <ul>
   <li>VSC Tier-1 Hortense, including login nodes and scratch storage;</li>
-  <li>The Tier-1 cloud infrastructure <strong>(problems fixed now, since 10:10 CEST)</strong>;</li>
+  <li>The Tier-1 cloud infrastructure that is not on backup power</li>
   <li>All HPC-UGent Tier-2 clusters;</li>
   <li>Home directories for VSC accounts affiliated with UGent;</li>
   <li>HPC-UGent shared filesystems ($VSC_DATA, $VSC_SCRATCH);</li>
   </ul>
   </p>
   <p>
-  We are working on mitigating the problems, and making all infrastructure available again as soon as possible.
+  Problems with the Tier-1 cloud infrastructure were fixed by 10:10 CEST.
   </p>
   <p>
-  <strong>Update 09:45</strong><br/>
-  Access to HPC-UGent Tier-2 login nodes is now closed, while we mitigate the problems with the HPC-UGent shared filesystems.
+  The HPC-UGent Tier-2 infrastructure and Tier-1 Hortense were fully operational again around 14:00 CEST.
+  </p>
+  <p>
+  The login nodes, web portal, and Globus service nodes for both the HPC-UGent Tier-2 infrastructure
+  and Tier-1 Hortense were rebooted in the process, to eliminate any problems caused by the shared filesystems
+  ($VSC_HOME, $VSC_DATA, $VSC_SCRATCH) being unavailable for a while (roughly between 02:50 and 10:00 CEST).
   </p>
