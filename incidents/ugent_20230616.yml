@@ -2,12 +2,12 @@ meta_data:
   title: Power outage in UGent datacenter S10
   start_date: 2023-06-16 02:50:00
   end_date: 
-  affected: tier1_compute, tier1_cloud, tier2_gent
+  affected: tier1_compute, tier2_gent
   level: high
   planned: yes
 content: >
   <p>
-  An unexpected power outage has occurred in the UGent datacenter S10 around 02:50 on Friday 16 June 2023.
+  An unexpected power outage has occurred in the UGent datacenter S10 around 02:50 CEST on Friday 16 June 2023.
   </p>
   <p>
   As a result of this, most of the HPC-UGent and VSC infrastructure housed in the UGent datacenter
@@ -15,7 +15,7 @@ content: >
   This includes:
   <ul>
   <li>VSC Tier-1 Hortense, including login nodes and scratch storage;</li>
-  <li>The Tier-1 cloud infrastructure;</li>
+  <li>The Tier-1 cloud infrastructure <strong>(problems fixed now, since 10:10 CEST)</strong>;</li>
   <li>All HPC-UGent Tier-2 clusters;</li>
   <li>Home directories for VSC accounts affiliated with UGent;</li>
   <li>HPC-UGent shared filesystems ($VSC_DATA, $VSC_SCRATCH);</li>

@@ -1,0 +1,19 @@
+meta_data:
+  title: Power outage in UGent datacenter S10
+  start_date: 2023-06-16 02:50:00
+  end_date: 2023-06-16 10:10:00
+  affected: tier1_cloud
+  level: high
+  planned: yes
+content: >
+  <p>
+  An unexpected power outage has occurred in the UGent datacenter S10 around 02:50 CEST on Friday 16 June 2023.
+  </p>
+  <p>
+  As a result of this, some of the virtual machines in the Tier-1 cloud infrastructure were down
+  (the ones not on backup UPS power).
+  </p>
+  <p>
+  All virtual machines were restored by 10:10 CEST.
+  </p>
+  <p>Affected projects will be contacted individually.</p>
