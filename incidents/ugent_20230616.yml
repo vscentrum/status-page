@@ -12,8 +12,14 @@ content: >
   <p>
   As a result of this, most of the HPC-UGent and VSC infrastructure housed in the UGent datacenter
   is currently down.<br/>
-  This includes VSC Tier-1 Hortense (incl. login nodes and scratch storage), Tier-1 cloud,
-  and all HPC-UGent Tier-2 clusters.
+  This includes:
+  <ul>
+  <li>VSC Tier-1 Hortense, including login nodes and scratch storage;</li>
+  <li>The Tier-1 cloud infrastructure;</li>
+  <li>All HPC-UGent Tier-2 clusters;</li>
+  <li>Home directories for VSC accounts affiliated with UGent;</li>
+  <li>HPC-UGent shared filesystems ($VSC_DATA, $VSC_SCRATCH);</li>
+  </ul>
   </p>
   <p>
   We are working on mitigating the problems, and making all infrastructure available again as soon as possible.
