@@ -1,0 +1,12 @@
+meta_data:
+  title: The scheduler is down due to hardware problems
+  start_date: 2023-06-20 11:50:00
+  end_date: 
+  affected: tier1_compute
+  level: high
+  planned: no
+content: >
+
+  <p>Due to an issue with the hardware, job submission is not possible on Tier1.</p>
+  <p></p>
+  <p>Update 2023-06-07 12:50:00</p>
