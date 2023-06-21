@@ -1,0 +1,15 @@
+meta_data:
+  title: Compute nodes shut down
+  start_date: 2023-06-21 11:20:00
+  end_date: 
+  affected: tier2_antwerp
+  level: high
+  planned: yes
+content: >
+
+  <p>Due to cooling issues, we have shut down the compute nodes of both of our clusters.</p>
+
+  <p>We will attempt to keep our storage accessible. Hence, access to other VSC clusters should still be possible.</p>
+
+  <p>Our apologies for the inconvenience.</p>
+
