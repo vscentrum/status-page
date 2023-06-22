@@ -1,10 +1,10 @@
 meta_data:
   title: Compute nodes shut down
   start_date: 2023-06-21 11:20:00
-  end_date: 
+  end_date: 2023-06-22 09:30:00
   affected: tier2_antwerp
   level: high
-  planned: yes
+  planned: no
 content: >
 
   <p>Due to cooling issues, we have shut down the compute nodes of both of our clusters.</p>
