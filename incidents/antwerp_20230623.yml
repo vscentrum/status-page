@@ -3,13 +3,14 @@ meta_data:
   start_date: 2023-06-23 13:40:00
   end_date: 
   affected: tier2_antwerp
-  level: high
+  level: low
   planned: no
 content: >
 
-  <p><strong>Update Mon 26 June 2023 - 10:00</strong> The storage infrastructure and compute nodes are accessible again. We are still experiencing some issues with the Leibniz login nodes, so please log in via the Hopper (`login-hopper.hpc.uantwerpen.be`) or Vaughan login nodes (`login-vaughan.hpc.uantwerpen.be`).</p>
+  <p><strong>Update Mon 26 June 2023 - 10:00</strong><br/>The storage infrastructure and compute nodes are accessible again.</p>
+  <p>We are still experiencing some issues with the Leibniz login nodes, so please log in via the Hopper (<emph>login-hopper.hpc.uantwerpen.be</emph>) or Vaughan login nodes (<emph>login-vaughan.hpc.uantwerpen.be</emph>).</p>
 
-  <p><strong>Original message:</strong> An unscheduled power interruption caused our infrastructure to go down.</p>
+  <p><strong>Original message:</strong><br/>An unscheduled power interruption caused our infrastructure to go down.</p>
 
   <p>At the moment of writing, no systems are accessible, including our storage infrastructure. This means that access to other VSC sites (both Tier-2 and Tier-1) is not possible.</p>
 
