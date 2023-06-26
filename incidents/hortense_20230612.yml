@@ -12,3 +12,5 @@ content: >
   <p>We anticipate this will bring more stability to the system.</p>
   <p></p>
   <p>All login nodes, all compute nodes, and the shared scratch filesystem will be offline.</p>
+  <p></p>
+  <p>Update 26/06/2023: for the moment, the login nodes and shared scratch filesystem can remain online during the maintenance works. But the schedulers are paused with no jobs currently running on Tier1.</p>
