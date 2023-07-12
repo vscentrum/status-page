@@ -1,0 +1,13 @@
+meta_data:
+  title: Unexpected shutdown of Tier-1 nodes due to cooling issues
+  start_date: 2023-07-12 12:31:00
+  end_date: 
+  affected: tier1_compute
+  level: high
+  planned: no
+content: >
+
+  <p>The majority of Tier1 nodes has shut down due to an unexpected temperature rise.</p>
+  <p>Minor works to the cooling system by the vendor seemingly have impacted the Tier1 system.</p>
+  <p>We are investigating what is going on and how soon the system can come back up again.</p>
+  
