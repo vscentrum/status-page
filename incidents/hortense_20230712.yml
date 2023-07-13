@@ -1,7 +1,7 @@
 meta_data:
   title: Unexpected shutdown of Tier-1 nodes due to cooling issues
   start_date: 2023-07-12 12:31:00
-  end_date: 
+  end_date: 2023-07-13 19:27:00
   affected: tier1_compute
   level: high
   planned: no
