@@ -10,4 +10,7 @@ content: >
   <p>The majority of Tier1 nodes has shut down due to an unexpected temperature rise.</p>
   <p>Minor works to the cooling system by the vendor seemingly have impacted the Tier1 system.</p>
   <p>We are investigating what is going on and how soon the system can come back up again.</p>
-  
+  <p></p>
+  <p>Update 2023-07-13 19:27:00</p>
+  <p>The majority of Tier1 nodes is now again available.</p>
+  <p>The temperature in the datacenter is restored to what it should be. We will keep on monitoring the cooling system closely.</p>
