@@ -1,21 +1,34 @@
 meta_data:
   title: General network outage at VUB main campus
   start_date: 2023-07-14 11:30:00
-  end_date:
+  end_date: 2023-07-14 16:30:00
   affected: tier2_brussels
   level: high
   planned: no
 content: >
 
-  On Friday 14th July at around 11 AM, the main VUB campus suffered a
+  On Friday 14th July at around 11:30 (CEST), the main VUB campus suffered a
   generalised network outage affecting the datacenter hosting the Tier-2 HPC
   cluster Hydra. The main issues regarding the functioning of the cluster are:
 
-      * loss of access to the login nodes of Hydra
+  * loss of access to the login nodes of Hydra
 
-      * many running jobs in Hydra will be severely impacted due to the loss of
-      connection of the cluster with the storage serving the home and data
-      directories of the users
+  * many running jobs in Hydra will be severely impacted due to the loss of
+  connection of the cluster with the storage serving the home and data
+  directories of the users
 
   The network outage at VUB campus is still ongoing. We will keep this incident
   up to date with any new information.
+
+  **update: 14-07-2023 16:30**
+
+  The network outage in VUB main campus is resolved. Access to both the
+  Hydra HPC cluster and the Pixiu object storage has been reestablished.
+
+  The job scheduler of Hydra is back online and jobs in the queue are being
+  processed as usual. Jobs already running before the outage might have failed
+  due to the disconnect of the VSC_HOME and VSC_DATA storage, users that had
+  running jobs should check the output for errors and re-submit any failed
+  jobs. Jobs that failed to start during the outage have been re-queued
+  automatically. Jobs of non-VUB users in Hydra will be held in queue until
+  Monday, July 17th.
