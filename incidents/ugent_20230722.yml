@@ -1,0 +1,15 @@
+meta_data:
+  title: Cooling issue in UGent datacenter S10
+  start_date: 2023-07-22 08:15:00
+  end_date:
+  affected: tier2_gent
+  level: high
+  planned: no
+content: >
+  <p>
+     A cooling failure occured at UGent data center S10 around 22/07/2022 05:00, so we had to canel 
+     all running jobs. Users have to restart their jobs after the cooling issues are resolved.
+  </p>
+  <p>
+     We do apologize for the inconvenience.
+  </p>
