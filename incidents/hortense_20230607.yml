@@ -1,7 +1,7 @@
 meta_data:
   title: Tier-1 Milan nodes partly shut down
   start_date: 2023-06-07 10:50:00
-  end_date: 
+  end_date: 2023-08-15 12:00:00
   affected: tier1_compute
   level: medium
   planned: no
