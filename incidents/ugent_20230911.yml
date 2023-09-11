@@ -2,7 +2,7 @@ meta_data:
   title: Total lockup of HPC-UGent shared filesystems ($VSC_HOME, $VSC_DATA, $VSC_SCRATCH*)
   start_date: 2023-09-11 02:20:00
   end_date: 
-  affected: tier2_gent
+  affected: tier2_gent, tier1_compute
   level: high
   planned: no
 content: >
@@ -13,4 +13,12 @@ content: >
   <p>
      Cluster workernodes are currently unable to start new jobs, we are looking into fixing the problem ASAP.
   </p>
-
+  <p>
+  <strong>Update 09:39:</strong><br/>
+  To mitigate the problems we are seeing, we need to perform some emergency maintenance updates
+  to the Infiniband switches that are using for the shared filesystems.
+  </p>
+  <p>
+  This means that HPC-UGent shared filesystems will be unavailable on the HPC-UGent Tier-2 login nodes as well,
+  and that $VSC_HOME and $VSC_DATA will be unavailable on Tier-1 Hortense, until further notice.
+  </p>
