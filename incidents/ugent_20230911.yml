@@ -20,5 +20,5 @@ content: >
   </p>
   <p>
   This means that HPC-UGent shared filesystems will be unavailable on the HPC-UGent Tier-2 login nodes as well,
-  and that $VSC_HOME and $VSC_DATA will be unavailable on Tier-1 Hortense, until further notice.
+  and that for UGent VSC accounts (<code>vsc4****</code>) both <code>$VSC_HOME</code> and <code>$VSC_DATA</code> will be unavailable on Tier-1 Hortense, until further notice.
   </p>
