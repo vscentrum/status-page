@@ -22,3 +22,8 @@ content: >
   This means that HPC-UGent shared filesystems will be unavailable on the HPC-UGent Tier-2 login nodes as well,
   and that for UGent VSC accounts (<code>vsc4****</code>) both <code>$VSC_HOME</code> and <code>$VSC_DATA</code> will be unavailable on Tier-1 Hortense, until further notice.
   </p>
+  <p>
+  <strong>Update 13:05</strong><br/>
+  Firmware update for Infiniband switches + subsequent reboot of IB switches are almost complete.<br/>
+  We do not expect any data loss or corruption problems on the HPC-UGent filesystems because of this event.
+  </p>
