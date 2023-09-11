@@ -1,5 +1,5 @@
 meta_data:
-  title: (RESOLVED) Total lockup of HPC-UGent shared filesystems ($VSC_HOME, $VSC_DATA, $VSC_SCRATCH*)
+  title: HPC-UGent shared filesystems unstable ($VSC_HOME, $VSC_DATA, $VSC_SCRATCH*)
   start_date: 2023-09-11 02:20:00
   end_date: 
   affected: tier2_gent, tier1_compute
@@ -7,14 +7,14 @@ meta_data:
   planned: no
 content: >
   <p>
-     A total lockup of the GPFS shared filesystems has occurred around 02:20 last night.
+     A total lockup of the GPFS shared filesystems has occurred around Mon 11 Sept'23 at 02:20.
   </p>
 
   <p>
      Cluster workernodes are currently unable to start new jobs, we are looking into fixing the problem ASAP.
   </p>
   <p>
-  <strong>Update 09:39:</strong><br/>
+  <strong>Update Mon 11 Sept'23 - 09:39:</strong><br/>
   To mitigate the problems we are seeing, we need to perform some emergency maintenance updates
   to the Infiniband switches that are using for the shared filesystems.
   </p>
@@ -23,21 +23,26 @@ content: >
   and that for UGent VSC accounts (<code>vsc4****</code>) both <code>$VSC_HOME</code> and <code>$VSC_DATA</code> will be unavailable on Tier-1 Hortense, until further notice.
   </p>
   <p>
-  <strong>Update 13:05</strong><br/>
+  <strong>Update Mon 11 Sept'23 - 13:05</strong><br/>
   Firmware update for Infiniband switches + subsequent reboot of IB switches are almost complete.<br/>
   We do not expect any data loss or corruption problems on the HPC-UGent filesystems because of this event.
   </p>
   <p>
-  <strong>Update 14:54</strong>
+  <strong>Update Mon 11 Sept'23 - 14:54</strong>
   Problems have been resolved, we are running some test jobs to make sure the HPC-UGent shared filesystems are stable again
   on all HPC-UGent Tier-2 clusters.
   </p>
   <p>
-  <strong>Update 15:57</strong>
+  <strong>Update Mon 11 Sept'23 - 15:57</strong>
   $VSC_HOME and $VSC_DATA is available again on Tier-1 Hortense for UGent VSC accounts (<code>vsc4****</code>).
   </p>
   <p>
-  <strong>Update 16:57</strong>
+  <strong>Update Mon 11 Sept'23 - 16:57</strong>
   Test jobs have not revealed any problems, so HPC-UGent shared filesystems can be considered stable again.<br/>
   Job schedulers will gradually be resumed on all HPC-UGent Tier-2 clusters in the next couple of hours.
+  </p>
+  <p>
+  <strong>Update Mon 11 Sept'23 - 22:56</strong>
+  Problems with the HPC-UGent shared filesystems have resurfaced.
+  The HPC-UGent $VSC_HOME, $VSC_DATA, and $VSC_SCRATCH* filesystems are currently unavailable everywhere.
   </p>
