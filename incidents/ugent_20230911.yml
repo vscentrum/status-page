@@ -1,5 +1,5 @@
 meta_data:
-  title: Total lockup of HPC-UGent shared filesystems ($VSC_HOME, $VSC_DATA, $VSC_SCRATCH*)
+  title: (RESOLVED) Total lockup of HPC-UGent shared filesystems ($VSC_HOME, $VSC_DATA, $VSC_SCRATCH*)
   start_date: 2023-09-11 02:20:00
   end_date: 
   affected: tier2_gent, tier1_compute
@@ -31,4 +31,13 @@ content: >
   <strong>Update 14:54</strong>
   Problems have been resolved, we are running some test jobs to make sure the HPC-UGent shared filesystems are stable again
   on all HPC-UGent Tier-2 clusters.
+  </p>
+  <p>
+  <strong>Update 15:57</strong>
+  $VSC_HOME and $VSC_DATA is available again on Tier-1 Hortense for UGent VSC accounts (<code>vsc4****</code>).
+  </p>
+  <p>
+  <strong>Update 16:57</strong>
+  Test jobs have not revealed any problems, so HPC-UGent shared filesystems can be considered stable again.<br/>
+  Job schedulers will gradually be resumed on all HPC-UGent Tier-2 clusters in the next couple of hours.
   </p>
