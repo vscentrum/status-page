@@ -46,3 +46,8 @@ content: >
   Problems with the HPC-UGent shared filesystems have resurfaced.
   The HPC-UGent $VSC_HOME, $VSC_DATA, and $VSC_SCRATCH* filesystems are currently unavailable everywhere.
   </p>
+  <p>
+  <strong>Update Tue 12 Sept'23 - 00:10</strong>
+  HPC-UGent shared filesystems are available again on the HPC-UGent Tier-2 login nodes and VSC Tier-1 Hortense,
+  but job schedulers have been paused so we can investigate further.
+  </p>
