@@ -58,7 +58,14 @@ content: >
   and spontaneously rebooted on Mon 11 Sept’23 around 22:37 CEST (and again on Tue 12 Sept'12 around 05:25 CEST).<br/>
   We are looking into resolving the issue ASAP and making the HPC-UGent filesystems stable again.
   </p>
+  <p>
   <strong>Update Tue 12 Sept'23 - 13:56</strong>
   We are still seeing stability problems with the Infiniband network that is used for the HPC-UGent shared filesystems.<br/>
   We are in touch with the vendor of the hardware, and are doing what we can to resolve the problem ASAP.
+  </p>
+  <p>
+  <strong>Update Tue 12 Sept'23 - 16:56</strong>
+  Infiniband network has been restored (although with reduced redundancy), faulty switch has been removed.<br/>
+  The HPC-UGent shared filesystems should be stable again.<br/>
+  We are running tests for ensure that the clusters are stable again before we resume the job schedulers.
   </p>
