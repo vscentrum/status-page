@@ -55,6 +55,10 @@ content: >
   <p>
   <strong>Update Tue 12 Sept'23 - 07:53</strong>
   The cause of the problems with the HPC-UGent shared filesystems is a core Infiniband switch that is acting up,
-  and spontaneously rebooted on Mon 11 Sept’23 around 22:37 CEST.<br/>
+  and spontaneously rebooted on Mon 11 Sept’23 around 22:37 CEST (and again on Tue 12 Sept'12 around 05:25 CEST).<br/>
   We are looking into resolving the issue ASAP and making the HPC-UGent filesystems stable again.
+  </p>
+  <strong>Update Tue 12 Sept'23 - 13:56</strong>
+  We are still seeing stability problems with the Infiniband network that is used for the HPC-UGent shared filesystems.<br/>
+  We are in touch with the vendor of the hardware, and are doing what we can to resolve the problem ASAP.
   </p>
