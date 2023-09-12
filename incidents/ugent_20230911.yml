@@ -49,5 +49,12 @@ content: >
   <p>
   <strong>Update Tue 12 Sept'23 - 00:10</strong>
   HPC-UGent shared filesystems are available again on the HPC-UGent Tier-2 login nodes and VSC Tier-1 Hortense,
-  but job schedulers have been paused so we can investigate further.
+  but stability can not be guaranteed.<br/>
+  Job schedulers on all HPC-UGent Tier-2 clusters have been paused so we can investigate further.
+  </p>
+  <p>
+  <strong>Update Tue 12 Sept'23 - 07:53</strong>
+  The cause of the problems with the HPC-UGent shared filesystems is a core Infiniband switch that is acting up,
+  and spontaneously rebooted on Mon 11 Sept’23 around 22:37 CEST.<br/>
+  We are looking into resolving the issue ASAP and making the HPC-UGent filesystems stable again.
   </p>
