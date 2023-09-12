@@ -1,5 +1,5 @@
 meta_data:
-  title: HPC-UGent shared filesystems unstable ($VSC_HOME, $VSC_DATA, $VSC_SCRATCH*)
+  title: (RESOLVED) HPC-UGent shared filesystems unstable ($VSC_HOME, $VSC_DATA, $VSC_SCRATCH*)
   start_date: 2023-09-11 02:20:00
   end_date: 
   affected: tier2_gent, tier1_compute
@@ -67,5 +67,10 @@ content: >
   <strong>Update Tue 12 Sept'23 - 16:56</strong>
   Infiniband network has been restored (although with reduced redundancy), faulty switch has been removed.<br/>
   The HPC-UGent shared filesystems should be stable again.<br/>
-  We are running tests for ensure that the clusters are stable again before we resume the job schedulers.
+  We are running tests for ensure that the clusters are stable again before we resume the HPC-UGent Tier-2 job schedulers.
+  </p>
+  <p>
+  <strong>Update Tue 12 Sept'23 - 19:41</strong>
+  HPC-UGent Tier-2 job schedulers have been resumed, everything should be back to normal for now.<br/>
+  We will follow up on the faulty Infiniband switch with the vendor, and will look into restoring redundancy in the Infiniband network later.
   </p>
