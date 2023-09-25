@@ -1,0 +1,14 @@
+meta_data:
+  title: Tier-2 Genius maintenance downtime
+  start_date: 2023-09-25 08:00:00
+  end_date: 2023-09-26 23:00:00 
+  affected: tier2_leuven
+  level: high
+  planned: yes
+content: >
+
+  Tier-2 Genius maintenance downtime
+  
+  We are migrating the OS of Geniu- from CentOS 7 to Rocky 8. Tier-2 cluster wICE will remain operational during this migration.
+  Have a look at the documentation page for a full overview: https://docs.vscentrum.be/leuven/genius_2_rocky.html
+
