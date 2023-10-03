@@ -1,0 +1,15 @@
+meta_data:
+  title: Tier-1 workernodes down due to problems with cooling
+  start_date: 2023-10-03 15:10:00
+  end_date: 
+  affected: tier1_compute
+  level: high
+  planned: no
+content: >
+  <p>
+  Due to unexpected impact of maintenance on the cooling infrastructure,
+  all workernodes of Tier-1 Hortense are currently unavailable.
+  </p>
+  <p>
+  We are looking into mitigating the problems ASAP.
+  </p>
