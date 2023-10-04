@@ -1,7 +1,7 @@
 meta_data:
-  title: Tier-1 workernodes down due to problems with cooling
+  title: (RESOLVED) Tier-1 workernodes down due to problems with cooling
   start_date: 2023-10-03 15:10:00
-  end_date: 
+  end_date: 2023-10-06 18:00:00
   affected: tier1_compute
   level: high
   planned: no
@@ -18,4 +18,7 @@ content: >
   </p>
   <p>
   <strong>Update 4 Oct 09:30 CEST</strong>: We are slowly starting to boot workernodes.
+  </p>
+  <p>
+  <strong>Update 4 Oct 21:25 CEST</strong>: Tier-1 workernodes are online again and running jobs since 13:05 CEST, problems are resolved.
   </p>
