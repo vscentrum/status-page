@@ -7,18 +7,26 @@ meta_data:
   planned: no
 content: >
 
+  <p>
   On Tuesday, October 10th at around 17:30 (CEST), there was an outage of the
   Slurm scheduler in Hydra.  Please check the output of your jobs carefully if it
   was in queue or running between October 10th at 17:00 CEST and October 11th at
   09:00 CEST.
+  </p>
 
+  <p>
   We're working on updating the cluster to a newer OS version. During the
   preparation of these updates we have accidentally pushed a configuration change
   to Hydra that caused the Slurm job scheduler to lose track of all running jobs.
+  </p>
 
+  <p>
   The error has now been corrected but as the job scheduler didn't know anymore
   which jobs were still running and which already ended, it might happen that your
   jobs got requeued and are again queued or running.
+  </p>
 
+  <p>
   We apologize for the inconvenience. Please contact |VUBHPC| if you have any
   other questions.
+  </p>
