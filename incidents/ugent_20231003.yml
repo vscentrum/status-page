@@ -1,7 +1,7 @@
 meta_data:
   title: Rolling OS updates on HPC-UGent Tier-2 clusters to RHEL 8.8
   start_date: 2023-10-03 11:00:00
-  end_date: 
+  end_date: 2023-10-18 21:00:00
   affected: tier2_gent
   level: medium
   planned: yes
@@ -13,7 +13,6 @@ content: >
   </p>
   <p>
   <ul>
-    <li>Login nodes and Web Portal will be updated in the evening of October 18th, around 20h.</li>
-    <li>Completed: accelgor, doduo, donphan, joltik, skitty, swalot, victini, gallade</li>
+    <li>Completed: accelgor, doduo, donphan, joltik, skitty, swalot, victini, gallade, login nodes, web portal</li>
   </ul>
   </p>
