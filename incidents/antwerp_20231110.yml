@@ -1,0 +1,21 @@
+meta_data:
+  title: Planned power outage and system maintenance downtime
+  start_date: 2023-11-16 08:00:00
+  end_date: 2023-11-20 18:00:00
+  affected: tier2_antwerp
+  level: high
+  planned: yes
+content: >
+
+
+  <p>We have scheduled a downtime for all CalcUA clusters between Thursday November 16, 8 am, and Monday November 20, 6 pm.
+
+  <p>This is needed for planned work on the high-voltage network on CGB on Saturday.<br/>
+  Therefore, we need to power down all our equipment, clusters as well as storage.<br/>
+  We have decided to combine this downtime with other maintenance tasks (that would otherwise require yet another downtime).<br/>
+  Afterwards, we will run some tests before we release the clusters again.</p>
+
+  <p>During the downtime, access to other VSC Tier-2 sites will not be possible. Access to VSC Tier-1 is possible but the shared filesystems $VSC_HOME and $VSC_DATA will not be available.</p>
+
+  <p>Our apologies for the inconvenience.</p>
+
