@@ -7,13 +7,13 @@ meta_data:
   planned: yes
 content: >
   <p>
-Starting Monday 27 November 2023, we will upgrade the operating system of Tier1 Hortense to Redhat Enterprise Linux 8.8
-This is primarily to maintain security and integrity of the system.
-We don’t expect this upgrade to have an impact on the scientific software or the way in which you run jobs.
+  Starting Monday 27 November 2023, we will upgrade the operating system of Tier1 Hortense to Redhat Enterprise Linux 8.8
+  This is primarily to maintain security and integrity of the system.
+  We don’t expect this upgrade to have an impact on the scientific software or the way in which you run jobs.
   </p>
   <p>
-We need to eventually bring down all nodes to execute this upgrade but to limit the impact on you, we will execute these upgrades per partition.
-We will start with the partition cpu_rome. By 27 November 9h00, we will drain all the nodes of this partition. 
-Nodes will then become available again as soon as they have been updated.
-Only once upgrade work on this entire partition is finished, will we switch to the next partition (bringing that down, etc.)
+  We need to eventually bring down all nodes to execute this upgrade but to limit the impact on you, we will execute these upgrades per partition.
+  We will start with the partition cpu_rome. By 27 November 9h00, we will drain all the nodes of this partition. 
+  Nodes will then become available again as soon as they have been updated.
+  Only once upgrade work on this entire partition is finished, will we switch to the next partition (bringing that down, etc.)
   </p>
