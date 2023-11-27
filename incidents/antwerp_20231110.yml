@@ -1,12 +1,15 @@
 meta_data:
   title: Planned power outage and system maintenance downtime
   start_date: 2023-11-16 08:00:00
-  end_date: 
+  end_date: 2023-11-27 18:00:00
   affected: tier2_antwerp
   level: high
   planned: yes
 content: >
 
+  <p><strong>Update Mon 27 November 2023 - 15:00</strong><br/>The login nodes are accessible and jobs can be submitted, but we are still running some final benchmark tests. The reservation will end at 6 pm, and jobs that were put on held state will be restarted first.</p>
+
+  <p>Thank you for your understanding and patience!</p>
 
   <p><strong>Update Mon 20 November 2023 - 17:00</strong><br/>We are still busy with the upgrade of our scratch storage filesystem.<br />
   Therefore, we unfortunately need to extend our downtime. We will keep you informed about the availability.</p>
