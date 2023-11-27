@@ -14,9 +14,9 @@ content: >
   </p>
 
   <p>
-  Please check our [news page](https://hpc.vub.be/posts/category/news/) for detailed info.
+  Please check our <a href="https://hpc.vub.be/posts/category/news/">news page</a> for detailed info.
   </p>
 
   <p>
-  Please contact us at [hpc@vub.be](mailto:hpc@vub.be) if you have any other questions.
+  Please contact us at <a href="mailto:hpc@vub.be">hpc@vub.be</a> if you have any other questions.
   </p>
