@@ -1,0 +1,22 @@
+meta_data:
+  title: Hydra maintenance
+  start_date: 2023-11-27 03:00:00
+  end_date: 2023-11-29 03:00:00
+  affected: tier2_brussels
+  level: high
+  planned: yes
+content: >
+
+  <p>
+  On Monday, November 27th at 03:00 (CET), Hydra will be shut down during 48
+  hours for a major operating system upgrade, a brand new scratch storage, extra
+  compute nodes, and a new GPU cluster for interactive workflows.
+  </p>
+
+  <p>
+  Please check our news page at https://hpc.vub.be/posts/category/news/ for detailed info.
+  </p>
+
+  <p>
+  Please contact |VUBHPC| if you have any other questions.
+  </p>
