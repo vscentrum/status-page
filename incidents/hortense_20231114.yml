@@ -17,3 +17,6 @@ content: >
   Nodes will then become available again as soon as they have been updated.
   Only once upgrade work on this entire partition is finished, will we switch to the next partition (bringing that down, etc.)
   </p>
+  <p>
+  Update 28/11/2023: partition cpu_rome is currently being upgraded and work is progressing well.
+  </p>
