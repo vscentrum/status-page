@@ -8,4 +8,4 @@ meta_data:
 content: >
 
   Problems with tier-2 scratch performance
-  Users may experience low responsiveness of the scratch storage on Genius and wICE. The issue with the infiniband network is identified. To migitate the probleit will probably include frequent reboots of a number of nodes including the login nodes.
+  Users may experience low responsiveness of the scratch storage on Genius and wICE. The issue with the infiniband network is identified. To mitigate the probleit will probably include frequent reboots of a number of nodes including the login nodes.
