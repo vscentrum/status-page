@@ -18,5 +18,6 @@ content: >
   Only once upgrade work on this entire partition is finished, will we switch to the next partition (bringing that down, etc.)
   </p>
   <p>
-  Update 28/11/2023: partition cpu_rome is currently being upgraded and work is progressing well.
+  Update 30/11/2023: GPU partition is currently being upgraded. Partition cpu_rome_all is done.
+  Update 28/11/2023: partition cpu_rome_all is currently being upgraded and work is progressing well.
   </p>
