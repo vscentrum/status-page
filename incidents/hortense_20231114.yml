@@ -17,7 +17,9 @@ content: >
   Nodes will then become available again as soon as they have been updated.
   Only once upgrade work on this entire partition is finished, will we switch to the next partition (bringing that down, etc.)
   </p>
-  <p>
-  Update 30/11/2023: GPU partition is currently being upgraded. Partition cpu_rome_all is done.
-  Update 28/11/2023: partition cpu_rome_all is currently being upgraded and work is progressing well.
-  </p>
+  <div>
+  <ul>
+    <li><b>Update 30/11/2023:</b> GPU partition is currently being upgraded. Partition cpu_rome_all is done. </li>
+    <li><b>Update 28/11/2023:</b> partition cpu_rome_all is currently being upgraded and work is progressing well. </li>
+  </ul>
+  </div>
