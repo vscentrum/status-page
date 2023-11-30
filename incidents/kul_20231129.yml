@@ -1,0 +1,11 @@
+meta_data:
+  title: Tier-2 scratch issues
+  start_date: 2023-11-29 10:00:00
+  end_date: 
+  affected: tier2_leuven
+  level: medium
+  planned: no
+content: >
+
+  Problems with tier-2 scratch performance
+  Users may experience low responsiveness of the scratch storage on Genius and wICE. The issue with the infiniband network is identified. To migitate the probleit will probably include frequent reboots of a number of nodes including the login nodes.
