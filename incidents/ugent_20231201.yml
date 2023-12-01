@@ -1,0 +1,14 @@
+meta_data:
+  title: UGent Tier-2 login nodes briefly unreachable
+  start_date: 2023-12-01 08:25:00
+  end_date: 2023-12-01 09:35:00
+  affected: tier2_gent
+  level: low
+  planned: no
+content: >
+  <p>
+  Due to a problem with a local filesystem, the UGent Tier-2 login nodes were briefly unavailable.
+  </p>
+  <p>
+  Login nodes were restarted and filesystem links restored, resolving the issue.
+  </p>
