@@ -1,7 +1,7 @@
 meta_data:
   title: End-of-life for swalot Tier-2 cluster (30 Oct'23)
   start_date: 2023-10-04 09:00:00
-  end_date: 
+  end_date: 2023-11-01 09:00:00
   affected: tier2_gent
   level: low
   planned: yes
