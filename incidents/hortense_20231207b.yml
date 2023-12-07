@@ -1,0 +1,14 @@
+meta_data:
+  title: Tier-1 Hardware error
+  start_date: 2023-12-07 22:30:00
+  end_date:
+  affected: tier1_compute
+  level: medium
+  planned: no
+content: >
+  <p>
+  We have a hardware error that affect the service infrastructure of Tier-1. 
+  Some of the services (like login nodes) are not redundant anymore. 
+  You might not be able to submit jobs, or jobs in the queue might not start to run.  
+  Running jobs are not affected.
+  </p>
