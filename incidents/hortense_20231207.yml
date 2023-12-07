@@ -7,6 +7,6 @@ meta_data:
   planned: no
 content: >
   <p>
-  We have a bug in the Web portal (OOD) job submission, we are working on the solution.
+  We have a bug in the Web portal (OOD) that prevents job submission, we are working on the solution.
   Right now we cannot predict the time when the bug would be fixed.
   </p>
