@@ -19,7 +19,8 @@ content: >
   </p>
   <div>
   <ul>
-    <li><b>Update 06/12/2023:</b> Partition debug_rome is currently being upgraded. cpu_milan partition is done. Login nodes and web portal will upgrade on Friday night.</li>
+    <li><b>Update 08/12/2023:</b> Partition debug_rome and web portal are done. Login nodes will upgrade on Friday night.</li>
+    <li><b>Update 06/12/2023:</b> Partition debug_rome is currently being upgraded. cpu_milan partition is done. Login nodes will upgrade on Friday night.</li>
     <li><b>Update 03/12/2023:</b> Partition cpu_milan is currently being upgraded. GPU partition is done. </li>
     <li><b>Update 30/11/2023:</b> GPU partition is currently being upgraded. Partition cpu_rome_all is done. </li>
     <li><b>Update 28/11/2023:</b> partition cpu_rome_all is currently being upgraded and work is progressing well. </li>
