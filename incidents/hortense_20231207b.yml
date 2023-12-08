@@ -1,7 +1,7 @@
 meta_data:
   title: Tier-1 Hardware error
   start_date: 2023-12-07 22:30:00
-  end_date:
+  end_date: 2023-12-08 11:00:00
   affected: tier1_compute
   level: medium
   planned: no
