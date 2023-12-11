@@ -1,0 +1,14 @@
+meta_data:
+  title: Tier-1 Hardware error
+  start_date: 2023-12-11 12:30:00
+  end_date: 
+  affected: tier1_compute
+  level: high
+  planned: no
+content: >
+  <p>
+  We have an undiscovered (possibly network) error that affect the service infrastructure of Tier-1. 
+  Nodes are falling in and out of the queue. 
+  You might not be able to submit jobs, or jobs in the queue might not start to run.  
+  Running jobs are not affected.
+  </p>
