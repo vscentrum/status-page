@@ -1,0 +1,17 @@
+meta_data:
+  title: SSH access UGent to Tier-2 login nodes briefly unavailable
+  start_date: 2023-12-01 10:00:00
+  end_date: 2023-12-01 13:00:00
+  affected: tier2_gent
+  level: low
+  planned: no
+content: >
+  <p>
+  SSH access to the UGent Tier-2 login nodes was briefly not possible.
+  This was due to a problem with a service on one of the login nodes.
+  Access to the web portal was unaffected.
+  </p>
+  <p>
+  10:40 The problematic service on the login nodes was restarted, resolving the issue.
+  But this has caused a disruption of all open SSH connections to the login nodes.
+  </p>
