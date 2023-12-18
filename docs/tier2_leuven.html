@@ -20,7 +20,7 @@
         
         <h2>Current incidents</h2>
         
-        <h3><a id="incident_0021">Tier-2 scratch issues</a></h3>
+        <h3><a id="incident_0022">Tier-2 scratch issues</a></h3>
 
 <table>
     <tr>
@@ -33,11 +33,11 @@
     </tr>
     <tr>
         <td><span class="td_name">Updated:</span></td>
-        <td>2023-12-18 16:23:03</td>
+        <td>2023-12-18 16:41:19</td>
     </tr>
     <tr>
         <td><span class="td_name">Level:</span></td>
-        <td>medium</td>
+        <td>low</td>
     </tr>
 </table>
 
@@ -47,13 +47,36 @@
    <li><b>update 01/12/2023</b> The reservation has been moved to Wednesday. No special errors are reported</li>
    <li><b>update 04/12/2023</b> The source of the problem is not yet clear, but there were no hardware errors reported. There will be no full reboot of the system needed, so the reservation will be released. We will keep on monitoring the system, performance might still be more variable. In order to check for undetected broken network links, the network will be further examined, while the system is under load.</li>
    <li><b>update 05/12/2023</b> The system appears to be stable since 10:30 yesterday, with three network switches disabled. The network throughput is currently one quarter of the normal capacity. From tomorrow morning, December 6th, we will reenable switches gradually, to see when the problems reappear so we can locate possible broken parts.</li>
+    <li><b>update 18/12/2023</b> The system has been to be stable, only one network switches is disabled. The network throughput is normal.</li>
    </ul>
 </div>
 
         
         <h2>Planned maintenance</h2>
         
-        <p>No maintenance planned currently.</p>
+        <h3><a id="incident_0003">Tier-2 maintenance</a></h3>
+
+<table>
+    <tr>
+        <td><span class="td_name">Start:</span></td>
+        <td>2024-01-03 08:00:00</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">End:</span></td>
+        <td>2024-01-04 08:00:00</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">Updated:</span></td>
+        <td>2023-12-18 16:41:19</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">Level:</span></td>
+        <td>high</td>
+    </tr>
+</table>
+
+<p> Tier-2 environment needs a full maintenance window. The ethernet switches will be updated and rebooted. This will temporarly break connections to the netapp (VSC_HOME, VSC_DATA en apps). In the same time window a slurm update will be applied. Jobs that can't end before January 3th 08:00 will remain in the queue. The system will be released as soon as possible after the update and appropriate tests have been run. </p>
+
         
         <hr/>
         <p class="navigation">
