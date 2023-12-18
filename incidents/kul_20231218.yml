@@ -1,5 +1,5 @@
 meta_data:
-  title: Tier-2 maintenance 
+  title: Tier-2 wICE maintenance 
   start_date: 2024-01-03 08:00:00
   end_date: 2024-01-04 08:00:00 
   affected: tier2_leuven
@@ -7,6 +7,7 @@ meta_data:
   planned: yes
 content: >
   <p>
-  Tier-2 environment needs a full maintenance window. The ethernet switches will be updated and rebooted. This will temporarly break connections to the netapp (VSC_HOME, VSC_DATA en apps).
+  Tier-2 wICE needs a full maintenance window. The ethernet switches will be updated and rebooted. This will temporarly break connections to the netapp (VSC_HOME, VSC_DATA en apps).
   In the same time window a slurm update will be applied. Jobs that can't end before January 3th 08:00 will remain in the queue. The system will be released as soon as possible after the update and appropriate tests have been run.
+  During this maintenance, Genius will remain operational.
   </p>
