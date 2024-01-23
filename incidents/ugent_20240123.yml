@@ -1,0 +1,17 @@
+meta_data:
+  title: End-of-life for victini Tier-2 cluster (12 Feb'24)
+  start_date: 2024-01-23 10:00:00
+  end_date: 2024-02-23 20:00:00
+  affected: tier2_gent
+  level: low
+  planned: yes
+content: >
+  <p>
+  The HPC-UGent Tier-2 cluster <em>victini</em> will be shut down mid February 2024, to make room for a new cluster.
+  </p>
+  <p>
+  Only jobs that are guaranteed to finish by Mon 12 Feb'24 00:00 CET will still start.
+  </p>
+  <p>
+  <strong>If you are still relying on victini, please migrate your workloads to another cluster ASAP.</strong>
+  </p>
