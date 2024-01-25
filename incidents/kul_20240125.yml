@@ -1,0 +1,11 @@
+meta_data:
+  title: Globus collection VSC KU Leuven Tier-2 scratch not accessible.
+  start_date: 2024-01-25 00:00:00
+  end_date:  
+  affected: tier1_data
+  level: medium
+  planned: no
+content: >
+  <p>
+  The Globus collection VSC KU leuven Tier2 scratch is currently unavailable. We are aware of the issue and working on it. 
+  </p>
