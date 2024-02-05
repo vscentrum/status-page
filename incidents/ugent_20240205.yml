@@ -1,0 +1,11 @@
+meta_data:
+  title: UGent shares are not accessible from Tier2
+  start_date: 2024-02-05 12:00:00
+  end_date: 
+  affected: tier2_gent
+  level: low
+  planned: no
+content: >
+  <p>
+  Due to an unexpected error, UGent shares are not accessiblr from UGent Tier-2 systems. We are working on the solution.
+  </p>
