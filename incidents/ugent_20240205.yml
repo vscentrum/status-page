@@ -1,7 +1,7 @@
 meta_data:
   title: UGent shares are not accessible from Tier2
   start_date: 2024-02-05 12:00:00
-  end_date: 
+  end_date: 2024-02-06 19:00:00
   affected: tier2_gent
   level: low
   planned: no
