@@ -1,0 +1,15 @@
+meta_data:
+  title: Scheduled maintenance to Tier2 HPC-UGent (13-17 May 2024)
+  start_date: 2024-05-13 08:00:00
+  end_date: 2024-05-17 23:59:00
+  affected: tier2_gent
+  level: high
+  planned: yes
+content: >
+  <p>
+  Maintenance to the HPC-UGent network infrastructure is scheduled from Monday 13 May (08:00 CEST) till Friday 17 May 2024.
+  A major cleanup, refactoring, and renewal of the core networks (both regular Ethernet and InfiniBand high-speed interconnect) and some core services will be done.
+  </p>
+  <p>
+  All HPC-UGent Tier2 infrastructure, including all workernodes as well as login and debug nodes, and the Tier2 shared storage (home, data, scratch) will be unavailable during this period.
+  </p>
