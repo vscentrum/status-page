@@ -8,7 +8,7 @@ meta_data:
 content: >
   <p>
   Maintenance to the HPC-UGent network infrastructure is scheduled from Monday 13 May (08:00 CEST) till Friday 17 May 2024.
-  A major cleanup, refactoring and renewal of the core networks (both regular Ethernet and InfiniBand high-speed interconnect) and some core services will be done.
+  A major cleanup, refactoring, and renewal of the core networks (both regular Ethernet and InfiniBand high-speed interconnect) and some core services will be done.
   </p>
   <p>
   Tier1 Compute Hortense in full, including all workernodes as well as login and debug nodes, and the dedicated Tier1 scratch filesystem will be unavailable during this period.
