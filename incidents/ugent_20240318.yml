@@ -1,0 +1,12 @@
+meta_data:
+  title: Hidden network error casuse MPI jobs hanging.
+  start_date: 2024-03-11 12:00:00
+  end_date: 
+  affected: tier2_gent
+  level: low
+  planned: no
+content: >
+  <p>
+  Due to hidden error, MPI applications can hang with the error message "Failed to modify UD QP to INIT on mlx5_0: Operation not permitted" error message. 
+  We do not know the origin of the error, we are currently working on the solution.
+  </p>
