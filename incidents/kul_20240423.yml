@@ -1,0 +1,11 @@
+meta_data:
+  title: Maintenance on Genius r22i13 r23i13 
+  start_date: 2024-04-23 08:00:00
+  end_date:  
+  affected: tier2_leuven
+  level: low
+  planned: yes
+content: >
+  <p>
+  There is a planned maintenance on the connections to the enclosures r22i13 and r23i13. During the time of the maintenance the nodes within these enclosures will be shut down.  
+  </p>
