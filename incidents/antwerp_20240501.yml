@@ -1,0 +1,19 @@
+meta_data:
+  title: CalcUA shutdown due to cooling issues
+  start_date: 2024-05-01 18:00:00
+  end_date: 
+  affected: tier2_antwerp
+  level: low
+  planned: no
+content: >
+
+  <p>Due to a problem with the cooling infrastructure, we had to shutdown the infrastructure.
+  The storage system was also shut down.</p>
+
+  <p>All running jobs are lost. Our apologies.</p>
+
+  <p>No access to CalcUA or other VSC clusters is possible at the moment.
+  We’ll keep you informed.</p>
+
+  <p>Our apologies for the inconvenience.</p>
+
