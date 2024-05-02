@@ -7,7 +7,10 @@ meta_data:
   planned: no
 content: >
 
-  <p>Due to a problem with the cooling infrastructure, we had to shutdown the infrastructure.
+  <p><strong>Update Thu 2 May 2024 - 17:20</strong><br/> The user and data filesystems are up and running, and are available on other VSC sites. We are still experiencing issues bringing up the scratch filesystem.</p>
+
+  <p><strong>Original message:</strong><br/>
+  Due to a problem with the cooling infrastructure, we had to shutdown the infrastructure.
   The storage system was also shut down.</p>
 
   <p>All running jobs are lost. Our apologies.</p>
