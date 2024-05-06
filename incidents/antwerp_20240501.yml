@@ -1,11 +1,13 @@
 meta_data:
   title: CalcUA shutdown due to cooling issues
   start_date: 2024-05-01 18:00:00
-  end_date: 
+  end_date: 2024-05-06 15:00
   affected: tier2_antwerp
   level: high
   planned: no
 content: >
+
+  <p><strong>Update Mon 6 May 2024 - 15:00</strong><br/> The scratch filesystem is back up and available on all nodes again.</p>
 
   <p><strong>Update Fri 3 May 2024 - 17:00</strong><br/> On Friday 3 May, we have restarted our login nodes, so that users can login again.</p>
   
