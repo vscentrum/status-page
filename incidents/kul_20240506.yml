@@ -1,0 +1,14 @@
+meta_data:
+  title: End-Of-Life Genius skylake r22i13 r23i13 
+  start_date: 2024-05-17 08:00:00
+  end_date: 2024-05-21 11:00:00  
+  affected: tier2_leuven
+  level: low
+  planned: yes
+content: >
+  <p>
+  The oldest part of Genius is operational since 6 years. We will be shutting down the nodes in enclosures r22i13 and  r23i13.
+  We will repurpose some of the nodes for an interactive partition in Genius. The other nodes will be kept in the racks and can for a limited time be re-used for specific purposes. 
+  Genius large memory nodes and the GPU nodes with the nVidia P100 will remain operational, in an unsupported state, also the Cascadelake nodes will remain available.
+  And with wICE Icelake and SaphireRapids, there is a large amount of compute power available, so we expect turning of those nodes will have minimal impact.
+  </p>
