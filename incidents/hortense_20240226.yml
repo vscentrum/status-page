@@ -1,7 +1,7 @@
 meta_data:
   title: Scheduled maintenance to Tier1 Hortense (13-17 May 2024)
   start_date: 2024-05-13 08:00:00
-  end_date: 2024-05-17 23:59:00
+  end_date: 2024-05-15 18:00:00
   affected: tier1_compute
   level: high
   planned: yes
@@ -12,4 +12,10 @@ content: >
   </p>
   <p>
   Tier1 Compute Hortense in full, including all workernodes as well as login and debug nodes, and the dedicated Tier1 scratch filesystem will be unavailable during this period.
+  </p>
+  <p>
+  Update 15/05/2024:
+  The maintenance works to that part of the HPC-UGent network infrastructure connecting Hortense have been completed.
+  Tier1 Compute Hortense is again available and accepting jobs.
+  Login nodes, debug nodes and the dedicated Tier1 scratch filesystem are also up.
   </p>
