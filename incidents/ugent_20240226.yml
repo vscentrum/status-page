@@ -1,7 +1,7 @@
 meta_data:
   title: Scheduled maintenance to Tier2 HPC-UGent (13-17 May 2024)
   start_date: 2024-05-13 08:00:00
-  end_date: 2024-05-17 23:59:00
+  end_date: 2024-05-17 12:00:00
   affected: tier2_gent
   level: high
   planned: yes
@@ -12,4 +12,15 @@ content: >
   </p>
   <p>
   All HPC-UGent Tier2 infrastructure, including all workernodes as well as login and debug nodes, and the Tier2 shared storage (home, data, scratch) will be unavailable during this period.
+  </p>
+  <p>
+  Update 17/05/2024:
+  The majority of Tier2 clusters and nodes is now back online and accepting and running jobs.
+  Several have effectively been running (previously queued) jobs since yesterday.
+  Since this morning, we have opened up the Tier2 login nodes, debug nodes and webportal.
+
+  During this maintenance window, a major overhaul of the network infrastructure was done, necessitating an actual complete downtime of all infrastructure.
+  Networking hardware and cables were replaced, rewired and updated.
+  In addition, firmware updates were done.
+  Ensuing configuration, extensive tests were conducted before releasing the clusters.
   </p>
