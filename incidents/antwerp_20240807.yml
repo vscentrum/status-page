@@ -1,0 +1,20 @@
+meta_data:
+  title: Interruption VSC Antwerpen link
+  start_date: 2024-08-08 08:00:00
+  end_date: 2024-08-08 18:00:00
+  affected: tier2_antwerp
+  level: high
+  planned: yes
+content: >
+
+  <p>On Thursday, August 8th, Digipolis will work on a fiber panel on which our dedicated VSC link is connected.<br/>
+  As such, our dedicated VSC connection will most likely be interrupted from 8 am until somewhere in the late afternoon.</p>
+
+  <p>During this period, the antwerpen shared filesystems (/{user,data,apps}/antwerpen) will not be available.<br/>
+  This implies that no jobs from antwerpen users can run nor start on non-antwerpen Tier-2 clusters, and access to these Tier-2 clusters will not be possible either.<br/>
+  Jobs running on the Tier-1 cluster Hortense should not be impacted (as long as they do not use anything from our shared filesystems).</p>
+
+  <p>We will let you know when the work is finished and when our shared filesystems are available again (and login is possible again).</p>
+ 
+  <p>Thank you for your understanding.</p>
+
