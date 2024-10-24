@@ -1,0 +1,14 @@
+meta_data:
+  title: Maintenance downtime Tier-2 
+  start_date: 2024-11-18 08:00:00
+  end_date: 2024-11-18 16:00:00  
+  affected: tier2_leuven
+  level: high
+  planned: yes 
+content: >
+  <p>
+  Slurm on the KU Leuven Tier-2 clusters will be updated to version 24.05. In onder to avoid issues with diffent versions of Slurm clients running on the Tier-2 clusters a full downtime of the Tier-2 cluster is scheduled. 
+  During the maintance window also a minor update on the Netapp fileserver (home/data) will be done.
+
+  Jobs will remain in the queue when then can not finish before the start of the maintance.
+  </p>
