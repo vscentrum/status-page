@@ -12,6 +12,7 @@ content: >
 
   Jobs will remain in the queue when then can not finish before the start of the maintance.
    <ul>
-    <li><b>update 18/11/2024</b>Maintenance is done. Tests are ongoing.</li>
+   <li><b>update 2 - 18/11/2024 18:15 </b>Maintenance and tests are complete. the cluster is gradually being released.</li>
+    <li><b>update 1 - 18/11/2024</b>Maintenance is done. Tests are ongoing.</li>
   </ul>
   </p>
