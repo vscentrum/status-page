@@ -1,7 +1,7 @@
 meta_data:
   title: Maintenance downtime Tier-2 
   start_date: 2024-11-18 08:00:00
-  end_date: 2024-11-18 16:00:00  
+  end_date: 2024-11-18 20:00:00  
   affected: tier2_leuven
   level: high
   planned: yes 
@@ -11,4 +11,7 @@ content: >
   During the maintance window also a minor update on the Netapp fileserver (home/data) will be done.
 
   Jobs will remain in the queue when then can not finish before the start of the maintance.
+   <ul>
+    <li><b>update 18/11/2024</b>Maintenance is done. Tests are ongoing.</li>
+  </ul>
   </p>
