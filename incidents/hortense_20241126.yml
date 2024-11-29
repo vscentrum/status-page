@@ -14,4 +14,7 @@ content: >
     26 November, with the cpu_rome partition. Following the
     cpu_milan partition, then finally the gpu partitions.
     The intervention will take maximum 3 times 3 days.
+
+    Currently running updates: cpu_milan
+    Finished running updates: cpu_rome_all
   </p>
