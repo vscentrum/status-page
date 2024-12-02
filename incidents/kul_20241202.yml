@@ -1,7 +1,7 @@
 meta_data:
   title: Lustre mount issues on Tier-2
   start_date: 2024-12-02 10:15:00
-  end_date:
+  end_date: 2024-12-02 12:00:00
   affected: tier2_leuven
   level: high
   planned: no
@@ -15,4 +15,9 @@ content: >
 
   Reservations have been put in place on Genius and wICE to prevent
   new jobs from starting.
+
+  <ul>
+    <li><b>update</b>: All servers and clients have now recovered and the reservations have been removed.</li>
+  </ul>
+
   </p>
