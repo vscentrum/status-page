@@ -1,0 +1,18 @@
+ meta_data:
+  title: Lustre mount issues on Tier-2
+  start_date: 2024-12-02 10:15:00
+  end_date:
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: >
+<p>
+  The Clusterstor metadata servers needed rebooting following a disk failure
+  and the Lustre clients are only slowly recovering from this event.
+
+  Scratch and staging storage may be temporarily unavailable on the login
+  and compute nodes of the KU Leuven Tier-2 clusters.
+
+  Reservations have been put in place on Genius and wICE to prevent
+  new jobs from starting.
+</p>
