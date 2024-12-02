@@ -6,7 +6,7 @@
   level: high
   planned: no
 content: >
-<p>
+  <p>
   The Clusterstor metadata servers needed rebooting following a disk failure
   and the Lustre clients are only slowly recovering from this event.
 
@@ -15,4 +15,4 @@ content: >
 
   Reservations have been put in place on Genius and wICE to prevent
   new jobs from starting.
-</p>
+  </p>
