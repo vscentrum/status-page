@@ -15,6 +15,6 @@ content: >
     cpu_milan partition, then finally the gpu partitions.
     The intervention will take maximum 3 times 3 days.
 
-    Currently running updates: cpu_milan
-    Finished running updates: cpu_rome_all
+    Currently running updates: gpu_rome_a100
+    Finished running updates: cpu_rome_all, cpu_milan
   </p>
