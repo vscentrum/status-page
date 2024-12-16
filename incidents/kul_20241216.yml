@@ -1,0 +1,11 @@
+meta_data:
+  title: Tier-2 cooling maintenance
+  start_date: 2024-12-16 11:00:00
+  end_date: 2024-12-16 16:00:00
+  affected: tier2_leuven
+  level: low
+  planned: yes
+content: >
+  <p>
+  The Cooling Distribution Unit (CDU) which is providing DLC cooling for a part of wICE gets a standard planned maintanance today. There should be no impact on the Tier-2 systems.
+  </p>
