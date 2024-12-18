@@ -1,0 +1,17 @@
+meta_data:
+  title: Scheduled maintenance to HPC-UGent Tier2 infrastructure
+  start_date: 2025-02-24 08:00:00
+  end_date: 2024-02-28 19:00:00
+  affected: tier2_gent
+  level: high
+  planned: yes
+content: >
+  <p>
+  Maintenance to the HPC-UGent Tier2 infrastructure is scheduled for Monday 24 (08:00 CET) till Friday 28 February 2025.
+  This will impact ALL infrastructure and services maintained by HPC-UGent.
+  </p>
+  <p>
+  The entire HPC-UGent Tier2 infrastructure will be offline and unavailable during this period.
+  This includes all workernodes as well as login and debug nodes, and the Tier2 shared storage (home, data, scratch).
+  No jobs will be able to run on the infrastructure.
+  </p>
