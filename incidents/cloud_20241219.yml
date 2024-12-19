@@ -1,0 +1,17 @@
+meta_data:
+  title: Scheduled maintenance affecting Tier1 Cloud infrastructure
+  start_date: 2025-02-24 08:00:00
+  end_date: 2025-02-28 19:00:00
+  affected: tier1_cloud
+  level: high
+  planned: yes
+content: >
+  <p>
+  Maintenance is scheduled for Monday 24 (08:00 CET) till Friday 28 February 2025 at the HPC-UGent site.
+  This will affect the Tier1 Cloud infrastructure.
+  </p>
+  <p>
+  Network connectivity to/from Tier1 Cloud will be disrupted.
+  Running VMs won’t be affected.
+  But the Tier1 Cloud dashboard and all VMs won’t be reachable.
+  </p>
