@@ -20,7 +20,29 @@
         
         <h2>Current incidents</h2>
         
-        <p>All systems running fine.</p>
+        <h3><a id="incident_0074">Tier-2 Lustre issues</a></h3>
+
+<table>
+    <tr>
+        <td><span class="td_name">Start:</span></td>
+        <td>2025-01-01 21:00:00</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">End:</span></td>
+        <td>Unknown</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">Updated:</span></td>
+        <td>2025-01-02 17:08:46</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">Level:</span></td>
+        <td>high</td>
+    </tr>
+</table>
+
+<p> On 2025-01-01, a problem with the Lustre file system appeared. The distributed lock manager puts a very high load on some Lustre servers, resulting in frequent timeouts. Users will experience this as slow or impossible access to $VSC_SCRATCH and staging directories. Since the cause of the problem has not yet been identified, a reliable time to solution cannot be provided at the moment. Workloads that do not make use of the Lustre file system should not be affected. </p>
+
         
         <h2>Planned maintenance</h2>
         
