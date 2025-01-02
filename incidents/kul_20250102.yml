@@ -1,0 +1,11 @@
+meta_data:
+  title: Tier-2 Lustre issues
+  start_date: 2025-01-01 21:00:00
+  end_date:
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: >
+  <p>
+  On 2025-01-01, a problem with the Lustre file system appeared. The distributed lock manager puts a very high load on some Lustre servers, resulting in frequent timeouts. Users will experience this as slow or impossible access to $VSC_SCRATCH and staging directories. Since the cause of the problem has not yet been identified, a reliable time to solution cannot be provided at the moment. Workloads that do not make use of the Lustre file system should not be affected.
+  </p>
