@@ -33,7 +33,7 @@
     </tr>
     <tr>
         <td><span class="td_name">Updated:</span></td>
-        <td>2025-01-07 09:20:02</td>
+        <td>2025-01-07 10:24:13</td>
     </tr>
     <tr>
         <td><span class="td_name">Level:</span></td>
@@ -41,7 +41,12 @@
     </tr>
 </table>
 
-<p> On 2025-01-01, a problem with the Lustre file system appeared. The distributed lock manager puts a very high load on some Lustre servers, resulting in frequent timeouts. Users will experience this as slow or impossible access to $VSC_SCRATCH and staging directories. Since the cause of the problem has not yet been identified, a reliable time to solution cannot be provided at the moment. Workloads that do not make use of the Lustre file system should not be affected. </p>
+<p> On 2025-01-01, a problem with the Lustre file system appeared. The distributed lock manager puts a very high load on some Lustre servers, resulting in frequent timeouts. Users will experience this as slow or impossible access to $VSC_SCRATCH and staging directories. Since the cause of the problem has not yet been identified, a reliable time to solution cannot be provided at the moment. Workloads that do not make use of the Lustre file system should not be affected.
+<ul>
+  <li><b>update - 07-01-2025 </b>The reservation is released, all jobs will be starting.</li> 
+  <li><b>update - 05-01-2025 </b>The load on the Lustre file system has stabilized and performance seems to be back to normal. As a precautionary measure, a reservation has been placed on all nodes starting on 2025-01-09 09:00, wich will accommodate further investigation if required. Jobs that cannot complete before the start of the reservation, will remain in the queue.</li>
+</ul>
+</p>
 
         
         <h2>Planned maintenance</h2>
