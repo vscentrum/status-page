@@ -10,7 +10,6 @@ content: >
   Considerable hardware is currently broken in the Tier1 Compute infrastructure Hortense.
   Site research has shown this is due to corrosion and leakage in the cooling system directly going to the processing units.
   Vendors ATOS (now Eviden) and APAC are aware of this issue and confirm this is due to a design issue with the cooling system.
-  Similar other HPC systems delivered by ATOS are affected by the same issue.
   </p>
   <p>
   The damage is extensive.
