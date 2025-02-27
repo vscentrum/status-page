@@ -15,3 +15,8 @@ content: >
   Running VMs won’t be affected.
   But the Tier1 Cloud dashboard and all VMs won’t be reachable.
   </p>
+  <p>
+  Update on Thursday 27 February, 12h00:
+  Network connection to the Tier1 Cloud infrastructure is restored.
+  You should again be able to connect to the dashboard and VMs.
+  </p>
