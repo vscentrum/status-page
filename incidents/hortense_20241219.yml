@@ -1,7 +1,7 @@
 meta_data:
-  title: Scheduled maintenance affecting Tier1 Compute infrastructure
+  title: Scheduled maintenance affecting Tier1 Compute infrastructure - COMPLETED
   start_date: 2025-02-24 08:00:00
-  end_date: 2025-02-28 19:00:00
+  end_date: 2025-03-07 19:00:00
   affected: tier1_compute
   level: high
   planned: yes
@@ -17,4 +17,19 @@ content: >
   <p>
   It has become apparant that network connectivity to/from Tier1 Compute Hortense will be severely disrupted during the maintenance.
   This will make it impossible for jobs to run.
+  </p>
+  <p>
+  Update on 28 February 2025:
+  All Tier1 partitions are back online and have already been running jobs for several hours.
+  Tier1 login nodes and storage are also available again.
+  </p>
+  <p>
+  Please be aware of the following changes:
+  <ul>
+  <li>All planned network changes have been successfully completed.</li>
+  <li>IP address changes have been implemented, as a result of major network refactoring.</li>
+  See <a href="https://docs.hpc.ugent.be/troubleshooting/#issues-reaching-servers-from-hpc-infrastructure">https://docs.hpc.ugent.be/troubleshooting/#issues-reaching-servers-from-hpc-infrastructure</a> for more details.
+  <li>Default locations used by R for self-installed R packages have been changed (see <a href="https://docs.hpc.ugent.be/r-packages">https://docs.hpc.ugent.be/r-packages</a>).</li>
+  <li>Linux kernels have been updated on Tier1 login and worker nodes.</li>
+  </ul>
   </p>
