@@ -33,4 +33,4 @@ content: >
   See https://docs.hpc.ugent.be/troubleshooting/#issues-reaching-servers-from-hpc-infrastructure for more details.
   - Default locations used by R for self-installed R packages have been changed (see https://docs.hpc.ugent.be/r-packages).
   - Linux kernel and GPU drivers have been updated on login and worker nodes.
-</p>
+  </p>
