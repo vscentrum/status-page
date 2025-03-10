@@ -21,5 +21,12 @@ content: >
   This, no doubt, will require another substantial maintenance window.
   </p>
   <p>
+  Update 10/03/2025: an intermediate repair will already be executed starting 17/03/2025, and will likely take a couple of days.
+  A leak in the cooling system will be fixed.
+  No full downtime is needed this time, only some hardware racks are affected.
+  There will be a reduction in the available hardware during these repair works, but considerable CPU and GPU nodes will remain available.
+  </p>
+  <p>
+  More extensive retrofit repair works will still be needed to replace the direct cooling loops.
   We will inform all Tier1 users by mail as soon as a date is confirmed by vendor ATOS to execute these repairs.
   </p>
