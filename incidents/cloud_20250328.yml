@@ -1,7 +1,7 @@
 meta_data:
   title: Tier1 Cloud infrastructure down
   start_date: 2025-03-28 08:00:00
-  end_date:
+  end_date: 2025-03-28 12:00:00
   affected: tier1_cloud
   level: high
   planned: no
@@ -13,4 +13,7 @@ content: >
   <p>
   Likely cause is an issue with an upgrade script.
   We are in communication with RedHat to get this issue fixed as soon as possible.
+  </p>
+  <p>
+  Update 28/03/2025 12h00: the issue is resolved. Tier-1 Cloud infrastructure and associated services are again available.
   </p>
