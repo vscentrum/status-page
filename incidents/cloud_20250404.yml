@@ -1,0 +1,16 @@
+meta_data:
+  title: Tier1 Cloud infrastructure API down
+  start_date: 2025-04-04 08:00:00
+  end_date: 
+  affected: tier1_cloud
+  level: high
+  planned: no
+content: >
+  <p>
+  The Openstack API for the VSC Tier-1 Cloud infrastructure is temporarily down.
+  The dashboard is still available.
+  </p>
+  <p>
+  Likely cause is (again) an issue with an upgrade script from RedHat.
+  We are in communication with RedHat to get this issue fixed as soon as possible.
+  </p>
