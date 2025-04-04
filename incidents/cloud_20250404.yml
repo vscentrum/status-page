@@ -1,7 +1,7 @@
 meta_data:
   title: Tier1 Cloud infrastructure API down
   start_date: 2025-04-04 08:00:00
-  end_date: 
+  end_date: 2025-04-04 10:10:00
   affected: tier1_cloud
   level: high
   planned: no
@@ -13,4 +13,7 @@ content: >
   <p>
   Likely cause is (again) an issue with an upgrade script from RedHat.
   We are in communication with RedHat to get this issue fixed as soon as possible.
+  </p>
+  <p>
+  Update 04/04/2025 10h10: the issue is resolved. Tier-1 Cloud APIs are again available.
   </p>
