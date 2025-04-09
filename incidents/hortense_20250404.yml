@@ -12,7 +12,7 @@ content: >
   If all goes well, broken hardware (including a large portion of the GPU nodes in the gpu_rome_a100_40 partition) will also be replaced.
   </p>
   <p>
-  A complete downtime is scheduled starting Monday 5 May (08:00 CET) till Friday 16 May 2025.
+  <strong>A complete downtime is scheduled starting Monday 5 May (08:00 CET) till Friday 16 May 2025.</strong>
   Tier1 Compute Hortense will be unavailable during this period.
   This includes workernodes as well as login and debug nodes, and the dedicated Tier1 scratch filesystem.
   </p>
@@ -24,4 +24,11 @@ content: >
   We actually hope the downtime can be contained to 2 weeks.
   We aim to limit the effective downtime as much as possible.
   Please take this downtime into account when planning your computational work.
+  </p>
+  <p>
+  We will make use of the downtime to initiate the gradual migration towards RHEL9 for the Milan partition.<br/>
+  128 nodes (out of 384) of the Milan partition will already be switched to RHEL9 when the system comes back up again.
+  The size of the <pre>cpu_milan_rhel9</pre> partition will grow accordingly.
+  Over the next few months, gradually more nodes will be migrated.<br/>
+  Please make sure that your software/workflow is RHEL9 compliant (this is also a hard requirement for academic project applications at the next Tier1 cutoff).
   </p>
