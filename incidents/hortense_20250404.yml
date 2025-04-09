@@ -28,7 +28,7 @@ content: >
   <p>
   We will make use of the downtime to initiate the gradual migration towards RHEL9 for the Milan partition.<br/>
   128 nodes (out of 384) of the Milan partition will already be switched to RHEL9 when the system comes back up again.
-  The size of the <pre>cpu_milan_rhel9</pre> partition will grow accordingly.
+  The size of the <code>cpu_milan_rhel9</code> partition will grow accordingly.
   Over the next few months, gradually more nodes will be migrated.<br/>
   Please make sure that your software/workflow is RHEL9 compliant (this is also a hard requirement for academic project applications at the next Tier1 cutoff).
   </p>
