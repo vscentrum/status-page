@@ -1,0 +1,12 @@
+meta_data:
+  title: Tier-2 scratch/staging issues
+  start_date: 2025-04-21 10:00:00
+  end_date: 
+  affected: tier2_leuven
+  level: medium
+  planned: no
+content: >
+  <p>
+  Problems with tier-2 scratch performance
+  Users may experience low responsiveness of the scratch storage on Genius and wICE. The issue exists on some (not on all) the nodes. We are working on a solution
+  </p>
