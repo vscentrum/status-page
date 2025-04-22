@@ -10,3 +10,8 @@ content: >
   Problems with tier-2 scratch performance
   Users may experience low responsiveness of the scratch storage on Genius and wICE. The issue exists on some (not on all) the nodes. We are working on a solution
   </p>
+  <div>
+  <ul>
+    <li><b>update 22/04/2025</b> A preventive reservation has been set on the whole cluster starting today at 11:00. This is just in case we need a larger scale reboot of the file system, which is not yet sure. Jobs that are running will keep on running.</li>
+  </ul>
+  </div>
