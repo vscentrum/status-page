@@ -1,0 +1,16 @@
+meta_data:
+  title: User and apps filesystems inaccessible
+  start_date: 2025-04-28 12:00:00
+  end_date: 
+  affected: tier2_antwerp
+  level: high
+  planned: no
+content: >
+
+  <p>We are currently experiencing an issue with our user and apps filesystems.</p>
+
+  <p>Hence, it is currently not possible for UAntwerp users to login to all Tier-2 clusters, while we are investigating the issue.<br/>
+  Connecting to the Hortense Tier-1 system is unaffected and remains possible.</p>
+
+  <p>Thank you for your understanding.</p>
+
