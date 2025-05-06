@@ -1,0 +1,16 @@
+meta_data:
+  title: Issues with shared filesystems
+  start_date: 2025-05-06 10:30:00
+  end_date: 
+  affected: tier2_antwerp
+  level: high
+  planned: no
+content: >
+  
+  <p>We are currently experiencing issues with our shared filesystems (/user/antwerpen and /apps/antwerpen).</p>
+
+  <p>As a result, logging in is currently not possible, and running jobs might also fail because of stale file handles.<br/>
+  We are looking into the issue.</p>
+ 
+  <p>Our apologies for the inconvenience.</p>
+
