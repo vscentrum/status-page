@@ -1,7 +1,7 @@
 meta_data:
   title: Extensive maintenance to Tier1 infrastructure
   start_date: 2025-05-05 08:00:00
-  end_date: 2025-05-16 18:00:00
+  end_date: 2025-05-14 14:00:00
   affected: tier1_compute
   level: high
   planned: yes
@@ -31,4 +31,12 @@ content: >
   The size of the <code>cpu_milan_rhel9</code> partition will grow accordingly.
   Over the next few months, gradually more nodes will be migrated.<br/>
   Please make sure that your software/workflow is RHEL9 compliant (this is also a hard requirement for academic project applications at the next Tier1 cutoff).
+  </p>
+  <p>
+  Update 14/05/2025 14h00<br/>
+  Extensive scheduled maintenance has been largely completed, and access to the system has been restored.
+  Changes applied:
+  The direct cooling infrastructure of Tier-1 Hortense got a thorough revision to counteract a design issue
+  Some additional changes to the system, mainly related to the migration to the RHEL9 operating system (see https://docs.vscentrum.be/gent/tier1_hortense.html#migration-to-rhel9-operating-system)
+  Majority of system is ready for production workloads, but some nodes still need further maintenance
   </p>
