@@ -1,0 +1,13 @@
+meta_data:
+  title: Maintenance downtime Tier-2
+  start_date: 2025-07-07 08:00:00
+  end_date: 2025-07-08 19:00:00
+  affected: tier2_leuven
+  level: high
+  planned: yes
+content: >
+  <p>
+  This downtime is scheduled in order to perform software updates for the Lustre storage, NetApp storage and network switches. All Genius and wICE compute nodes, login nodes and storage locations will be unavailable.
+
+  Jobs will remain in the queue when then can not finish before the start of the maintance.
+  </p>
