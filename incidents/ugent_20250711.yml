@@ -1,0 +1,17 @@
+meta_data:
+  title: test of UGent datacenter S10 Disaster Recovery Procedure (DRP)
+  start_date: 2025-07-11 08:00:00
+  end_date: 2025-07-11 20:00:00
+  affected: tier1_compute, tier1_cloud, tier2_gent
+  level: high
+  planned: yes
+content: >
+  <p>On Friday 11 July 2025, a planned test of the UGent datacenter S10 Disaster Recovery Procedure (DRP) will take place.</p>
+
+  <p>As a result, there will temporarily be <strong>no network access to all infrastructure hosted in UGent datacenter S10</strong>.</p>
+
+  <p>This includes Tier-1 login nodes + web portal, HPC-UGent Tier-2 login nodes + web portal, Tier-1 Cloud interface + network access to VMs,
+  as well as the VSC accountpage <https://account.vscentrum.be>).</p>
+
+  <p>It should <em>not</em> affect running jobs and VMs, unless they require access to outside world (which will not work).<br/>
+  Internal network + access to shared filesystems ($VSC_HOME, $VSC_DATA, $VSC_SCRATCH*) from jobs on the system will be unaffected.</p>
