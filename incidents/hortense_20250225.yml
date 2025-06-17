@@ -1,7 +1,7 @@
 meta_data:
   title: Hardware defect in Tier1 Compute infrastructure
   start_date: 2025-02-25 08:00:00
-  end_date: 
+  end_date: 2025-06-17 12:00:00
   affected: tier1_compute
   level: high
   planned: no
@@ -28,4 +28,11 @@ content: >
   </p>
   <p>
   Update 4/04/2025: more extensive retrofit repair works to replace the direct cooling loops are scheduled for 5-16 May 2025.
+  </p>
+  <p>
+  Update 17/06/2025<br/>
+  The 5-14/05/2025 datacenter retrofit went well.
+  The majority of broken hardware is now fixed.
+  Further repairs will be executed by ATOS, likely without requiring major downtimes.
+  This issue is considered closed.
   </p>
