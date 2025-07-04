@@ -1,0 +1,12 @@
+meta_data:
+  title: Resapp unavailable on 8 July 2025
+  start_date: 2025-07-08 08:00:00
+  end_date: 2025-07-08 18:00:00
+  affected: tier1_compute
+  level: low
+  planned: yes
+content: >
+  <p>
+  Due to a migration of the underlying platform, the Tier1 resource webapplication https://resapp.hpc.ugent.be will be unavailable.
+  No further impact is expected.
+  </p>
