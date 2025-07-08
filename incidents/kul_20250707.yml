@@ -1,7 +1,7 @@
 meta_data:
   title: Maintenance downtime Tier-2
   start_date: 2025-07-07 08:00:00
-  end_date: 2025-07-08 19:00:00
+  end_date: 2025-07-09 09:00:00
   affected: tier2_leuven
   level: high
   planned: yes
@@ -11,3 +11,10 @@ content: >
 
   Jobs will remain in the queue when then can not finish before the start of the maintance.
   </p>
+
+  <div>
+  <ul>
+    <li><b>update 08/07/2025</b> Tests have completed. An additional update of switches took a bit more time than planned. The cluster will be released tomorrow morning.</li>
+  </ul>
+  </div>
+
