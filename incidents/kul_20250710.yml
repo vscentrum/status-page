@@ -6,6 +6,7 @@ meta_data:
   level: high
   planned: no
 content: >
-  <p>
-  All login nodes and much of the compute nodes of wICE and Genius are in trouble due to networking issues. One of the consequences is that is currently not possible to login to the clusters as the connection attempts are hanging.
+  <p>All login nodes and much of the compute nodes of wICE and Genius are in trouble due to NetApp storage issues.</p>
+  <p>One of the consequences was that it was not possible to login to the clusters as the connection attempts were hanging. This problem has since been resolved.</p>
+  <p>Slurm remains unavailable for the time being, which means it is not possible to e.g. submit jobs.</p>
   </p>
