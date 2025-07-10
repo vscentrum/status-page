@@ -1,0 +1,11 @@
+meta_data:
+  title: General problems affecting Tier-2 login and compute nodes
+  start_date: 2025-07-10 07:00:00
+  end_date: 
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: >
+  <p>
+  All login nodes and much of the compute nodes of wICE and Genius are in trouble due to networking issues. One of the consequences is that is currently not possible to login to the clusters as the connection attempts are hanging.
+  </p>
