@@ -1,12 +1,12 @@
 meta_data:
   title: General problems affecting Tier-2 login and compute nodes
   start_date: 2025-07-10 07:00:00
-  end_date: 
+  end_date: 2025-07-10 12:00:00
   affected: tier2_leuven
   level: high
   planned: no
 content: >
-  <p>All login nodes and much of the compute nodes of wICE and Genius are in trouble due to NetApp storage issues.</p>
+  <p>All login nodes and much of the compute nodes of wICE and Genius were in trouble due to NetApp storage issues.</p>
   <p>One of the consequences was that it was not possible to login to the clusters as the connection attempts were hanging. This problem has since been resolved.</p>
   <p>Slurm was also unavailable which meant it was not possible to e.g. submit jobs. Also this has since been resolved.</p>
-  </p>
+  <p>If you had any jobs in a running state during this outage, consider verifying that the calculations are not hanging or crashing. In case any of your jobs experienced problems, please send the corresponding JobIDs to hpcinfo@kuleuven.be so that the spent compute credits can be refunded.</p>
