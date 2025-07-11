@@ -1,0 +1,10 @@
+meta_data:
+  title: Authentication problems affecting Tier-2 login
+  start_date: 2025-07-11 07:00:00
+  end_date:
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: >
+  <p>There are authentication issues when logging in to the KU Leuven Tier-2 clusters, ssh access is currently not possible.</p>
+  <p>A limited number of applications is still accessible via the OnDemand portal (https://ondemand.hpc.kuleuven.be/pun/sys/dashboard).</p>
