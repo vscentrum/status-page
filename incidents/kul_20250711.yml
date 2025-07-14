@@ -7,4 +7,5 @@ meta_data:
   planned: no
 content: >
   <p>There are authentication issues when logging in to the KU Leuven Tier-2 clusters, ssh access is currently not possible.</p>
-  <p>A limited number of applications is still accessible via the OnDemand portal (https://ondemand.hpc.kuleuven.be/pun/sys/dashboard).</p>
+  <p>A limited number of applications is still accessible via the <a href="https://ondemand.hpc.kuleuven.be/pun/sys/dashboard">OnDemand portal</a>.</p>
+  <p>As a temporary workaround to open a terminal on the cluster, the "Interactive Shell" app can be used on the OnDemand portal (note that the wice interactive partition is currently not usable).</p>
