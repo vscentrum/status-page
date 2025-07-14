@@ -1,7 +1,7 @@
 meta_data:
   title: Authentication problems affecting Tier-2 login
   start_date: 2025-07-11 07:00:00
-  end_date:
+  end_date: 2025-07-14 12:00:00
   affected: tier2_leuven
   level: high
   planned: no
@@ -12,6 +12,7 @@ content: >
   <div>
   <ul>
     <li><b>update 14/07/2025</b> login nodes are gradually available again. You should be able to login to the cluster in the regular way.</li>
-  </ul>
+    <li><b>update 14/07/2025</b> situation is normal again.</li>
+    </ul>
   </div>
 
