@@ -1,15 +1,18 @@
 meta_data:
   title: Reduced capcacity of cluster joltik and donphan
   start_date: 2025-07-18 00:00:00
-  end_date: 
+  end_date: 2025-07-30 00:00:00
   affected: tier2_gent
   level: medium
   planned: no
 content: >
   <p>
-  A hardware failure impacted clusters joltik and donphan.
-  Currently these clusters are operating at reduced capacity.
+    Due to hardware failure clusters donphan and joltik were unavailable for submitting this morning.
+    Some other minor services were also affected.
   </p>
   <p>
-  The operational team is looking hard into resolving the issue as swiftly as possible.
+  7:30 The operational team is looking hard into resolving the issue as swiftly as possible.
+  </p>
+  <p>
+  12:20 All workloads have been migrated to different hardware and all access and functionality has been restored.
   </p>
