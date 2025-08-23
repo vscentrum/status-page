@@ -11,6 +11,7 @@ content: >
   <p>Running jobs should not be affected.</p>
   <div>
   <ul>
+    <li><b>update 23/08/2025 9:00h</b> Lustre metadata performance is back to normal. Both Genius and wICE are open again.</li>
     <li><b>update 22/08/2025</b> Lustre metadata performance is unstable, which makes some prolog checks fail and hence stops a job at startup. 
     A disk rebuild has completed, but the situation is not yet resolved. 
     Running jobs should continue normally, but we keep the system closed for further investigation.</li>
