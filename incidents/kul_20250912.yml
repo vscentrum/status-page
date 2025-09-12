@@ -7,18 +7,18 @@ meta_data:
   planned: no
 content: >
   <p>
-  Access to the KULeuven/UHasselt Tier2 systems is suspended.
+  Access to the KU Leuven/UHasselt Tier2 systems is suspended.
   </p>
   <p>
-  Access limitation applies to:
+  The access limitation applies to:
   <ul>
     <li> all KU Leuven Tier2 login nodes </li>
-    <li> sesions through ondemand.hpc.kuleuven.be </li>
+    <li> sessions through ondemand.hpc.kuleuven.be </li>
   </ul>
-  The Tier-2 cluster will temorarly not be reachable.
+  The Tier-2 cluster will temporarily not be reachable.
   However, running jobs will not be affected.
   </p>
   <p>
-  In the next few days, maintenance procedures completed.
+  In the next few days, maintenance procedures will be completed.
   Keep an eye on the status page for updates.
   </p>
