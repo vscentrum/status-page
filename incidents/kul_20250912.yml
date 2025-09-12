@@ -1,0 +1,24 @@
+meta_data:
+  title: Suspended access to Tier2 systems for maintenance
+  start_date: 2025-09-12 17:00:00
+  end_date: 
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: >
+  <p>
+  Access to the KULeuven/UHasselt Tier2 systems is suspended.
+  </p>
+  <p>
+  Access limitation applies to:
+  <ul>
+    <li> all KU Leuven Tier2 login nodes </li>
+    <li> sesions through ondemand.hpc.kuleuven.be </li>
+  </ul>
+  The Tier-2 cluster will temorarly not be reachable.
+  However, running jobs will not be affected.
+  </p>
+  <p>
+  In the next few days, maintenance procedures completed.
+  Keep an eye on the status page for updates.
+  </p>
