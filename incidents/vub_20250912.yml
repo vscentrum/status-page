@@ -1,0 +1,25 @@
+meta_data:
+  title: Security shutdown of access to Tier2 systems
+  start_date: 2025-09-12 14:00:00
+  end_date: 
+  affected: tier2_brussel
+  level: high
+  planned: no
+content: >
+  <p>
+  Access to the Brussels Tier2 systems is shut down with immediate effect.
+  This is in response to a major security flaw in the kernel, which has been recently identified.
+  </p>
+  <p>
+  Access limitation applies to:
+  <ul>
+    <li> all VUB Tier2 login nodes </li>
+    <li> the VUB web portal portal.hpc.vub.be </li>
+  </ul>
+  All these systems will not be reachable.
+  However, running jobs will not be affected.
+  </p>
+  <p>
+  In the next few days, we will perform emergency maintenance procedures.
+  If all goes well, the systems should be back up in the beginning of next week.
+  </p>
