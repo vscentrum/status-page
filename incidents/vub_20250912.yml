@@ -6,20 +6,29 @@ meta_data:
   level: high
   planned: no
 content: >
+
   <p>
-  Access to the Brussels Tier2 systems is shut down with immediate effect.
-  This is in response to a major security flaw in the kernel, which has been recently identified.
+  Access to the Brussels Tier2 systems is currently shut down. 
+  This is in response to a major security flaw in the kernel that was recently identified.
   </p>
+  
   <p>
   Access limitation applies to:
   <ul>
-    <li> all VUB Tier2 login nodes </li>
-    <li> the VUB web portal portal.hpc.vub.be </li>
+    <li> All VUB Tier2 login nodes </li>
+    <li> The VUB web portal <a href="https://portal.hpc.vub.be">portal.hpc.vub.be</a></li>
   </ul>
   All these systems will not be reachable.
   However, running jobs will not be affected.
   </p>
+  
+  <p>  
+  All fixes are now ready for deployment. Cluster nodes will be upgraded as soon as they become idle.
+  We expect login nodes to be back online by the end of Monday, 15th September,
+  with the full Hydra cluster likely restored by Tuesday, 16th September.
+  We can confirm that the security of Hydra has not been compromised.
+  </p>
+
   <p>
-  In the next few days, we will perform emergency maintenance procedures.
-  If all goes well, the systems should be back up in the beginning of next week.
+  For more details, please check our <a href="https://hpc.vub.be/news/2025/hydra_security_shutdown/">news page</a>
   </p>
