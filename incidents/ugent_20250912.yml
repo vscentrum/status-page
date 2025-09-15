@@ -1,11 +1,16 @@
 meta_data:
   title: Security shutdown of access to Tier2 systems
   start_date: 2025-09-12 13:30:00
-  end_date: 
+  end_date: 2025-09-16 12:00:00
   affected: tier2_gent
   level: high
   planned: no
 content: >
+  <p>
+  <strong>Update Mon 16 Sept 2025, 18:19 CEST</strong><br/>
+  Security updates for UGent Tier-2 systems + login nodes completed,<br/>
+  access has been restored.
+  </p>
   <p>
   Access to the UGent Tier2 systems is shut down with immediate effect.
   This is in response to a major security flaw in the kernel, which has been recently identified.
