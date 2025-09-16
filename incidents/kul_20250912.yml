@@ -19,6 +19,8 @@ content: >
   However, running jobs will not be affected.
   </p>
   <p>
-  In the next few days, maintenance procedures will be completed.
-  Keep an eye on the status page for updates.
+    <ul>
+    <li><b>update 16/08/2025 9:00h</b> The login nodes are accessible again. Further testing is done on the compute nodes. We expect to be gradually releasing nodes today.</li>
+    </ul>
+
   </p>
