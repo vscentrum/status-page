@@ -1,7 +1,7 @@
 meta_data:
   title: Security shutdown of access to Tier2 systems
   start_date: 2025-09-12 14:00:00
-  end_date: 
+  end_date: 2025-09-15 20:00:00
   affected: tier2_brussels
   level: high
   planned: no
