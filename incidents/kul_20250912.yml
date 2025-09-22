@@ -22,5 +22,6 @@ content: >
     <ul>
     <li><b>update 2025-09-16 09:00</b> The login nodes are accessible again. Further testing is done on the compute nodes. We expect to be gradually releasing nodes today.</li>
     <li><b>update 2025-09-16 13:45</b> Most compute nodes are now back in production. Nearly all remaining nodes will follow over the course of the next days. The wICE test nodes with Rocky 9 will however only be released at a later stage. Jobs using the "rocky9_pilot" reservation will therefore not start anytime soon.</li>
+    <li><b>update 2025-09-22 09:45</b> The wICE nodes in the "rocky9_pilot" reservation are now also back in production.</li>
     </ul>
   </p>
