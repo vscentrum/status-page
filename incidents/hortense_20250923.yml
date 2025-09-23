@@ -1,0 +1,15 @@
+meta_data:
+  title: Performance issues to Tier1 systems
+  start_date: 2025-09-23 09:00:00
+  end_date: 
+  affected: tier1_compute
+  level: medium
+  planned: no
+content: >
+  <p>
+  An issue with the I/O system of Hortense is causing performance problems.
+  This might lead to file system lags and delays.
+  </p>
+  <p>
+  We are in contact with our vendor ATOS to come up with a solution.
+  </p>
