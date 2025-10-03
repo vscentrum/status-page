@@ -1,0 +1,17 @@
+meta_data:
+  title: Scheduled maintenance to Tier1 Compute Hortense
+  start_date: 2025-11-17 08:00:00
+  end_date: 2025-11-21 18:00:00
+  affected: tier1_compute
+  level: high
+  planned: yes
+content: >
+  <p>
+  In accord with vendor ATOS, several updates to hardware and software will be performed.
+  </p>
+  <p>
+  The following infrastructure and services will be unavailable during this period: Tier1 Compute Hortense in full, including all workernodes as well as login and debug nodes, and the dedicated Tier1 scratch filesystem.
+  </p>
+  <p>
+  During the maintenance, the (very) old Rome login and debug nodes (partition debug_rome) will also be decommissioned. This means that, after the maintenance, all login nodes will have Milan architecture.
+  </p>
