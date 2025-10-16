@@ -1,0 +1,19 @@
+meta_data:
+  title: Security updates of GPU nodes on Tier-2 clusters
+  start_date: 2025-10-16 11:30:00
+  end_date: 
+  affected: tier2_gent
+  level: high
+  planned: no
+content: >
+  <p>
+  <strong>Tue 16 Oct 2025, 11:30 CEST</strong><br/>
+  An urgent security update needs to be installed on all systems that include NVIDIA GPUs.
+  </p>
+  <p>
+  The nodes in the joltik, accelgor, litleo, and donphan clusters have been put offline,
+  so they can be drained to install the necessary updates and reboot them.
+  </p>
+  <p>
+  We'll do what we can to make these clusters available again ASAP.
+  </p>
