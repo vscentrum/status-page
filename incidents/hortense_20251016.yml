@@ -8,7 +8,7 @@ meta_data:
 content: >
   <p>
   <strong>Tue 16 Oct 2025, 11:30 CEST</strong><br/>
-  An urgent security update needs to be installed on all systems that include NVIDIA GPUs.
+  An urgent update needs to be installed on all systems that include NVIDIA GPUs.
   </p>
   <p>
   The nodes in the GPU and debug partitions have been put offline,
