@@ -1,7 +1,7 @@
 meta_data:
   title: Security updates of GPU nodes on Tier-1 Hortense
   start_date: 2025-10-16 11:30:00
-  end_date: 
+  end_date: 2025-10-19 11:47:00
   affected: tier1_compute
   level: medium
   planned: no
