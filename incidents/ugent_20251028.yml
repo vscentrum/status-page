@@ -1,0 +1,18 @@
+meta_data:
+  title: VSC accountpage unavailable
+  start_date: 2025-10-31 12:00:00
+  end_date: 2025-10-31 18:00:00
+  affected: tier2_gent tier1_compute
+  level: medium
+  planned: yes
+content: >
+  <p>
+  The VSC accountpage will be migrated to another hosting platform on Friday 31 October 2025.
+  </p>
+  <p>
+  All services related to the VSC accountpage will be unavailable.
+  This includes e.g. requesting/altering VOs, groups, requesting new VSC accounts.
+  </p>
+  <p>
+  Migration will start at 12h00 and will last several hours.
+  </p>
