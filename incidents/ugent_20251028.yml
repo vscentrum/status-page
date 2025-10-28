@@ -2,7 +2,7 @@ meta_data:
   title: VSC accountpage unavailable
   start_date: 2025-10-31 12:00:00
   end_date: 2025-10-31 18:00:00
-  affected: tier2_gent tier1_compute
+  affected: tier2_gent, tier1_compute
   level: medium
   planned: yes
 content: >
