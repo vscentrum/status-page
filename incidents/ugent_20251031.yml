@@ -1,0 +1,12 @@
+meta_data:
+  title: $VSC_SCRATCH_ARCANINE temporarily unavailable
+  start_date: 2025-10-30 9:50:00
+  end_date: 
+  affected: tier2_gent
+  level: medium
+  planned: no
+content: >
+  <p>
+  The $VSC_SCRATCH_ARCANINE partition is temporarily offline.
+  We are in contact with our vendor to find a resolution.
+  </p>
