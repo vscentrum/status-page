@@ -1,10 +1,11 @@
 meta_data:
   title: Scratch and staging permission issues
   start_date: 2025-11-24 05:00:00
-  end_date:
+  end_date: 2025-11-24 09:22:00
   affected: tier2_leuven
   level: high
   planned: no
 content: >
   <p>Attempts to access /scratch or /staging storage are currently getting denied due to insufficient permissions.</p>
   <p>The problem is been investigated. We have put a whole-system reservation on Genius and wICE to prevent new jobs from starting.</p>
+  <p><strong>Update</strong>: The problem has been solved and the reservations have been removed.</p>
