@@ -9,7 +9,13 @@ content: >
   <p>
   An issue with the I/O system of Hortense is causing performance problems.
   This might lead to file system lags and delays.
+  We are in contact with our vendor ATOS to come up with a solution.
   </p>
   <p>
-  We are in contact with our vendor ATOS to come up with a solution.
+  Update 25/11/2025
+  </p>
+  <p>
+  Unfortunately, the (many) updates executed during the previous maintenance window did not resolve the performance issue.
+  We are in further contact with our vendor ATOS to in-depth research and pinpoint the underlying issue.
+  However, identifying (and hopefully resolving) this issue will likely still take considerable time.
   </p>
