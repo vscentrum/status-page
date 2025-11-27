@@ -1,0 +1,18 @@
+meta_data:
+  title: Issues with scratch filesystem
+  start_date: 2025-11-27 10:00:00
+  end_date: 
+  affected: tier2_antwerp
+  level: high
+  planned: no
+content: >
+  
+  <p>We are currently experiencing issues with our scratch filesystem.</p>
+ 
+  <p>Access to the scratch filesystem is currently degraded and may result in hangs.<br/>
+  Accessing the user and data filesystems (/user/antwerpen and /data/antwerpen) is still possible.</p>
+
+  <p>We are looking into the issue.</p>
+ 
+  <p>Our apologies for the inconvenience.</p>
+
