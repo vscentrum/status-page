@@ -6,5 +6,5 @@ meta_data:
   level: high
   planned: no
 content: >
-  <p>Slurm is being upgraded from 24.05 to 25.05.</p>
+  <p>Slurm is being currently upgraded.</p>
   <p>In the hopefully short period in which the Slurm database is being processed, it will for example not be possible to submit or query jobs. Also the application forms on OnDemand will not function while the update is underway.</p>
