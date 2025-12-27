@@ -1,0 +1,10 @@
+meta_data:
+  title: temporary issue on Tier-2 filesystem 
+  start_date: 2025-12-27 08:30:00
+  end_date: 2025-12-29 12:00:00
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: >
+        <p>There have been issues with the Lustre filesystem on Tier-2 on 27/12 between 8:30h and 15:15h.</p>
+  <p>The issue has been resolved, but some jobs might have failed.</p>
