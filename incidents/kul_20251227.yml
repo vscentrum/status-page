@@ -6,5 +6,5 @@ meta_data:
   level: high
   planned: no
 content: >
-        <p>There have been issues with the Lustre filesystem on Tier-2 on 27/12 between 8:30h and 15:15h.</p>
+  <p>There have been issues with the Lustre filesystem on Tier-2 on 27/12 between 8:30h and 15:15h.</p>
   <p>The issue has been resolved, but some jobs might have failed.</p>
