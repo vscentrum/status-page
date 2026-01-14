@@ -1,0 +1,18 @@
+meta_data:
+  title: CalcUA downtime Jan 26-30
+  start_date: 2026-01-26 07:00:00
+  end_date: 2026-01-30 18:00:00
+  affected: tier2_antwerp
+  level: high
+  planned: yes
+content: >
+
+  <p>We have scheduled a <b>downtime</b> for all CalcUA clusters between <b>Monday January 26</b>, 7 am, and <b>Friday January 30</b>, 6 pm.<br/>
+  This is needed for the upgrade of our storage servers and filesystems services.
+  Afterwards, we will do some more maintenance tasks and run several tests.</p>
+
+  <p>During this downtime, access to all CalcUA clusters will <u>not</u> be possible, including our Open OnDemand web portal and Globus endpoint).<br/>
+  Access to other VSC Tier-2 sites will <u>not</u> be possible. Access to VSC Tier-1 is possible, but $VSC_HOME and $VSC_DATA will not be available.</p>
+
+  <p>Our apologies for the inconvenience.</p>
+
