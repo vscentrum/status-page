@@ -1,0 +1,9 @@
+meta_data:
+  title: Slurm database issues
+  start_date: 2026-01-14 04:00:00
+  end_date: 
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: >
+  <p>As a result of issues with the Slurm scheduler, it is currently impossible to submit jobs on both Genius and wICE. This also affects the OnDemand apps.</p>
