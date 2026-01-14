@@ -1,0 +1,9 @@
+meta_data:
+  title: Issues with interactive nodes and A100 GPU nodes on wICE
+  start_date: 2026-01-13 09:00:00
+  end_date:
+  affected: tier2_leuven
+  level: medium
+  planned: no
+content: >
+  <p>As a result of issues with the Slurm scheduler, none of the nodes in the `interactive` and `gpu_a100` partitions on wICE are currently available. Any jobs sent to these partitions will therefore remain in a pending state for the time being.</p>
