@@ -2,7 +2,7 @@ meta_data:
   title: Scheduled maintenance to HPC-UGent Tier1 Hortense infrastructure
   start_date: 2026-03-09 08:00:00
   end_date: 2026-03-13 18:00:00
-  affected: tier2_gent
+  affected: tier1_compute
   level: high
   planned: yes
 content: >
