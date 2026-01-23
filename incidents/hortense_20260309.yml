@@ -7,7 +7,7 @@ meta_data:
   planned: yes
 content: >
   <p>
-  Updates to hardware configuration and software will be performed, mainly relatred to the high speed network and the I/O subsystem.
+  Updates to hardware configuration and software will be performed, mainly related to the high speed network and the I/O subsystem.
   </p> 
   <p>
   The following infrastructure and services will be unavailable during this period: Tier1 Compute Hortense in full, including all workernodes as well as login and debug nodes, and the dedicated Tier1 scratch filesystem.
