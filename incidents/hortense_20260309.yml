@@ -1,0 +1,17 @@
+meta_data:
+  title: Scheduled maintenance to HPC-UGent Tier1 Hortense infrastructure
+  start_date: 2026-03-09 08:00:00
+  end_date: 2026-03-13 18:00:00
+  affected: tier2_gent
+  level: high
+  planned: yes
+content: >
+  <p>
+  Updates to hardware configuration and software will be performed, mainly relatred to the high speed network and the I/O subsystem.
+  </p> 
+  <p>
+  The following infrastructure and services will be unavailable during this period: Tier1 Compute Hortense in full, including all workernodes as well as login and debug nodes, and the dedicated Tier1 scratch filesystem.
+  </p>
+  <p>
+  Please be aware that during the maintenance period, you will not be able to access any data located on Tier1 Hortense system.
+  </p>
