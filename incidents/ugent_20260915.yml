@@ -1,0 +1,14 @@
+meta_data:
+  title: UGent datacenter maintenance, impacting HPC-UGent Tier2
+  start_date: 2026-09-15 08:00:00
+  end_date: 2026-09-15 18:00:00
+  affected: tier2_gent
+  level: high
+  planned: yes
+content: >
+  <p>
+  For an electrical inspection of the UGent datacenter, all main power will have to be shut down.
+  </p>
+  <p>
+  All Tier2 systems at UGent will be offline, including workernodes, login- and debugnodes, webportal and the dedicated Tier2 filesystem.
+  </p>
