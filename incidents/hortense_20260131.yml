@@ -1,0 +1,12 @@
+meta_data:
+  title: Tier-1 web portal external access
+  start_date: 2026-01-31 04:30:00
+  end_date: 
+  affected: tier1_compute
+  level: medium
+  planned: no
+content: >
+  <p>
+  Due to a (possible) network error, the firewall app does not work with the Tier-1 web portal.
+  As a consequence, the web portal is only accessible from the UGent network (including the UGent VPN)
+  </p>
