@@ -1,7 +1,7 @@
 meta_data:
   title: VSC accountpage unavailable
   start_date: 2026-02-05 10:00:00
-  end_date: 
+  end_date: 2026-02-05 12:20:00
   affected: backbone
   level: high
   planned: no
@@ -12,4 +12,7 @@ content: >
   </p>
   <p>
   The team behind the platform has been informed and is working on a fix.
+  </p>
+  <p>
+  Update 2026-02-05 12h20: bug fixed and accountpage is back online
   </p>
