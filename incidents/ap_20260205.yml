@@ -1,0 +1,15 @@
+meta_data:
+  title: VSC accountpage unavailable
+  start_date: 2026-02-05 10:00:00
+  end_date: 
+  affected: backbone
+  level: high
+  planned: no
+content: >
+  <p>
+  The platform hosting the VSC accountpage seems to have suffered an unexpected downtime.
+  As a result, the VSC accountpage is currently unavailable.
+  </p>
+  <p>
+  The team behind the platform has been informed and is working on a fix.
+  </p>
