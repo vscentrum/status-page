@@ -1,0 +1,11 @@
+meta_data:
+  title: Tier-1 cooling issues
+  start_date: 2026-02-09 13:00:00
+  end_date: 
+  affected: tier1_compute
+  level: low
+  planned: no
+content: >
+  <p>
+  Rack 7 has cooling problems, so we have to drain in total 48 milan cpu nodes.
+  </p>
