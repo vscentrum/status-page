@@ -1,9 +1,9 @@
 meta_data:
   title: wICE OS migration to Rocky9
   start_date: 2026-02-18 09:00:00
-  end_date: 2026-02-18 18:00:00
+  end_date: 2026-02-18 15:30:00
   affected: tier2_leuven
   level: high
   planned: yes
 content: >
-  <p>wICE is migrated to Rocky Linux v9.6. We are running benchmarks to reassess the performance, and evaluate the acceptance. Hence, wICE is still unavailable. Similarly, OnDemand sessions will also not start on wICE. But, jobs pending in the queue stay on hold until the machine is released. The Genius cluster stays available.</p>
+  <p>wICE has been migrated to Rocky Linux v9.6, and the cluster is released.</p>
