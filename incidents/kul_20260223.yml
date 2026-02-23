@@ -5,7 +5,7 @@ meta_data:
   affected: tier2_leuven
   level: high
   planned: no
-content: >
+content: |-
   [Update] We have released part of wICE, while keeping eye on the recurring Lustre issues.
 
   [Update] Genius reservation is released.
