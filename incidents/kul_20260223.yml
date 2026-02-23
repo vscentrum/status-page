@@ -6,7 +6,7 @@ meta_data:
   level: high
   planned: no
 content: |-
-  [Update] We have released part of wICE, while keeping eye on the recurring Lustre issues.
+  [Update] We have released the wICE `interactive` and `gpu_*` partitions, while keeping eye on the recurring Lustre issues.
 
   [Update] Genius reservation is released.
 
