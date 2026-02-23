@@ -6,4 +6,7 @@ meta_data:
   level: high
   planned: no
 content: >
-  <p>We are aware of job submission issues on both Genius and wICE clusters. For the moment, the Tier-2 machines are under reservation, but running jobs can continue to completion and new jobs will stay in the queue until the issue is addressed. You cannot start any new session via OnDemand portal as well.</p>
+  <p>
+[Update] Genius reservation is released.
+
+[Issue] We are aware of job submission issues on both Genius and wICE clusters. For the moment, the Tier-2 machines are under reservation, but running jobs can continue to completion and new jobs will stay in the queue until the issue is addressed. You cannot start any new session via OnDemand portal as well.</p>
