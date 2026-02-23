@@ -1,0 +1,9 @@
+meta_data:
+  title: Tier-2 (Genius and wICE) system-wide issue
+  start_date: 2026-02-23 11:30:00
+  end_date: 2026-03-02 18:30:00
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: >
+  <p>We are aware of job submission issues on both Genius and wICE clusters. For the moment, the Tier-2 machines are under reservation, but running jobs can continue to completion and new jobs will stay in the queue until the issue is addressed. You cannot start any new session via OnDemand portal as well.</p>
