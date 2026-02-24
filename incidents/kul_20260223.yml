@@ -3,9 +3,11 @@ meta_data:
   start_date: 2026-02-23 11:30:00
   end_date: 2026-03-02 18:30:00
   affected: tier2_leuven
-  level: high
+  level: low
   planned: no
 content: |-
+  [Update] wICE is fully released, but we keep eye on the Lustre load.
+
   [Update] We released the `batch_icelake` and `bigmem` partition, while keeping eye on the Lustre load.
  
   [Update] We released the wICE `interactive` and `gpu_*` partitions, while keeping eye on the recurring Lustre issues.
