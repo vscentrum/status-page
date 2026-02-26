@@ -16,5 +16,5 @@ content: >
   Please be aware that during the maintenance period, you will not be able to access any data located on Tier1 Hortense system.
   </p>
   <p>
-  We also would like to inform you, that for technical reasons, we will not be able to keep RHEL8 nodes anymore in the updated system, so we will have to upgrade all GPU nodes to RHEL9. We will not have a transition period as it happened for the CPU nodes, and some of the old GPU software will not longer accessible. We do apologize for the inconvenience.
+  We also would like to inform you, that for technical reasons, we will not be able to keep RHEL8 nodes anymore in the updated system, so we will have to upgrade all GPU nodes to RHEL9. We will not have a transition period as it happened for the CPU nodes, and some of the old GPU software will no longer be accessible. We do apologize for the inconvenience.
   </p>
