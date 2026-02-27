@@ -33,7 +33,7 @@
     </tr>
     <tr>
         <td><span class="td_name">Updated:</span></td>
-        <td>2026-02-27 12:46:22</td>
+        <td>2026-02-27 10:06:30</td>
     </tr>
     <tr>
         <td><span class="td_name">Level:</span></td>
@@ -60,7 +60,7 @@
     </tr>
     <tr>
         <td><span class="td_name">Updated:</span></td>
-        <td>2026-02-27 12:46:22</td>
+        <td>2026-02-27 14:48:45</td>
     </tr>
     <tr>
         <td><span class="td_name">Level:</span></td>
@@ -68,9 +68,9 @@
     </tr>
 </table>
 
-<p>[Issue] We are aware of setting and retrieving ACLs on Lustre on wICE cluster. Apparently, the ACLs do not propagate on all wICE nodes and stay local to the node used to set them.</p>
-<p>This issue is inherent to the Rocky9 OS. As a result of this, some jobs which access files on staging may fail with permission issues. On the login nodes (still on Rocky8), the ACLs are fully respected by the OS and file access is as expected. We are investigating to find a solution for this.</p>
-<p>A temporary workaround is copying your target data apriori from staging to your <code>$VSC_SCRATCH</code> <strong>from the login nodes before launcing your job(s)</strong>, provided your data fits in your scratch folder.</p>
+<p>[Issue] We are aware of an issue with retrieving ACLs on Lustre on the wICE cluster. Apparently, the ACLs do not propagate on all wICE nodes and stay local to the node used to set them. Users typically observe this as "Permission Denied" errors when accessing files for which they should have access. The issue is not present on the Genius cluster or on login nodes.</p>
+<p>Update: a solution has been found and is being rolled out since Friday 2026-02-27 12:00. The problem was due to a bug in the Lustre client. Since the solution requires rebooting a node, each node will be patched as soon as all jobs on it have completed.</p>
+<p>A temporary workaround is copying your target data apriori from staging to your <code>$VSC_SCRATCH</code> <strong>from the login nodes before launcing your job(s)</strong>, provided your data fits in your scratch folder, but it is recommended to simply wait for the rollout of the proper solution to complete.</p>
 
         
         <h2>Planned maintenance</h2>
