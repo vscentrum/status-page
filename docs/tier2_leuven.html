@@ -33,17 +33,44 @@
     </tr>
     <tr>
         <td><span class="td_name">Updated:</span></td>
-        <td>2026-02-27 09:23:25</td>
+        <td>2026-02-27 10:06:30</td>
     </tr>
     <tr>
         <td><span class="td_name">Level:</span></td>
-        <td>high</td>
+        <td>medium</td>
     </tr>
 </table>
 
+<p>[Update] wICE nodes are released, but we keep monitoring the temporal load on the Lustre filesystem.</p>
 <p>[Update] We have released the wICE <code>interactive</code> and <code>gpu_*</code> partitions, while keeping eye on the recurring Lustre issues.</p>
 <p>[Update] Genius reservation is released.</p>
 <p>[Issue] We are aware of job submission issues on both Genius and wICE clusters. For the moment, the Tier-2 machines are under reservation, but running jobs can continue to completion and new jobs will stay in the queue until the issue is addressed. You cannot start any new session via OnDemand portal as well.</p>
+
+
+<h3><a id="incident_0115">wICE/Rocky9 ACL issues on Lustre</a></h3>
+
+<table>
+    <tr>
+        <td><span class="td_name">Start:</span></td>
+        <td>2026-02-27 09:30:00</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">End:</span></td>
+        <td>2026-03-27 18:30:00</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">Updated:</span></td>
+        <td>2026-02-27 10:06:30</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">Level:</span></td>
+        <td>medium</td>
+    </tr>
+</table>
+
+<p>[Issue] We are aware of setting and retrieving ACLs on Lustre on wICE cluster. Apparently, the ACLs do not propagate on all wICE nodes and stay local to the node used to set them.</p>
+<p>This issue is inherent to the Rocky9 OS. As a result of this, some jobs which access files on staging may fail with permission issues. On the login nodes (still on Rocky8), the ACLs are fully respected by the OS and file access is as expected. We are investigating to find a solution for this.</p>
+<p>A temporary workaround is copying your target data apriori from staging to your <code>$VSC_SCRATCH</code> <strong>from the login nodes before launcing your job(s)</strong>, provided your data fits in your scratch folder.</p>
 
         
         <h2>Planned maintenance</h2>
