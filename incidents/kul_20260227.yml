@@ -1,0 +1,13 @@
+meta_data:
+  title: wICE/Rocky9 ACL issues on Lustre
+  start_date: 2026-02-27 09:30:00
+  end_date: 2026-03-27 18:30:00
+  affected: tier2_leuven
+  level: medium
+  planned: no
+content: |-
+  [Issue] We are aware of setting and retrieving ACLs on Lustre on wICE cluster. Apparently, the ACLs do not propagate on all wICE nodes and stay local to the node used to set them.
+  
+  This issue is inherent to the Rocky9 OS. As a result of this, some jobs which access files on staging may fail with permission issues. On the login nodes (still on Rocky8), the ACLs are fully respected by the OS and file access is as expected. We are investigating to find a solution for this.
+
+  A temporary workaround is copying your target data apriori from staging to your `$VSC_SCRATCH` **from the login nodes before launcing your job(s)**, provided your data fits in your scratch folder.
