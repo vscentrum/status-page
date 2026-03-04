@@ -20,31 +20,7 @@
         
         <h2>Current incidents</h2>
         
-        <h3><a id="incident_0115">wICE/Rocky9 ACL issues on Lustre</a></h3>
-
-<table>
-    <tr>
-        <td><span class="td_name">Start:</span></td>
-        <td>2026-02-27 09:30:00</td>
-    </tr>
-    <tr>
-        <td><span class="td_name">End:</span></td>
-        <td>2026-03-27 18:30:00</td>
-    </tr>
-    <tr>
-        <td><span class="td_name">Updated:</span></td>
-        <td>2026-03-04 09:51:07</td>
-    </tr>
-    <tr>
-        <td><span class="td_name">Level:</span></td>
-        <td>medium</td>
-    </tr>
-</table>
-
-<p><strong>Update</strong>: a solution has been found and is being rolled out since Friday 2026-02-27 12:00. The problem was due to a bug in the Lustre client. Since the solution requires rebooting a node, each node will be patched as soon as all jobs on it have completed.</p>
-<p>[Issue] We are aware of an issue with retrieving ACLs on Lustre on the wICE cluster. Apparently, the ACLs do not propagate on all wICE nodes and stay local to the node used to set them. Users typically observe this as "Permission Denied" errors when accessing files for which they should have access. The issue is not present on the Genius cluster or on login nodes.</p>
-<p>A temporary workaround is copying your target data apriori from staging to your <code>$VSC_SCRATCH</code> <strong>from the login nodes before launching your job(s)</strong>, provided your data fits in your scratch folder, but it is recommended to simply wait for the rollout of the proper solution to complete.</p>
-
+        <p>All systems running fine.</p>
         
         <h2>Planned maintenance</h2>
         
