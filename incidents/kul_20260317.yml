@@ -1,0 +1,10 @@
+meta_data:
+  title: Slurm communication issue 
+  start_date: 2026-03-16 16:30:00
+  end_date: 
+  affected: tier2_leuven
+  level: medium
+  planned: no
+content: |-
+
+  [Issue] There is a problem with the the Slurm scheduler. Slurm commands like squeu or sbatch will fail. We are looking into the problem. 
