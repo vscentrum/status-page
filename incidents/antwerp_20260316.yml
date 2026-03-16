@@ -10,10 +10,8 @@ content: >
   <p>On <b>Wednesday March 18</b>, an upgrade of the scratch filesystem services will take place (to fix bugs in the current version of the services).
   The upgrade will <b>start at 9 am</b> and might take a few hours to complete.</p>
 
-  <p><em>During the upgrade, there might be small interruptions in the availability
-of the scratch filesystems (as these services need to be restarted).</em></p>
+  <p><em>During the upgrade, there might be small interruptions in the availability of the scratch filesystems (as these services need to be restarted).</em></p>
 
   <p>Therefore, we have created a reservation on all compute nodes between 9 am and 2 pm. Jobs that cannot run to completion before the start of the upgrade will not start before the end of the reservation (2 pm).</p>
 
   <p>Our apologies for the inconvenience.</p>
-
