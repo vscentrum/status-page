@@ -20,7 +20,44 @@
         
         <h2>Current incidents</h2>
         
-        <p>All systems running fine.</p>
+        <h3><a id="incident_0074">Issues with the Slurm scheduler</a></h3>
+
+<table>
+    <tr>
+        <td><span class="td_name">Start:</span></td>
+        <td>2026-03-16 16:30:00</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">End:</span></td>
+        <td>Unknown</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">Updated:</span></td>
+        <td>2026-03-18 11:59:47</td>
+    </tr>
+    <tr>
+        <td><span class="td_name">Level:</span></td>
+        <td>medium</td>
+    </tr>
+</table>
+
+<p>Due to intermittent issues with Slurm on Genius, the following problems
+may arise, which may in some cases also affect wICE:</p>
+<ul>
+<li>
+<p>Slurm commands such as <code>squeue</code> and <code>sbatch</code> may time out. The same applies
+  to related tools such as <code>sam-balance</code>.</p>
+</li>
+<li>
+<p>The 'Partition' and/or 'Account' dropdowns in the forms for the OnDemand
+  apps remain empty.</p>
+</li>
+</ul>
+<p>While we are looking for solutions, one workaround is to try again at a
+later time when the scheduler has recovered. In the case of OnDemand this
+is best combined with refreshing your session via 'Help' -&gt;
+'Restart Web Server'.</p>
+
         
         <h2>Planned maintenance</h2>
         
