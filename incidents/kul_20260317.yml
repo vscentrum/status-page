@@ -1,11 +1,22 @@
 meta_data:
-  title: Slurm communication issue 
+  title: Issues with the Slurm scheduler
   start_date: 2026-03-16 16:30:00
-  end_date: 2026-03-16 16:58:00
+  end_date:
   affected: tier2_leuven
   level: medium
   planned: no
 content: |-
 
-  [update] The issue is resolved.
-  [Issue] There is a problem with the the Slurm scheduler. Slurm commands like squeu or sbatch will fail. We are looking into the problem. 
+  Due to intermittent issues with Slurm on Genius, the following problems
+  may arise, which may in some cases also affect wICE:
+
+  * Slurm commands such as `squeue` and `sbatch` may time out. The same applies
+    to related tools such as `sam-balance`.
+
+  * The 'Partition' and/or 'Account' dropdowns in the forms for the OnDemand
+    apps remain empty.
+
+  While we are looking for solutions, one workaround is to try again at a
+  later time when the scheduler has recovered. In the case of OnDemand this
+  is best combined with refreshing your session via 'Help' ->
+  'Restart Web Server'.
