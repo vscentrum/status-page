@@ -1,11 +1,11 @@
 meta_data:
   title: Tier-2 Lustre issues
   start_date: 2025-03-20 10:30:00
-  end_date:
+  end_date: 2025-03-20 12:10:00
   affected: tier2_leuven
   level: high
   planned: no
-content: >
-  <p>
-  Problems with the Lustre file system have reappeared, giving slow or impossible access to (some) $VSC_SCRATCH and staging directories.
-  </p>
+content: |-
+  [Update] The Lustre problems have been resolved. 
+
+  [Issue] Problems with the Lustre file system have reappeared, giving slow or impossible access to (some) $VSC_SCRATCH and staging directories.
