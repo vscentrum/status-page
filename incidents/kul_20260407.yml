@@ -8,4 +8,5 @@ meta_data:
 content: |-
 
  Due to a bug at our certificate supplier, an urgent, unplanned intervention is required. This also might affect login to the Tier-2 cluster.
+ As there may be issues with job submission, a whole-system reservation has been put in place on the cluster, preventing new jobs from starting.
  The team is working to resolve this as quickly as possible and apologize for the inconvenience.
