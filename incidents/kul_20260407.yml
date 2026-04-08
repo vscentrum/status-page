@@ -1,5 +1,5 @@
 meta_data:
-  title: General issue with certificate 
+  title: General issue with SSL/TLS certificates
   start_date: 2026-04-07 22:41:00
   end_date: 
   affected: tier2_leuven,tier1_data
@@ -7,13 +7,16 @@ meta_data:
   planned: no
 content: |-
 
- **Update(2026-04-08:08:55:00)**: Tier-1 Data login and job submission issues were resolved. The reservations have therefore been removed.
- 
- In case you encounter problems connecting to the KU Leuven Tier-2 clusters, you may try to first add a certificate to your SSH agent by executing 'ssh -A -l vscXXXXX firewall.vscentrum.be'.
- Opening the firewall challange with Chrome should also work.
- 
- Ondemand access is fixed.
+ ** Update (2026-04-08:08:55:00) **: Tier-1 Data login and job submission issues were resolved. The reservations have therefore been removed.
 
- Due to a bug at our certificate supplier, an urgent, unplanned intervention is required. This also might affect login to the Tier-2 cluster and the Tier-1 Data platform.
- As there may be issues with job submission, a whole-system reservation has been put in place on the cluster, preventing new jobs from starting.
+ In case you encounter problems connecting to the KU Leuven Tier-2 clusters, you may try to first add a certificate to your SSH agent by executing 'ssh -A -l vscXXXXX firewall.vscentrum.be'.
+ Opening the firewall challenge with a Chrome-like browser instead of Firefox may also help.
+ 
+ You should now also be able to access OnDemand with a Chrome-like browser (enabling access through Firefox remains work in progress).
+
+
+ ** Original issue **:
+
+ Due to a bug originating at our certificate supplier, an urgent and unplanned intervention is required. This also might affect connections to the Tier-2 cluster and the Tier-1 Data platform.
+ As there may also be issues with job submission, a whole-system reservation has been put in place on Genius and wICE, preventing new jobs from starting.
  The team is working to resolve this as quickly as possible and apologize for the inconvenience.
