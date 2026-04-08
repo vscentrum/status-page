@@ -1,5 +1,5 @@
 meta_data:
-  title: General issue with certificate 
+  title: General issue with SSL/TLS certificates
   start_date: 2026-04-07 22:41:00
   end_date: 2026-04-08 17:00:00
   affected: tier2_leuven,tier1_data
@@ -12,9 +12,10 @@ content: |-
  ** Update(2026-04-08:08:55:00) **: Tier-1 Data login and job submission issues were resolved. The reservations have therefore been removed.
  
  In case you encounter problems connecting to the KU Leuven Tier-2 clusters, you may try to first add a certificate to your SSH agent by executing 'ssh -A -l vscXXXXX firewall.vscentrum.be'.
- Opening the firewall challange with Chrome should also work.
+ Opening the firewall challenge with a Chrome-like browser instead of Firefox may also help.
  
- Ondemand access is fixed.
+ You should now also be able to access OnDemand with a Chrome-like browser (enabling access through Firefox remains work in progress).
+
 
  ** Original issue **:
  
