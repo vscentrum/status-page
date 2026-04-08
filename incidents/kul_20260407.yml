@@ -7,7 +7,7 @@ meta_data:
   planned: no
 content: |-
 
- **Update(2026-04-08:08:00:00)**: Tier-1 Data login and job submission issues were resolved. The reservations have therefore been removed.
+ **Update(2026-04-08:08:55:00)**: Tier-1 Data login and job submission issues were resolved. The reservations have therefore been removed.
  
  In case you encounter problems connecting to the KU Leuven Tier-2 clusters, you may try to first add a certificate to your SSH agent by executing 'ssh -A -l vscXXXXX firewall.vscentrum.be'.
  Opening the firewall challange with Chrome should also work.
