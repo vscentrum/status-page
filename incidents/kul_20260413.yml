@@ -1,7 +1,7 @@
 meta_data:
   title: Tier-1 data and ManGO authentication issues
   start_date: 2026-04-13 00:00:00
-  end_date: Unknown
+  end_date: 
   affected: tier1_data
   level: high
   planned: no
