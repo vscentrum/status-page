@@ -1,0 +1,13 @@
+meta_data:
+  title: Tier-1 data and ManGO authentication issues
+  start_date: 2026-04-13 00:00:00
+  end_date: Unknown
+  affected: tier1_data
+  level: high
+  planned: no
+content: >
+  <p>
+  Users may at the moment experience authentication issues when trying to access Tier-1 Data or ManGO. These issues seem to affect all zones. We are investigating the issue. 
+  
+  Because of these issues, we advise you not to start new uploads, downloads or other data-related operations (move/copy within a zone) if possible. If you already have an active upload or download, you can let it continue, though you may experience errors. 
+  </p>
