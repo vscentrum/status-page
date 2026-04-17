@@ -1,0 +1,10 @@
+meta_data:
+  title: Lustre issues on Genius and wICE
+  start_date: 2026-04-17 01:00:00
+  end_date: 
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: |-
+
+  [Issue] Problems with the Lustre file system have reappeared, preventing all access to $VSC_SCRATCH and staging storage. We have put Genius and wICE under reservation to prevent jobs from starting while the issue is being addressed.
