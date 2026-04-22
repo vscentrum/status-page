@@ -7,7 +7,7 @@ meta_data:
   planned: yes
 content: >
   <p>
-  We will update the scheduler (slirm) and some drivers (for GPUS) and the kernel for security updates.
+  We will update the scheduler (slurm) and some drivers (for GPUS) and the kernel for security updates.
   </p>
   <p>
   The following infrastructure and services will be unavailable during this period: The whole Tier-2 system including all workernodes as well as login and debug nodes, and the Tier-2 filesystem.
