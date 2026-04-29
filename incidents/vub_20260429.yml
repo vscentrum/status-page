@@ -2,7 +2,7 @@ meta_data:
   title: Access to VUB-HPC Tier-2 clusters closed due to critical security vulnerability
   start_date: 2026-04-29 21:15:00
   end_date: 
-  affected: tier2_vub
+  affected: tier2_brussels
   level: high
   planned: no
 content: >
