@@ -9,7 +9,7 @@ content: >
   <p>
   *[Thu 29 Apr 2026 - 11:48:00]*<br/>
   Update: We are actively deploying a mitigation for the security problem.
-  All running jobs have been cancelled, to expedite updating and rebooting all login and worker nodes.
+  All running jobs have been requeued, to expedite updating and rebooting all login and worker nodes.
   We are doing what we can to restore access to the systems ASAP.
   </p>
   <p>
