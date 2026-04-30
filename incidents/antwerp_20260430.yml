@@ -1,0 +1,14 @@
+meta_data:
+  title: Access to CalcUA Tier-2 clusters closed due to critical security vulnerability
+  start_date: 2026-04-29 22:35:00
+  end_date: 
+  affected: tier2_antwerp
+  level: high
+  planned: no
+content: >
+
+  <p>Due to a critical security vulnerability, access to the CalcUA Tier-2 clusters has been closed.<br/> This means users cannot access the login nodes, as well as the Open OnDemand portal.</p>
+
+  <p>Access will only be restored when a fix has been deployed.</p>
+
+  <p>Our apologies for the inconvenience.</p>
