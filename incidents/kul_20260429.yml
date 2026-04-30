@@ -1,0 +1,11 @@
+meta_data:
+  title: Access to Leuven Tier-2 clusters closed due to critical security vulnerability
+  start_date: 2026-04-30 07:25:00
+  end_date: 
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: >
+  <p>
+  Due to a critical security vulnerability, access to the KU Leuven / UHasselt Tier-2 clusters has been closed. This includes the login nodes as well as the OnDemand apps. Access will only be restored when a fix has been deployed.
+  </p>
