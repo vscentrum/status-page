@@ -7,6 +7,13 @@ meta_data:
   planned: no
 content: >
   <p>
+  *[Thu 29 Apr 2026 - 11:48:00]*<br/>
+  Update: We are actively deploying a mitigation for the security problem.
+  All running jobs have been requeued, to expedite updating and rebooting all login and worker nodes.
+  We are doing what we can to restore access to the systems ASAP.
+  </p>
+  <p>
+  *[Wed 29 Apr 2026 - 22:32:00]*<br/>
   Due to a critical security vulnerability, access to the HPC-UGent Tier-2 and VSC Tier-1 Hortense login nodes was closed
   for all VSC accounts on Wednesday 29 April 2026 at 22:32 CEST.
   </p>
