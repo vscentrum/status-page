@@ -1,7 +1,7 @@
 meta_data:
   title: Login nodes unavailable due to critical security vulnerability
   start_date: 2026-04-29 22:32:00
-  end_date: 
+  end_date: 2026-04-30 17:30:00
   affected: tier2_gent, tier1_compute
   level: high
   planned: no
