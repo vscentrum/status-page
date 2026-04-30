@@ -1,12 +1,32 @@
 meta_data:
   title: Access to VUB-HPC Tier-2 clusters closed due to critical security vulnerability
   start_date: 2026-04-29 21:15:00
-  end_date: 
+  end_date: 2026-04-30 18:30:00
   affected: tier2_brussels
   level: high
   planned: no
 content: >
   <p>
+  <b>[Thu 30 Apr 2026 - 18:30:00]</b><br/>
+  Access to Hydra is open again through the terminal interface of the login nodes (SSH)
+  </p>
+  <p>
+  All critical systems have been patched with the necessary security updates,
+  and we have no indication that any breach of security has occurred.
+  </p>
+  <p>
+  During this downtime, we had to re-queue all jobs running in the cluster. It
+  might be that your jobs have already finished, or that they are running but
+  in previous state, or maybe still in queueu. Some job scripts might have
+  also failed to handle the re-queue properly, as this is not a common
+  situation to go through for a job. Please check the output of your jobs
+  carefully.
+  </p>
+  <p>
+  If you experience any new issues or unexpected behaviour with the
+  updated system, please contact us at hpc@vub.be
+  <p>
+  <b>[Wed 29 Apr 2026 - 21:15:00]</b><br/>
   Due to a new critical vulnerability recently disclosed, all access to VUB-HPC
   Tier-2 clusters is closed.
   This measure includes the following services on Hydra and Anansi:
