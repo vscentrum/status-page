@@ -1,11 +1,15 @@
 meta_data:
-  title: Access to Leuven Tier-2 clusters closed due to critical security vulnerability
+  title: Partial unavailability of Tier-2 compute nodes due to critical security vulnerability
   start_date: 2026-04-30 07:25:00
   end_date: 
   affected: tier2_leuven
-  level: high
+  level: medium
   planned: no
 content: >
+  <p>
+  *[Mon 04 May 2026 - 08:50:00]*<br/>
+  Update: The blocking reservations have now been released on the compute nodes of Mindwell, wICE (except for the batch_sapphirerapids partition) and the Genius GPU nodes. The remaining partitions will follow later today. Note that all Genius compute and login nodes needed to be migrated to Rocky Linux 9 in the process.
+  </p>
   <p>
   *[Thu 30 Apr 2026 - 13:00:00]*<br/>
   Update: Selected login nodes are now accessible again now that the security concern has been mitigated on these nodes.
