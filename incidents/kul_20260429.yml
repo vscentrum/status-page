@@ -7,6 +7,9 @@ meta_data:
   planned: no
 content: >
   <p>
+  *[Mon 04 May 2026 - 09:00:00]*<br/>
+  Update: Almost all cluster nodes are patched and are released. Only the wICE Sapphirerapid nodes will remain a bit longder under reservation. In the process, Genius is now also moved to Rocky 9 OS. For Superdome this means that it will be no longer accessible.
+  
   *[Thu 30 Apr 2026 - 13:00:00]*<br/>
   Update: Selected login nodes are now accessible again now that the security concern has been mitigated on these nodes.
 
