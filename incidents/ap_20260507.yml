@@ -1,0 +1,18 @@
+meta_data:
+  title: VSC accountpage unavailable
+  start_date: 2026-05-11 07:00:00
+  end_date: 2026-05-11 12:00:00
+  affected: backbone
+  level: high
+  planned: yes
+content: >
+  <p>
+  The platform hosting the VSC accountpage will be migrated to new version on Monday 11 May 2026.
+  </p>
+  <p>
+  All services related to the VSC accountpage will be unavailable.
+  This includes login to the web portals and the VSC firewall app, as well as requesting new VSC accounts and requesting/altering VOs and groups.
+  </p>
+  <p>
+  Migration will start at 07:00 and is expected to take 1-2 hours.
+  </p>
