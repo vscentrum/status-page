@@ -1,11 +1,16 @@
 meta_data:
   title: Login nodes unavailable due to critical security vulnerability
   start_date: 2026-05-16 12:37:00
-  end_date:
+  end_date: 2026-05-22 07:56:00
   affected: tier2_gent, tier1_compute
   level: high
   planned: no
 content: >
+  <p>
+  <strong>[Fri 22 May 2026 - 07:56:00]</strong><br/>
+  Update: We have deployed a mitigation for the security vulnerability on HPC-UGent Tier-2.
+  Access to the HPC-UGent Tier-2 login nodes and web portal has been restored.
+  </p>
   <p>
   <strong>[Thu 21 May 2026 - 17:35:00]</strong><br/>
   Update: We have deployed a mitigation for the security vulnerability on VSC Tier-1 Hortense.
