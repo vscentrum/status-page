@@ -13,6 +13,7 @@ content: >
 
   In principle, access to the login nodes will still be available, but access to some storage
   locations can temporarily be lost because of maintentance to the network.
+  Slurm commands may also temporarily fail during the maintenance.
 
   Once completed, the maintenance tasks should not affect user workflows, this concerns
   only internal workings of the cluster.
