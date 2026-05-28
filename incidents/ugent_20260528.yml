@@ -1,0 +1,13 @@
+meta_data:
+  title: Tier-2 login nodes rebooted, access to UGent shares unavailable
+  start_date: 2026-05-28 15:50:00
+  end_date: 
+  affected: tier2_gent
+  level: low
+  planned: no
+content: >
+  <p>
+  <strong>[Thu 28 May 2026 - 15:50:00 CEST]</strong><br/>
+  HPC-UGent Tier-2 login nodes were rebooted to disable the CIFS kernel module,
+  to mitigate a known security issue. As a result, access to UGent shares is temporarily unavailable.
+  </p>
