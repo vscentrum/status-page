@@ -11,3 +11,7 @@ content: >
   HPC-UGent Tier-2 login nodes were rebooted to disable the CIFS kernel module,
   to mitigate a known security issue. As a result, access to UGent shares is temporarily unavailable.
   </p>
+  <p>
+  <strong>[Tue 02 June 2026 - 10:47:00 CEST]</strong><br/>
+  Update: UGent shares are again accessible from gligar08
+  </p>
