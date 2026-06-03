@@ -1,0 +1,20 @@
+meta_data:
+  title: Tier-2 clusters unavailable for maintenance
+  start_date: 2026-06-15 09:00:00
+  end_date: 2026-06-15 17:00:00
+  affected: tier2_leuven
+  level: medium
+  planned: yes
+content: >
+  <p>
+  On Monday 2026-06-15, planned maintenance works will be done to the KU Leuven/UHasselt Tier-2 clusters.
+  A reservation on all compute nodes will ensure that no jobs can run during the planned maintenance window.
+  This reservation will also affect jobs submitted via OnDemand sessions.
+
+  In principle, access to the login nodes will still be available, but access to some storage
+  locations can temporarily be lost because of maintentance to the network.
+  Slurm commands may also temporarily fail during the maintenance.
+
+  Once completed, the maintenance tasks should not affect user workflows, this concerns
+  only internal workings of the cluster.
+  </p>
