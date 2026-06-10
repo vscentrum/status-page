@@ -1,0 +1,12 @@
+meta_data:
+  title: VSC accountpage and the firewall app is unavailable
+  start_date: 2026-06-10 13:00:00
+  end_date: 
+  affected: backbone
+  level: medium
+  planned: no
+content: >
+  <p>
+  Due to network infrastrucuture problems the accountpage (https://account.vscentrun.be/ and 
+  https://firewall.vscentrum.be/ might not working properly.
+  </p>
