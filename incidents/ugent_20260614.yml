@@ -1,0 +1,12 @@
+meta_data:
+  title: Unknown network error
+  start_date: 2026-06-12 22:00:00
+  end_date: 
+  affected: tier2_gent, tier1_compute, backbone
+  level: high
+  planned: no
+content: >
+  <p>
+  We have an unknown network error, so all UGent infrastructure are not available.
+  We are working on to solve a problem. 
+  </p>
