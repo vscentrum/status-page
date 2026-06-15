@@ -1,7 +1,7 @@
 meta_data:
   title: Tier-2 clusters unavailable for maintenance
   start_date: 2026-06-15 09:00:00
-  end_date: 2026-06-15 17:00:00
+  end_date: 2026-06-16 17:00:00
   affected: tier2_leuven
   level: medium
   planned: yes
@@ -17,4 +17,8 @@ content: >
 
   Once completed, the maintenance tasks should not affect user workflows, this concerns
   only internal workings of the cluster.
+  </p>
+
+  <p>
+  Update: the wICE and Mindwell clusters have been released. The Genius GPU nodes remain under reservation.
   </p>
