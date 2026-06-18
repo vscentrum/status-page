@@ -1,0 +1,13 @@
+meta_data:
+  title: Tier-2 clusters unavailable due to Lustre issue
+  start_date: 2026-06-18 10:45:00
+  end_date: 2026-06-18 13:00:00
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: >
+  <p>
+  [11:30] We are aware of the Lustre failure on our Tier-2 clusters, and a recovery is in progress.
+  After that, access to the login nodes shall be possible again. Running jobs which depended on Lustre
+  (scratch and/or staging) might have failed. You may request a credit refund for large jobs.
+  </p>
