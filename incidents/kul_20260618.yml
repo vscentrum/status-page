@@ -9,7 +9,9 @@ content: >
   <p>
   [12:00] Recovery is completed. Access to the Lustre and login nodes are back to normal.
           Mindwell and GPFS seem  unaffected.
+  </p>
 
+  <p>
   [11:30] We are aware of the Lustre failure on our Tier-2 clusters, and a recovery is in progress.
   After that, access to the login nodes shall be possible again. Running jobs which depended on Lustre
   (scratch and/or staging) might have failed. You may request a credit refund for large jobs.
