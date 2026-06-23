@@ -1,0 +1,13 @@
+meta_data:
+  title: Tier-1 data: ManGO portal unavailable
+  start_date: 2026-07-23 00:00:00
+  end_date: 
+  affected: tier1_data
+  level: medium
+  planned: no
+content: >
+  <p>
+  The ManGO portal, the web interface for Tier-1 Data, is currently unavailable.   
+  Other clients like iron, Globus or the Python API are unaffected: you can still authenticate with them and use them. 
+  We are working to resolve the issue.  
+  </p>
