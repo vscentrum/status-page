@@ -1,0 +1,14 @@
+meta_data:
+  title: Tier-2 reduced capacity
+  start_date: 2026-06-26 10:00:00
+  end_date:
+  affected: tier2_leuven
+  level: medium
+  planned: no
+content: >
+  <p>
+  In order to protect the datacenter from overheating the next days, some preventive measures were taken. A partial reservation on wICE was created. 
+  Nodes in this reservation that become idle will be turned off. This will temporarly reduce capacity of the cluster and might lead to longer queuetimes.
+  No jobs were canceled up till now, only in case of emergency we will turn off nodes with running jobs.
+  Note that this was unrelated to the Lustre issues.
+  </p>
