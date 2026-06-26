@@ -1,0 +1,17 @@
+meta_data:
+  title: Tier1 Hortense I/O system upgrade
+  start_date: 2026-08-03 08:00:00
+  end_date: 2026-08-07 18:00:00
+  affected: tier1_compute
+  level: high
+  planned: yes
+content: >
+  <p>
+  A scheduled maintenance will take place between Mon 3 August 2026 08:00 CET and Fri 7 August 2026 18:00 CET on Tier1 Hortense.
+  The I/O subsystem will be upgraded.
+  This is a remaining task from previous maintenance windows, which was postponed due to some unforeseen technical difficulties from the vendor side.
+  </p>
+  <p>
+  Tier1 Hortense will not be available in this period, including all workernodes as well as login and debug nodes, and the dedicated Tier1 scratch filesystem.
+  Please be aware that during the maintenance period, you will not be able to access any data located on Tier1 Hortense system.
+  </p>
