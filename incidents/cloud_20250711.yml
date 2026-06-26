@@ -1,0 +1,18 @@
+meta_data:
+  title: Datacenter test - Tier1 Cloud system unavailable on 11 July
+  start_date: 2026-07-11 08:00:00
+  end_date: 2026-07-11 10:10:00
+  affected: tier1_cloud
+  level: high
+  planned: yes
+content: >
+  <p>
+  On Saturday 11 July 2026, a planned test of the UGent datacenter S10 Disaster Recovery Procedure (DRP) will take place.
+  As a result, there will be no network access to/from the Tier1 Cloud setup throughout the day.
+  </p>
+
+  <p>
+  The Tier1 Cloud dashboard and all VMs won’t be reachable that day.
+  Running VMs will keep running, but won’t be able to reach the internet.
+  Local network connections (within Tier1 Cloud) and storage systems will not be affected.
+  </p>
