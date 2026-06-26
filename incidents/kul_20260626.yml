@@ -1,0 +1,14 @@
+meta_data:
+  title: Tier-2 clusters unavailable due to Lustre issue
+  start_date: 2026-06-26 07:00:00
+  end_date:
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: >
+  <p>
+  [07:00] The Lustre file system is not available at the moment and because of this, the Genius and
+  wICE clusters have been reserved so no further jobs can start. Also from the login nodes, access to
+  Lustre is not possible. Running jobs which were using Lustre (scratch and/or staging) probably failed.
+  You can request a credit refund for large jobs.
+  </p>
