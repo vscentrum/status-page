@@ -1,5 +1,5 @@
 meta_data:
-  title: UGent datacenter maintenance, impacting HPC-UGent Tier2
+  title: Datacenter test - HPC-UGent Tier2 systems unavailable on 11 July
   start_date: 2026-07-11 08:00:00
   end_date: 2026-07-11 18:00:00
   affected: tier2_gent
