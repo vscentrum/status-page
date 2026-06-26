@@ -1,0 +1,18 @@
+meta_data:
+  title: UGent datacenter maintenance, impacting HPC-UGent Tier2
+  start_date: 2026-07-11 08:00:00
+  end_date: 2026-07-11 18:00:00
+  affected: tier2_gent
+  level: high
+  planned: yes
+content: >
+  <p>
+  On Saturday 11 July 2026, a planned test of the UGent datacenter S10 Disaster Recovery Procedure (DRP) will take place.
+  Due to technical constraints, we will have to switch off the Tier2 clusters entirely.
+  </p>
+
+  <p>
+  The entire HPC-UGent Tier2 infrastructure will be offline and unavailable this day.
+  This includes all workernodes as well as login and debug nodes, and the Tier2 shared storage (home, data, scratch).
+  Please be aware that you will not be able to access any data located on the HPC-UGent Tier2 storage systems this day.
+  </p>
