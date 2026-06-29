@@ -1,11 +1,15 @@
 meta_data:
   title: Tier-2 reduced capacity
   start_date: 2026-06-26 10:00:00
-  end_date:
+  end_date: 2026-06-29 12:00:00
   affected: tier2_leuven
   level: medium
   planned: no
 content: >
+  <p>
+  [2026-06-29 09:00] wICE is fully available again.
+  </p>
+
   <p>
   In order to protect the datacenter from overheating the next days, some preventive measures were taken. A partial reservation on wICE was created. 
   Nodes in this reservation that become idle will be turned off. This will temporarly reduce capacity of the cluster and might lead to longer queuetimes.
