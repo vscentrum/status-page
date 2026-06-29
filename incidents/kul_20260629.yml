@@ -1,7 +1,7 @@
 meta_data:
   title: Open OnDemand unavailable
   start_date: 2026-06-29 07:30:00
-  end_date: 2026-06-29 08:45:00
+  end_date:
   affected: tier2_leuven
   level: medium
   planned: no
@@ -12,5 +12,9 @@ content: >
   </p>
 
   <p>
-  [08:45] Resolved
+  [08:45] Issue resolved.
+  </p>
+
+  <p>
+  [10:30] Problems with ondemand.hpc.kuleuven.be have resurfaced.
   </p>
