@@ -8,6 +8,7 @@ meta_data:
 content: >
   <p>
   We had a short power outage in the data center, most of the compute nodes in Tier1-Hortense and Tier2 Gent
-  infrastructure currently offline. 
+  infrastructure are currently offline. 
+  You should check those jobs that were running, and you might have to resubmit them.
   We are working on to solve a problem. 
   </p>
