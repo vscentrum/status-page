@@ -1,8 +1,8 @@
 meta_data:
-  title: Power outage in UGent Data Center
+  title: Power outage in UGent Data Center impacting UGent Tier2 systems
   start_date: 2026-06-30 10:50:00
-  end_date: 
-  affected: tier2_gent, tier1_compute
+  end_date: 2026-06-30 14:00:00
+  affected: tier2_gent
   level: high
   planned: no
 content: >
@@ -11,4 +11,8 @@ content: >
   infrastructure are currently offline. 
   You should check those jobs that were running, and you might have to resubmit them.
   We are working on to solve a problem. 
+  </p>
+  <p>
+  Update 30/06/2026 14:00
+  All Tier2 clusters are back available and accepting jobs.
   </p>
