@@ -1,0 +1,19 @@
+meta_data:
+  title: Power outage in UGent Data Center - Tier1 Hortense unavailable
+  start_date: 2026-06-30 10:50:00
+  end_date: 
+  affected: tier1_compute
+  level: high
+  planned: no
+content: >
+  <p>
+  The Tier1-Hortense infrastructure has suffered from an unexpected short power outage in the data center.
+  <ul>
+  <li> Most compute nodes went offline. Jobs that were running on these nodes were likely lost and should be resubmitted. </li>
+  <li> The Tier-1 filesystem is showing issues due to the unexpected interruption. </li>
+  </p>
+  
+  <p>
+  We have escalated the filesystem issues with our hardware vendor.
+  Until they come up with a resolution, Tier-1 Hortense remains unavailable.
+  </p>
