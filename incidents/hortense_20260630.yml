@@ -14,6 +14,11 @@ content: >
   </p>
   
   <p>
-  We have escalated the filesystem issues with our hardware vendor.
-  Until they come up with a resolution, Tier-1 Hortense remains unavailable.
+  We are trying to find a solution for this as soon as possible.
+  A.o. we have escalated these filesystem issues with our hardware vendor.
+  </p>
+
+  <p>
+  Until the filesystem errors are resolved, Tier-1 Hortense remains unavailable.
+  This includes all Tier1 workernodes, login and debug nodes, and the dedicated Tier1 scratch filesystem.
   </p>
