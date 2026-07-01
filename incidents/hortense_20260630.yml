@@ -1,7 +1,7 @@
 meta_data:
   title: Power outage in UGent Data Center - Tier1 Hortense unavailable
   start_date: 2026-06-30 10:50:00
-  end_date: 
+  end_date: 2026-07-01 10:30:00
   affected: tier1_compute
   level: high
   planned: no
@@ -22,4 +22,10 @@ content: >
   <p>
   Until the filesystem errors are resolved, Tier-1 Hortense remains unavailable.
   This includes all Tier1 workernodes, login and debug nodes, and the dedicated Tier1 scratch filesystem.
+  </p>
+
+  <p>
+  Update 1/07/2026 10:00
+  The filesystem issue was fixed and has been running stable since 30/06/2026 evening.
+  The majority of nodes are now back available and accepting jobs.
   </p>
