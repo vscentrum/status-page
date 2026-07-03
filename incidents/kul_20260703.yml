@@ -1,0 +1,14 @@
+meta_data:
+  title: Tier-2 cluster Mindwell reservation
+  start_date: 2026-06-18 17:35:00
+  end_date: 
+  affected: tier2_leuven
+  level: medium
+  planned: yes
+content: >
+
+  <p>
+  The cooling unit might need a maintenance intervention. The vendor will give us final confirmation on Monday.
+  A provisional reservation for the maintenance has been put on Mindwell, starting from Tuesday 10:00h.
+  So you might start seeing jobs stuck in the queue if the can't complete before Tuesday 10:00h.
+  </p>
