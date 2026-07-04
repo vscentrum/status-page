@@ -1,0 +1,12 @@
+meta_data:
+  title: KU Leuven Tier-2 access closed 
+  start_date: 2026-07-04 10:00:00
+  end_date: 
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: >
+  <p>
+  Access to Tier-2 has been closed as a preemtive measure.
+  All connections to the cluster have been closed and no new jobs will start. We are still investigating and examining possible solutoins, but have no timeframe yet as to when the cluster will be available again.
+  </p>
