@@ -1,15 +1,15 @@
 meta_data:
-  title: VUB-HPC Tier-2 clusters - access closed for security reasons
+  title: Tier-1 sofia - access closed for security reasons
   start_date: 2026-07-04 02:00:00
   end_date: 
-  affected: tier2_brussels
+  affected: tier1_compute
   level: high
   planned: no
 content: >
   <b>[Sat 04 Jul 2026 - 02:00:00]</b><br/>
-  Due to a new critical vulnerability recently disclosed, all access to VUB-HPC
-  Tier-2 clusters is closed.
-  This measure includes the following services on Hydra and Anansi:
+  Due to a new critical vulnerability recently disclosed, all access to
+  VSC Tier-1 cluster <b>sofia</b> is closed.
+  This measure includes the following services on <b>sofia</b>:
   <ul>
   <li>SSH connections through the terminal interface</li>
   <li>OnDemand sessions through portal.hpc.vub.be</li>
@@ -21,7 +21,7 @@ content: >
   </p>
   <p>
   This is a preemptive action to avoid any damage on the HPC system and user's data
-  in it. At the time of closure, no intrusion in VUB-HPC infrastructure occurred.
+  in it. At the time of closure, no intrusion in Tier-1 <b>sofia</b> occurred.
   </p>
   <p>
   We are currently working on solving this new critical vulnerability on all
