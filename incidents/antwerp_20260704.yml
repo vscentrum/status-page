@@ -1,0 +1,31 @@
+meta_data:
+  title: CalcUA Tier-2 access closed 
+  start_date: 2026-07-04 22:40:00
+  end_date: 
+  affected: tier2_antwerp
+  level: high
+  planned: no
+content: >
+
+  <p>
+  Due to a new critical vulnerability recently disclosed, all access to CalcUA Tier-2 clusters is closed. This measure includes the following services:
+  <ul>
+  <li>SSH connections through the terminal interface</li>
+  <li>OnDemand sessions through portal.hpc.uantwerpen.be</li>
+  <li>Remote sessions with tunneling such as VS Code applications</li>
+  </ul>
+  </p>
+
+  <p>
+  Users can still access their data on the cluster through Globus.
+  </p>
+
+  <p>
+  This is a preemptive action to avoid any damage on the HPC system and user's data in it. At the time of closure, no intrusion in CalcUA infrastructure occurred.
+  </p>
+
+  <p>
+  We are currently working on solving this new critical vulnerability on all our systems as soon as possible. However, we cannot yet provide a timeline for the complete resolution of this issue as we still need to complete our investigation on it.
+  </p>
+
+  <p>Our apologies for the inconvenience.</p>
