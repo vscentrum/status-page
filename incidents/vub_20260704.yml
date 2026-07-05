@@ -6,6 +6,16 @@ meta_data:
   level: high
   planned: no
 content: >
+  <p>
+  <b>[Sun 05 Jul 2026 - 17:00:00]</b><br/>
+  We are in the process of deploying the required system updates
+  to fix the security issues disclosed on Friday.
+  </p>
+  <p>
+  Hydra and Anansi are expected to be fully online by Monday July 6th at 17:00
+  CEST
+  </p>
+  <p>
   <b>[Sat 04 Jul 2026 - 02:00:00]</b><br/>
   Due to a new critical vulnerability recently disclosed, all access to VUB-HPC
   Tier-2 clusters is closed.
