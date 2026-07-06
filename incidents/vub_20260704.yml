@@ -1,11 +1,17 @@
 meta_data:
   title: VUB-HPC Tier-2 clusters - access closed for security reasons
   start_date: 2026-07-04 02:00:00
-  end_date: 
+  end_date: 2026-07-06 09:00:00
   affected: tier2_brussels
   level: high
   planned: no
 content: >
+  <p>
+  <b>[Mon 06 Jul 2026 - 09:00:00]</b><br/>
+  We already patched the issue on the Tier-2 clusters (Hydra and Anansi) ahead
+  of schedule. Both Tier-2 clusters are again accessible. All jobs that could
+  not finished before Monday morning have been re-queued.
+  </p>
   <p>
   <b>[Sun 05 Jul 2026 - 17:00:00]</b><br/>
   We are in the process of deploying the required system updates
