@@ -1,11 +1,17 @@
 meta_data:
   title: Tier-1 sofia - access closed for security reasons
   start_date: 2026-07-04 02:00:00
-  end_date: 
+  end_date: 2026-07-06 14:00:00
   affected: tier1_compute
   level: high
   planned: no
 content: >
+  <p>
+  <b>[Mon 06 Jul 2026 - 14:00:00]</b><br/>
+  Operations on Tier-1 cluster sofia are complete and the
+  system is now available to users. There is no indication that any breach of
+  security has occurred in any of VUB-HPC systems.
+  </p>
   <p>
   <b>[Sun 05 Jul 2026 - 17:00:00]</b><br/>
   We are in the process of deploying the required system updates
