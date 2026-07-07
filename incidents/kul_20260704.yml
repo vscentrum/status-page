@@ -1,18 +1,21 @@
 meta_data:
   title: KU Leuven Tier-2 access closed 
   start_date: 2026-07-04 10:00:00
-  end_date: 
+  end_date: 2026-07-07 14:00:00
   affected: tier2_leuven
   level: high
   planned: no
 content: >
+  <p>
+  [2026-07-07 14:00] Also the Genius cluster has now been released.
+  </p>
 
   <p>
-  [2026-07-06 17:30] Login access to the HPC clusters is restored. wICE and Mindwell are released. Genius will need fruther testing tomorrow.
+  [2026-07-06 17:30] Login access to the HPC clusters has been restored and the wICE and Mindwell clusters have been released. Genius will need further testing tomorrow.
   </p>
   
   <p>
-  [2026-07-06 17:15] The tests have completed. the Tier-2 clusters will be released.
+  [2026-07-06 17:15] The tests have completed. The Tier-2 clusters will soon be released.
   </p>
   
   <p>
@@ -20,7 +23,7 @@ content: >
   </p>
 
   <p>
-  Access to Tier-2 has been closed as a preemtive measure.
+  [2026-07-04 10:00] Access to Tier-2 has been closed as a preemptive measure.
   All connections to the cluster have been closed and no new jobs will start.
   We are still investigating and examining possible solutions, but have no timeframe yet as to when the cluster will be available again.
   </p>
