@@ -26,3 +26,12 @@ content: >
   for the complete resolution of this issue as we still need to complete our
   investigation on it.
   </p>
+  <p>
+  <b>[Update 8 July 2026 - 17:15:00]</b><br/>
+  A mitigation is available and will be applied to all clusters in the upcoming days.
+  All systems will remain unavailable until after the announced downtime of 11 July 2026.
+  </p>
+  <p>
+  It remains possible to access your data on the Tier-2 shared storage via Globus https://www.globus.org/.
+  Check out https://docs.vscentrum.be/globus/index.html for more information.
+  </p>
