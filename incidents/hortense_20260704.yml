@@ -26,3 +26,12 @@ content: >
   for the complete resolution of this issue as we still need to complete our
   investigation on it.
   </p>
+  <b>[Update 8 July 2026 - 17:30:00]</b><br/>
+  A mitigation is available and will be applied to Tier-1 Hortense in the upcoming days.
+  The system will remain unavailable until after the announced downtime of 11 July 2026.
+  </p>
+  <p>
+  It remains possible to access your data on the Tier-1 Hortense storage via Globus https://www.globus.org/.<br/>
+  Check out https://docs.vscentrum.be/globus/index.html for more information.
+  Search for the 'VSC UGent Tier1 projects' collection.
+  </p>
