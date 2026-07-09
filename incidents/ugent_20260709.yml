@@ -1,7 +1,7 @@
 meta_data:
   title: Tier-1 Cloud VMs rebooting for security updates
   start_date: 2026-07-09 09:30:00
-  end_date: 2026-07-10 10:00:00
+  end_date: 2026-07-09 13:00:00
   affected: tier1_cloud
   level: medium
   planned: no
@@ -12,5 +12,9 @@ content: >
   During the reboot, VMs will be unreachable for a short period of time and active connections will be dropped.
   </p>
   <p>
-  We expect to finish this operation by tomorrow morning. 
+  We expect to finish this operation by tomorrow morning.
+  </p>
+  <p>
+  <b>[Thu 09 Jul 2026 - 12:40:00]</b><br/>
+  Update: this operation has been completed ahead of schedule. All VMs have been rebooted.
   </p>
