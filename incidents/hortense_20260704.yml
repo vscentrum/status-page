@@ -1,7 +1,7 @@
 meta_data:
   title: Tier-1 cluster Hortense - access closed for security reasons
   start_date: 2026-07-04 10:00:00
-  end_date: 2026-07-13 13:30
+  end_date: 2026-07-13 13:30:00
   affected: tier1_compute
   level: high
   planned: no
