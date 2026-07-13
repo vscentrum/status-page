@@ -1,7 +1,7 @@
 meta_data:
   title: UGent - HPC Tier-2 clusters - access closed for security reasons
   start_date: 2026-07-04 10:00:00
-  end_date: 
+  end_date: 2026-07-13 12:30:00
   affected: tier2_gent
   level: high
   planned: no
@@ -22,4 +22,8 @@ content: >
   It remains possible to access your data on the Tier-2 shared storage via Globus https://www.globus.org/.<br/>
   Check out https://docs.vscentrum.be/globus/index.html for more information.
   Search for the 'VSC UGent Tier2 filesystems' collection.
+  </p>
+  <p>
+  <b>[Update 13 July 2026 - 12:30:00]</b><br/>
+  All Tier-2 clusters, login nodes and web portal are back available again.
   </p>
