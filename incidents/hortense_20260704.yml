@@ -1,7 +1,7 @@
 meta_data:
   title: Tier-1 cluster Hortense - access closed for security reasons
   start_date: 2026-07-04 10:00:00
-  end_date: 
+  end_date: 2026-07-13 13:30:00
   affected: tier1_compute
   level: high
   planned: no
@@ -22,4 +22,9 @@ content: >
   It remains possible to access your data on the Tier-1 Hortense storage via Globus https://www.globus.org/.<br/>
   Check out https://docs.vscentrum.be/globus/index.html for more information.
   Search for the 'VSC UGent Tier1 projects' collection.
+  </p>
+  <p>
+  <b>[Update 13 July 2026 - 13:30:00]</b><br/>
+  Tier-1 Hortense is back available again.
+  All login nodes and web portal are again accessible.
   </p>
