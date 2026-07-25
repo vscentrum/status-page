@@ -1,0 +1,12 @@
+meta_data:
+  title: KU Leuven Tier-2  
+  start_date: 2026-07-25 16:00:00
+  end_date: 
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: >
+
+  <p>
+  [2026-07-25 16:00] Due to a general cooling issue in the data center, some Tier-2 nodes are being proactively shut down. No nodes currently running active jobs have been turned off so far. A reservation has been enabled on the Tier-2 systems, and no new jobs will be scheduled until the situation is resolved.
+  </p>
