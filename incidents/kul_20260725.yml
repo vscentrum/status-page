@@ -1,11 +1,15 @@
 meta_data:
   title: KU Leuven Tier-2 whole system reservation 
   start_date: 2026-07-25 16:00:00
-  end_date: 
+  end_date: 2026-07-28 17:00:00
   affected: tier2_leuven
   level: high
   planned: no
 content: >
+
+  <p>
+  [update 2026-07-27 17:30]  All nodes of wICE and Mindwell are released.
+  </p>
 
   <p>
   [update 2026-07-27 13:30]  The cooling issues have been resolved. The situation will be monitored closely, especially with the warm weather expected in the coming days. In the meantime, a new system image is being rolled out to the compute nodes. The nodes are expected to be released shortly.
