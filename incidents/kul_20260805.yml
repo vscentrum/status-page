@@ -1,0 +1,11 @@
+meta_data:
+  title: Tier-2 Mindwell maintenance
+  start_date: 2026-08-05 12:00:00
+  end_date: 2026-08-05 19:00:00
+  affected: tier1_data
+  level: medium
+  planned: yes
+content: >
+  <p>
+  Mindwell needs a short downtime window for maintenance on the CDU. A reservation has been enabled on the Mindwell starting from 2026-08-05 12:00h. The cluster is expected to be released by the end of the day. 
+  </p>
