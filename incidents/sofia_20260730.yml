@@ -1,7 +1,7 @@
 meta_data:
   title: Tier-1 sofia - reduced capacity
   start_date: 2026-08-04 09:00:00
-  end_date: 2026-08-05 17:00:00
+  end_date: 2026-08-04 18:00:00
   affected: tier1_compute
   level: medium
   planned: yes
