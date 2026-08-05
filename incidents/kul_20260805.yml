@@ -7,5 +7,9 @@ meta_data:
   planned: yes
 content: >
   <p>
+  [2026-08-05 17:00] The Mindwell CPU nodes have been released. The GPU nodes will probably be released later today.
+  </p>
+
+  <p>
   Mindwell needs a short downtime window for maintenance on the CDU. A reservation has been enabled on the Mindwell starting from 2026-08-05 12:00h. The cluster is expected to be released by the end of the day. 
   </p>
