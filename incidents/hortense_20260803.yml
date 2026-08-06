@@ -1,11 +1,16 @@
 meta_data:
   title: Tier1 Hortense I/O system upgrade
   start_date: 2026-08-03 08:00:00
-  end_date: 2026-08-07 18:00:00
+  end_date: 2026-08-06 11:05:00
   affected: tier1_compute
   level: high
   planned: yes
 content: >
+  <p>
+  Update 06/08/2026 11:36
+  The planned maintenance to VSC Tier-1 Hortense has been completed.
+  All Tier-1 Hortense login nodes and worker nodes, as well as the web portal, are again available.
+  </p>
   <p>
   A scheduled maintenance will take place between Mon 3 August 2026 08:00 CET and Fri 7 August 2026 18:00 CET on Tier1 Hortense.
   The I/O subsystem will be upgraded.
