@@ -1,0 +1,11 @@
+meta_data:
+  title: Tier-2 Mindwell maintenance
+  start_date: 2026-08-14 09:00:00
+  end_date: 2026-08-14 21:00:00
+  affected: tier2_leuven
+  level: medium
+  planned: yes
+content: >
+  <p>
+  Mindwell needs another short downtime for maintenance on the CDU. For this purpose Mindwell will be reserved on Friday August 14 starting from 9 AM. No new jobs will then be allowed to start on Mindwell until the cluster is released (which will normally happen later that day). 
+  </p>
