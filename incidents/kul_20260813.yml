@@ -1,11 +1,15 @@
 meta_data:
   title: Connection and Slurm problems due to central network issues
   start_date: 2026-08-13 10:29:00
-  end_date:
+  end_date: 2026-08-13 11:30:00
   affected: tier2_leuven
   level: high
   planned: no
 content: >
+  <p>
+  [2026-08-13 11:30] Once the central network got restored, also the Tier-2 HPC issues disappeared.
+  </p>
+
   <p>
   Connecting to the Tier-2 HPC environment as well as operations involving the Slurm database are likely to fail due to central network issues (see https://status.kuleuven.io/posts/01kzx3yj4d53sjkwp8e0zw0ytn?lang=en).
   </p>
