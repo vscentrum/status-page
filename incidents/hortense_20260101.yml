@@ -1,7 +1,7 @@
 meta_data:
   title: Performance issues on Tier1 Hortense
   start_date: 2026-01-01 09:00:00
-  end_date: 
+  end_date: 2026-08-06 12:00:00
   affected: tier1_compute
   level: medium
   planned: no
@@ -11,4 +11,8 @@ content: >
   This might lead to file system lags and delays.
   We are in contact with our vendor ATOS to in-depth research and pinpoint the underlying issue.
   However, identifying (and hopefully resolving) this issue will likely still take considerable time.
+  </p>
+  <p>
+  <b>Update 2026-08-06</b>
+  The I/O system of Hortense was succesfully updated by ATOS.
   </p>
