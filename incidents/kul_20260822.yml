@@ -1,12 +1,16 @@
 meta_data:
   title: KU Leuven Tier-2 whole system reservations
   start_date: 2026-08-22 14:30:00
-  end_date: 2026-08-20 18:00:00
+  end_date: 
   affected: tier2_leuven
   level: high
   planned: no
 content: >
 
+    <p>
+  [2026-08-22 14:40] All nodes have been powered down.
+  </p>
+
   <p>
-  [2026-08-22 10:40] A disruption in power is affecting the datecenter cooling, a reservation has been placed on all Genius, wICE and Mindwell compute nodes. When needed nodes will be turned off until the situation has stabilized.
+  [2026-08-22 14:30] A disruption in power is affecting the datecenter cooling, a reservation has been placed on all Genius, wICE and Mindwell compute nodes. When needed nodes will be turned off.
   </p>
