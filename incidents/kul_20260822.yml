@@ -7,6 +7,10 @@ meta_data:
   planned: no
 content: >
   <p>
+  [2026-08-24 09:00] The cluster will be brought back online with partial capacity. Power delivery has been stabilized, and while some remediation work remains in the data center, it is not expected to impact cluster operations.
+  </p>
+
+  <p>
   [2026-08-22 15:40] The Tier-2 clusters will remain offline for the remainder of the weekend. The power problems are due to a short-circuit issue in the Fluvius transformator-station. Today, there were again voltage issues, with impact on the cooling infrastructure in the datacenter. A temporary repair has been done. But additional works and checks are needed before all compute nodes off the clusters can be powered on. The login nodes and storage are available.
   </p>
 
