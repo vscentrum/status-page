@@ -7,6 +7,10 @@ meta_data:
   planned: no
 content: >
   <p>
+  [2026-08-24 12:00] All nodes were powered on again. Some remediation work remains in the data center, it is not expected to impact cluster operations.
+  </p>
+
+  <p>
   [2026-08-24 09:00] The cluster will be brought back online with partial capacity. Power delivery has been stabilized, and while some remediation work remains in the data center, it is not expected to impact cluster operations.
   </p>
 
