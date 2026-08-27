@@ -1,0 +1,14 @@
+meta_data:
+  title: Short downtime for Slurm upgrade
+  start_date: 2026-09-01 08:30:00
+  end_date: 2026-09-01 09:30:00
+  affected: tier2_leuven
+  level: medium
+  planned: yes
+content: >
+
+  <p>
+  A short downtime is needed to perform an upgrade of the Slurm scheduler.
+  During this time, jobs will be prevented from running on Genius, wICE and
+  Mindwell.
+  </p>
