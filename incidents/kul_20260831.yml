@@ -1,0 +1,15 @@
+meta_data:
+  title: Issues with lustre1
+  start_date: 2026-08-31 12:00:00
+  end_date:
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: |-
+
+  Faulty storage hardware has been replaced and the Lustre filesystem recovery is underway. 
+  Most storage components have recovered successfully, although one disk group still requires further investigation. 
+  We are also investigating crashes on two compute nodes observed during the recovery process.
+
+  The cluster remains under reservation while validation checks are completed. 
+  We will provide another update once the system status becomes clearer. 
