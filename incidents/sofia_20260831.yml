@@ -1,18 +1,23 @@
 meta_data:
   title: Tier-1 sofia - reduced H200 capacity
   start_date: 2026-08-13 17:00:00
-  end_date:
+  end_date: 2026-09-01 08:30:00
   affected: tier1_compute
   level: low
   planned: no
 content: >
   <p>
-  An unexpected power failure has caused the shutdown of 4 zen4_h200 nodes on
+  An network failure has caused the disconnection of 4 zen4_h200 nodes on
   sofia, reducing the GPU capacity of the cluster by 18%.
   Nodes acc019, acc020, acc021 and acc022 are currently unavailable until
   further notice.
-  <p>
   </p>
+  <p>
   We are currently investigating the issue and working on a solution. We will
   update this issue as soon as we have any new information.
+  </p>
+  <p>
+  <b>[Tue 01 Sep 2026 - 08:30:00]</b><br/>
+  The network failure was caused by a failed network switch. The switch has
+  been recovered and connectivity is now restored.
   </p>
