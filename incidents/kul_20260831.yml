@@ -1,11 +1,15 @@
 meta_data:
   title: Issues with Lustre storage
   start_date: 2026-08-31 12:20:00
-  end_date:
+  end_date: 2026-09-01 12:00:00
   affected: tier2_leuven
   level: high
   planned: no
 content: >
+
+  <p>
+  [2026-08-31 21:0] The recovery is completed.
+  </p>
 
   <p>
   [2026-08-31 16:00] The recovery is still ongoing.
