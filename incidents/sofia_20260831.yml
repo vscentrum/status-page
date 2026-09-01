@@ -1,7 +1,7 @@
 meta_data:
-  title: Tier-1 sofia - reduced H200 capacity
+  title: (Fixed on 2026-09-01) - Tier-1 sofia - reduced H200 capacity
   start_date: 2026-08-13 17:00:00
-  end_date: 2026-09-01 08:30:00
+  end_date: 2026-09-02 08:30:00
   affected: tier1_compute
   level: low
   planned: no
