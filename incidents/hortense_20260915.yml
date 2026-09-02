@@ -1,14 +1,17 @@
 meta_data:
-  title: UGent datacenter maintenance, impacting Tier1 Hortense
-  start_date: 2026-09-15 08:00:00
-  end_date: 2026-09-15 18:00:00
+  title: Maintenance to Hortense Tier1 Compute infrastructure
+  start_date: 2026-09-14 20:00:00
+  end_date: 2026-09-18 18:00:00
   affected: tier1_compute
   level: high
   planned: yes
 content: >
   <p>
-  For an electrical inspection of the UGent datacenter, all main power will have to be shut down.
+  Maintenance is scheduled to the Hortense Tier1 Compute infrastructure from Monday 14 (20:00 CET) till Friday 18 September 2026.
+  A power outage to the datacenter hosting the Hortense system is already scheduled that week.
+  We’ll try and take advantage of this to additionally perform maintenance and restoration works.
   </p>
   <p>
-  Tier1 Hortense will be offline, including workernodes, login- and debugnodes and the dedicated Tier1 scratch system.
+  Tier1 Hortense will be offline during this period, including workernodes, login- and debugnodes and the dedicated Tier1 scratch system.
+  If at all possible, we will limit the effective downtime as much as possible.
   </p>
