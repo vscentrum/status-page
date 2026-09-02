@@ -1,0 +1,11 @@
+meta_data:
+  title: Tier-1 Hortense cooling issues
+  start_date: 2026-09-02 08:00:00
+  end_date:
+  affected: tier1_compute
+  level: low
+  planned: no
+content: >
+  <p>
+  Due to a cooling issue, 96 milan nodes have been drained.
+  </p>
