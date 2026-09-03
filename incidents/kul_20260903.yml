@@ -1,12 +1,14 @@
 meta_data:
   title: Tier-1 Data log in issues on Hydra
   start_date: 2026-09-03 00:00:00
-  end_date: 
+  end_date: 2026-09-03 14:30:00 
   affected: tier1_data
   level: medium  
   planned: no
 content: >
   <p>
+  UPDATE: users can use iron, iCommands and the Python API from the login nodes of Hydra again.  
+
   Users may experience issues connecting to Tier-1 Data with iron, iCommands or the Python API from the login nodes of Hydra.  
   We are investigating the issue.  
   Users can still transfer data between Tier-1 Data and Hydra with Globus.  
