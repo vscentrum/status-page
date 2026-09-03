@@ -7,7 +7,7 @@ meta_data:
   planned: no
 content: >
   <p>
-  Users may affect issues connecting to Tier-1 Data with iron, iCommands or the Python API from the login nodes of Hydra.  
+  Users may experience issues connecting to Tier-1 Data with iron, iCommands or the Python API from the login nodes of Hydra.  
   We are investigating the issue.  
   Users can still transfer data between Tier-1 Data and Hydra with Globus.  
   </p>
