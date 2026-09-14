@@ -1,13 +1,13 @@
 meta_data:
   title: Maintenance to Hortense Tier1 Compute infrastructure
-  start_date: 2026-09-14 20:00:00
+  start_date: 2026-09-14 8:00:00
   end_date: 2026-09-18 18:00:00
   affected: tier1_compute
   level: high
   planned: yes
 content: >
   <p>
-  Maintenance is scheduled to the Hortense Tier1 Compute infrastructure from Monday 14 (20:00 CET) till Friday 18 September 2026.
+  Maintenance is scheduled to the Hortense Tier1 Compute infrastructure from Monday 14 (8:00 CET) till Friday 18 September 2026.
   A power outage to the datacenter hosting the Hortense system is already scheduled that week.
   We’ll try and take advantage of this to additionally perform maintenance and restoration works.
   </p>
