@@ -1,15 +1,15 @@
 meta_data:
   title: Planned power outage for Tier1 Cloud infrastructure
-  start_date: 2026-09-14 20:00:00
+  start_date: 2026-09-14 08:00:00
   end_date: 2026-09-15 18:00:00
   affected: tier1_cloud
   level: high
   planned: yes
 content: >
   <p>
-  The Tier1 Cloud infrastructure will be offline from Monday 14 (starting 20:00 CET) till Tuesday 15 September 2026.
+  The Tier1 Cloud infrastructure will be offline from Monday 14 (starting 8:00 CET) till Tuesday 15 September 2026.
   This is to accommodate a planned power outage to the datacenter hosting the Tier1 Cloud infrastructure.
   </p>
-  We will also have to shut down all non-UPS flavour VMs, starting Monday 14/09 at 20:00 CET.
+  We will also have to shut down all non-UPS flavour VMs, starting Monday 14/09 at 8:00 CET.
   As soon as the power is back up, we’ll restart the VMs affected.
   </p>
