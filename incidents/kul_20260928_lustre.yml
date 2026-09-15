@@ -1,0 +1,35 @@
+meta_data:
+  title: Downtime for Lustre maintenance
+  start_date: 2026-09-28 09:00:00
+  end_date: 2026-09-28 17:00:00
+  affected: tier2_leuven
+  level: high
+  planned: yes
+content: >
+
+  <p>
+  Downtime is needed to perform maintenance on the Lustre filesystem.
+  Lustre scratch and project storage will then be unavailable on all
+  compute and login nodes.
+  </p>
+
+  <p>
+  For this purpose, the Genius and wICE clusters will be reserved for a full
+  day, though we hope to release the reservation earlier if possible.
+  </p>
+
+  <p>
+  The Mindwell cluster will remain available during this maintenance,
+  but Mindwell jobs will only get to start if you select the `no-lustre`
+  reservation for the job. Please make sure to only do this for jobs
+  which don't need to access the Lustre filesystem (otherwise these jobs will
+  hang or crash while Lustre is unavailable).
+  </p>
+
+  <p>
+  You can select the `no-lustre` reservation by using the
+  `--reservation=no-lustre` option for sbatch or srun. If needed, you can also
+  let previously submitted jobs use the reservation by executing
+  `scontrol -M mindwell update job <JobID> reservation=no-lustre`
+  for each job.
+  </p>

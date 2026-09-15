@@ -1,0 +1,21 @@
+meta_data:
+  title: Downtime for Genius GPU migration
+  start_date: 2026-09-28 09:00:00
+  end_date: 2026-09-30 17:00:00
+  affected: tier2_leuven
+  level: medium
+  planned: yes
+content: >
+
+  <p>
+  For a more efficient organization of the data center, the Genius GPU nodes
+  need to be migrated to wICE. For this we foresee a three-day downtime
+  during which the Genius GPU nodes will be unavailable.
+  </p>
+
+  <p>
+  After the downtime, the Genius GPU nodes will be available on wICE.
+  You will then need to submit your P100 and V100 GPU jobs to wICE instead of
+  Genius. Genius jobs that are still pending when the maintenance starts
+  will be modified to run on wICE.
+  </p>
