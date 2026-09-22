@@ -1,0 +1,23 @@
+meta_data:
+  title: Tier-1 sofia - Roll-out of core system updates
+  start_date: 2026-09-21 10:00:00
+  end_date: 2026-09-25 17:00:00
+  affected: tier1_compute
+  level: low
+  planned: yes
+content: >
+  <p>
+  The operating system of sofia is receiving a regular update with latest
+  security and bug fixes.
+  </p>
+  <p>
+  We are gradually applying the update on all compute nodes and login nodes
+  without downtime. Users might experience temporary lower capacity on compute
+  partitions as they are being upgraded, as well as brief unavailability of
+  some login nodes.
+  </p>
+  <p>
+  This update includes the following core components: Linux kernel version
+  5.14.0-687.42.1.el9_8, GPFS storage driver version 5.2.3.9, DOCA-OFED network
+  driver version 3.5.0 and NVIDIA GPU driver version 610.57.04.
+  </p>
