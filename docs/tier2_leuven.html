@@ -24,7 +24,7 @@
         
         <h2>Planned maintenance</h2>
         
-        <h3><a id="incident_0202">Short downtime for Slurm upgrade</a></h3>
+        <h3><a id="incident_0081">Short downtime for Slurm upgrade</a></h3>
 
 <table>
     <tr>
@@ -37,7 +37,7 @@
     </tr>
     <tr>
         <td><span class="td_name">Updated:</span></td>
-        <td>2026-09-23 03:50:09</td>
+        <td>2026-09-11 14:16:20</td>
     </tr>
     <tr>
         <td><span class="td_name">Level:</span></td>
@@ -48,7 +48,7 @@
 <p> A short downtime (normally about 1 hour) is needed to perform an upgrade of the Slurm scheduler. During this time, jobs will be prevented from running on Genius, wICE and Mindwell. </p>
 
 
-<h3><a id="incident_0176">Downtime for Lustre maintenance</a></h3>
+<h3><a id="incident_0119">Downtime for Lustre maintenance</a></h3>
 
 <table>
     <tr>
@@ -61,7 +61,7 @@
     </tr>
     <tr>
         <td><span class="td_name">Updated:</span></td>
-        <td>2026-09-23 03:50:09</td>
+        <td>2026-09-11 14:16:20</td>
     </tr>
     <tr>
         <td><span class="td_name">Level:</span></td>
@@ -75,7 +75,7 @@
 <p> You can select the `no-lustre` reservation by using the `--reservation=no-lustre` option for sbatch or srun. If needed, you can also let previously submitted jobs use the reservation by executing `scontrol -M mindwell update job <JobID> reservation=no-lustre` for each job. </p>
 
 
-<h3><a id="incident_0078">Downtime for Genius GPU migration</a></h3>
+<h3><a id="incident_0076">Downtime for Genius GPU migration</a></h3>
 
 <table>
     <tr>
@@ -88,7 +88,7 @@
     </tr>
     <tr>
         <td><span class="td_name">Updated:</span></td>
-        <td>2026-09-23 03:50:09</td>
+        <td>2026-09-23 13:39:50</td>
     </tr>
     <tr>
         <td><span class="td_name">Level:</span></td>
@@ -96,8 +96,9 @@
     </tr>
 </table>
 
-<p> For a more efficient organization of the data center, the Genius GPU nodes need to be migrated to wICE. For this we foresee a three-day downtime during which the Genius GPU nodes will be unavailable. </p>
+<p> For a more efficient organization of the data center, the Genius GPU nodes need to be migrated to wICE. For this we foresee a three-day downtime during which these P100 and V100 GPU nodes will be unavailable. </p>
 <p> After the downtime, the Genius GPU nodes will be available on wICE. You will then need to submit your P100 and V100 GPU jobs to wICE instead of Genius. Genius jobs that are still pending when the maintenance starts will be modified to run on wICE. </p>
+<p> After the downtime, wICE will furthermore replace Genius as the default Slurm cluster on the login nodes. This mainly implies that commands like `scontrol`, `squeue` and `scancel` will involve the wICE cluster if the `-M/--clusters` option is not used. </p>
 
         
         <hr/>
