@@ -1,0 +1,13 @@
+meta_data:
+  title: Tier-2 cluster is unavailable 
+  start_date: 2026-09-22 09:00:00
+  end_date:
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: >
+
+  Access to the system has been temporarily suspended due to urgent maintenance activities. 
+  All connections to the cluster have been closed and no new jobs will start during this period.
+  The system will remain unavailable until the maintenance work has been completed. At this time, no estimated completion time is available.
+  Please monitor the status page for further updates. 
