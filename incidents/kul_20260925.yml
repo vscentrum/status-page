@@ -1,13 +1,17 @@
 meta_data:
-  title: Tier-2 ondemand unavailable 
+  title: Tier-2 ondemand unavailable (fixed) 
   start_date: 2026-09-25 11:00:00
-  end_date:  
+  end_date: 2026-09-25 13:00:00
   affected: tier2_leuven
   level: medium  
   planned: no
 content: >
-  <p>
 
+  <p>
+  [2026-09-25 12:25] Problem is resolved. Connections to ondemand should work again.
+  </p>
+
+  <p>
   Users experiencing issues login in to Ondemand.  
   We are investigating the issue.  
   Access via ssh terminals is working.  
