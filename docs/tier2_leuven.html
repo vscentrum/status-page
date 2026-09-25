@@ -33,7 +33,7 @@
     </tr>
     <tr>
         <td><span class="td_name">Updated:</span></td>
-        <td>2026-09-25 11:40:18</td>
+        <td>2026-09-25 11:45:25</td>
     </tr>
     <tr>
         <td><span class="td_name">Level:</span></td>
@@ -111,7 +111,7 @@ Users experiencing issues login in to Ondemand.   We are investigating the issue
     </tr>
     <tr>
         <td><span class="td_name">Updated:</span></td>
-        <td>2026-09-11 14:16:20</td>
+        <td>2026-09-23 13:39:50</td>
     </tr>
     <tr>
         <td><span class="td_name">Level:</span></td>
@@ -119,8 +119,9 @@ Users experiencing issues login in to Ondemand.   We are investigating the issue
     </tr>
 </table>
 
-<p> For a more efficient organization of the data center, the Genius GPU nodes need to be migrated to wICE. For this we foresee a three-day downtime during which the Genius GPU nodes will be unavailable. </p>
+<p> For a more efficient organization of the data center, the Genius GPU nodes need to be migrated to wICE. For this we foresee a three-day downtime during which these P100 and V100 GPU nodes will be unavailable. </p>
 <p> After the downtime, the Genius GPU nodes will be available on wICE. You will then need to submit your P100 and V100 GPU jobs to wICE instead of Genius. Genius jobs that are still pending when the maintenance starts will be modified to run on wICE. </p>
+<p> After the downtime, wICE will furthermore replace Genius as the default Slurm cluster on the login nodes. This mainly implies that commands like `scontrol`, `squeue` and `scancel` will involve the wICE cluster if the `-M/--clusters` option is not used. </p>
 
         
         <hr/>
