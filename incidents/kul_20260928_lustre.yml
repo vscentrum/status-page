@@ -1,11 +1,16 @@
 meta_data:
   title: Downtime for Lustre maintenance
   start_date: 2026-09-28 09:00:00
-  end_date: 2026-09-28 17:00:00
+  end_date: 2026-09-28 14:00:00
   affected: tier2_leuven
   level: high
   planned: yes
 content: >
+  <p>
+  [Update 2026-09-28 13:30] The Lustre maintenance has been completed and
+  both wICE and Mindwell are fully available again. For the Genius cluster,
+  see https://status.vscentrum.be/tier2_leuven.html#incident_0079
+  </p>
 
   <p>
   Downtime is needed to perform maintenance on the Lustre filesystem.
