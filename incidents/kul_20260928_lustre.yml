@@ -28,7 +28,7 @@ content: >
 
   <p>
   [Update 2026-09-28 09:40] Please email hpcinfo@kuleuven.be with subject
-  "Add <your VSC account> to the no-lustre reservation" to get access to this
+  "Add &lt;your VSC account&gt; to the no-lustre reservation" to get access to this
   reservation. Due to limitations in Slurm, we cannot include everyone by
   default.
   </p>
