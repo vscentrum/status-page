@@ -24,6 +24,11 @@ content: >
   reservation for the job. Please make sure to only do this for jobs
   which don't need to access the Lustre filesystem (otherwise these jobs will
   hang or crash while Lustre is unavailable).
+
+  [Update 2026-09-28 09:40] Please email hpcinfo@kuleuven.be with subject
+  "Add <your VSC account> to the no-lustre reservation" to get access to this
+  reservation. Due to limitations in Slurm, we cannot include everyone by
+  default.
   </p>
 
   <p>

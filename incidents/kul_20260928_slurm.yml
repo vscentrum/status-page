@@ -1,11 +1,20 @@
 meta_data:
   title: Short downtime for Slurm upgrade
   start_date: 2026-09-28 09:00:00
-  end_date: 2026-09-28 11:00:00
+  end_date: 2026-09-28 09:40:00
   affected: tier2_leuven
   level: high
   planned: yes
 content: >
+
+  <p>
+  [Update 2026-09-28 09:40] The Slurm upgrade has now been carried out and
+  the Mindwell cluster can therefore already be used for jobs that don't
+  require Lustre scratch or project storage (see
+  https://status.vscentrum.be/tier2_leuven.html#incident_0177).
+  For wICE, see the same status message. For Genius, see
+  https://status.vscentrum.be/tier2_leuven.html#incident_0079
+  </p>
 
   <p>
   A short downtime (normally about 1 hour) is needed to perform an upgrade of
