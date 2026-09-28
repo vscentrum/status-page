@@ -1,0 +1,11 @@
+meta_data:
+  title: Tier-1 Hortense cooling issues
+  start_date: 2026-09-28 13:37:00
+  end_date:
+  affected: tier1_compute
+  level: low
+  planned: no
+content: >
+  <p>
+  The cooling issue in rack 7 has re-appeared. As a result, 96 milan nodes have been drained.
+  </p>
