@@ -1,11 +1,17 @@
 meta_data:
   title: Downtime for Genius GPU migration
   start_date: 2026-09-28 09:00:00
-  end_date: 2026-09-30 17:00:00
+  end_date: 2026-10-02 17:00:00
   affected: tier2_leuven
   level: medium
   planned: yes
 content: >
+
+  <p>
+  [Update 2026-09-30 16:00] We expect that the migration will take one
+  or two days longer than what was originally planned (till October 1 or 2,
+  instead of September 30).
+  </p>
 
   <p>
   For a more efficient organization of the data center, the Genius GPU nodes
