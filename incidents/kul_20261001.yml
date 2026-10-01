@@ -1,0 +1,13 @@
+meta_data:
+  title: GPU and interactive nodes unavailable
+  start_date: 2026-10-01 13:00:00
+  end_date:
+  affected: tier2_leuven
+  level: medium
+  planned: no
+content: >
+  <p>
+  All compute nodes containing GPU devices have been reserved to perform
+  urgent maintenance. No new jobs will therefore be allowed to start on GPU
+  or interactive partitions during this period.
+  </p>
