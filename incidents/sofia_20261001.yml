@@ -1,0 +1,17 @@
+meta_data:
+  title: Tier-1 sofia - GPU nodes unavailable
+  start_date: 2026-10-01 12:00:00
+  end_date:
+  affected: tier1_compute
+  level: medium
+  planned: no
+content: >
+  <p>
+  All Tier-1 <strong>sofia</strong> GPU nodes (<strong>zen4_h200</strong> and <strong>zen5_vis</strong> partitions) have been drained for urgent maintenance.
+  No new jobs will start on these partitions until further notice.
+  </p>
+  <p>
+  The partitions will remain unavailable until maintenance is complete.
+  There is currently no estimated completion time.
+  Please monitor the status page for further updates.
+  </p>
