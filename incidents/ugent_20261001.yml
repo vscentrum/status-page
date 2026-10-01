@@ -1,0 +1,17 @@
+meta_data:
+  title: HPC-UGent Tier-2 GPU clusters unavailable
+  start_date: 2026-10-01 12:11:00
+  end_date:
+  affected: tier2_gent
+  level: medium
+  planned: no
+content: >
+  <p>
+  All HPC-UGent Tier-2 GPU and debug clusters have been drained to perform urgent maintenance.
+  No new jobs will start on clusters joltik, accelgor, litleo and donphan during this period.
+  </p>
+  <p>
+  These clusters will remain unavailable until the maintenance work has been completed.
+  At this time, no estimated completion time is available.
+  Please monitor the status page for further updates.
+  </p>
