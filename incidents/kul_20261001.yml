@@ -1,11 +1,16 @@
 meta_data:
-  title: GPU and interactive nodes unavailable
+  title: Reduced availability of GPU and interactive nodes
   start_date: 2026-10-01 13:00:00
   end_date:
   affected: tier2_leuven
   level: medium
   planned: no
 content: >
+  <p>
+  [Update 2026-10-02 15:50] More nodes have been serviced and released,
+  now also including wICE H100 and Mindwell B200 and interactive nodes.
+  </p>
+
   <p>
   [Update 2026-10-02 14:05] A first set of wICE A100 and interactive nodes
   have been patched and brought back in production. Other nodes will
