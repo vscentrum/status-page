@@ -1,11 +1,14 @@
 meta_data:
   title: Tier-1 Hortense GPU nodes unavailable
   start_date: 2026-10-01 12:11:00
-  end_date:
+  end_date: 2026-10-04 12:09:00
   affected: tier1_compute
   level: medium
   planned: no
 content: >
+  <p>
+  Update: The urgent maintenance to the GPU and debug nodes has been completed.
+  </p>
   <p>
   All Tier-1 Hortense GPU and debug nodes have been drained to perform urgent maintenance.
   No new jobs will start on the gpu_rome_a100_rhel9 and debug_milan_rhel9 partitions during this period.
