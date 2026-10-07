@@ -1,0 +1,29 @@
+meta_data:
+  title: Tier-1 sofia - Data center planned maintenance
+  start_date: 2026-10-28 08:00:00
+  end_date: 2026-10-28 18:00:00
+  affected: tier1_compute
+  level: high
+  planned: yes
+content: >
+  <p>
+  The data center hosting Tier-1 <b>sofia</b> will carry out power maintenance
+  tests on October 28th. This exercise serves to test the failover systems of
+  the data center in case of a total power cut and for <b>sofia</b>
+  implies a full shut-down of the cluster for the duration of the test.
+  </p>
+  <p>
+  The following services will not be available during the shutdown:
+    <ul>
+      <li>OnDemand web portal at https://portal.sofia.vub.be/</li>
+      <li>Terminal interface through login nodes</li>
+      <li>Globus endpoint for sofia</li>
+    </ul>
+  </p>
+  <p>
+  We will use this opportunity to carry out system updates on <b>sofia</b> and
+  other maintenace tasks that cannot easily be done with the cluster online. A
+  reservation is in place to ensure that no jobs will be running at the time of
+  shutdown. Queued jobs will stay in the queue and will be automatically
+  launched as soon as the cluster is back online.
+  </p>
