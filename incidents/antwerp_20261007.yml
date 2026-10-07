@@ -1,0 +1,21 @@
+meta_data:
+  title: CalcUA Tier-2 Slurm service unavailable
+  start_date: 2026-10-07 09:00:00
+  end_date: 
+  affected: tier2_antwerp
+  level: high
+  planned: no
+content: >
+
+  <p>
+  We are currently experiencing an issue with the Slurm cluster.<br/>
+  Slurm services are currently unavailable, which means that jobs cannot be 
+  submitted or queried at this time.
+  </p>
+
+  <p>
+  We are investigating it together with our vendor.<br/>
+  We will provide an update when more information is available.
+  </p>
+
+  <p>Our apologies for the inconvenience.</p>
