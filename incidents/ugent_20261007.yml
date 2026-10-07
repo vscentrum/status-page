@@ -2,10 +2,15 @@ meta_data:
   title: Power outage at HPC-UGent datacenter
   start_date: 2026-10-07 20:55:00
   end_date: 
-  affected: tier2_gent, tier1_compute
+  affected: tier2_gent, tier1_compute, tier1_cloud
   level: high
   planned: no
 content: >
+  <p>
+  <strong>Wed 7 Oct 2026, 21:40 CEST</strong></br>
+  There may be some minimal impact on Tier-1 Cloud as well, some virtual machines may be unavailable.</br>
+  The Lustre shared scratch filesystem on Tier-1 Hortense is unstable currently, as a result of network switches being unavailable.</br>
+  </p>
   <p>
   <strong>Wed 7 Oct 2026, 20:55 CEST</strong></br>
   A campus wide power outage has occurred at Ghent University campus Sterre,
