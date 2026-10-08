@@ -8,7 +8,7 @@ meta_data:
 content: >
   <p>
   <strong>Thu 8 Oct 2026, 13:30 CEST</strong></br>
-  Tier-1 Hortense is fully operational again.</br>
+  Tier-1 Hortense is fully operational again, except for one rack of nodes which is still down due to cooling issues (not related to power outage).</br>
   If you notice any problems that could be related to the power outage, please contact <a href="mailto:compute@vscentrum.be">compute@vscentrum.be</a>.
   </p>
   <p>
