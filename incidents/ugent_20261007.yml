@@ -1,11 +1,16 @@
 meta_data:
-  title: Power outage at HPC-UGent datacenter
+  title: Power outage at HPC-UGent datacenter (RESOLVED)
   start_date: 2026-10-07 20:55:00
-  end_date: 
+  end_date: 2026-10-08 23:59:00
   affected: tier2_gent, tier1_compute, tier1_cloud
   level: high
   planned: no
 content: >
+  <p>
+  <strong>Thu 8 Oct 2026, 13:30 CEST</strong></br>
+  Tier-1 Hortense is fully operational again.</br>
+  If you notice any problems that could be related to the power outage, please contact <a href="mailto:compute@vscentrum.be">compute@vscentrum.be</a>.
+  </p>
   <p>
   <strong>Thu 8 Oct 2026, 11:15 CEST</strong></br>
   Fallout of power outage for Tier-1 Cloud has been resolved.</br>
