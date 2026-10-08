@@ -7,6 +7,11 @@ meta_data:
   planned: no
 content: >
   <p>
+  <strong>Thu 8 Oct 2026, 10:00 CEST</strong></br>
+  HPC-UGent Tier-2 clusters are operational again since 09:00 CEST.</br>
+  We are working on restoring remaining infrastructure (Tier-1 Hortense, Tier-1 Cloud).
+  </p>
+  <p>
   <strong>Thu 8 Oct 2026, 07:30 CEST</strong></br>
   Power outage was resolved last night (~22:25 CEST), but the electrical power feed to the HPC infrastructure
   could not be restored yet because this requires signfiicant care to be taken to do it safely.</br>
