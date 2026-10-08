@@ -7,6 +7,12 @@ meta_data:
   planned: no
 content: >
   <p>
+  <strong>Thu 8 Oct 2026, 07:30 CEST</strong></br>
+  Power outage was resolved last night (~22:25 CEST), but the electrical power feed to the HPC infrastructure
+  could not be restored yet because this requires signfiicant care to be taken to do it safely.</br>
+  Technicians are currently looking into restoring the power feed ASAP.</br>
+  </p>
+  <p>
   <strong>Wed 7 Oct 2026, 21:40 CEST</strong></br>
   There may be some minimal impact on Tier-1 Cloud as well, some virtual machines may be unavailable.</br>
   The Lustre shared scratch filesystem on Tier-1 Hortense is unstable currently, as a result of network switches being unavailable.</br>
