@@ -1,0 +1,15 @@
+meta_data:
+  title: Tier-1 Data unavailable
+  start_date: 2026-10-13 12:00:00
+  end_date: 2026-10-13 13:10:00 
+  affected: tier1_data
+  level: high
+  planned: no
+content: >
+  <p>
+  There was an unexpected downtime of the Tier-1 Data service between around 12:30 and 13:10 today.
+  Services have been restarted and everything should be working as expected.
+
+  If any of your processes were affected by this downtime, and you require assistance, don't 
+  hestitate to contact the Tier-1 Data support team.  
+  </p>
