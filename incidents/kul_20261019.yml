@@ -1,0 +1,13 @@
+meta_data:
+  title: Tier-2 clusters unavailable
+  start_date: 2026-10-19 15:45:00
+  end_date: 
+  affected: tier2_leuven
+  level: high
+  planned: no
+content: >
+  <p>
+  Login node access has been closed and all compute nodes have been reserved
+  in order to perform urgent maintenance. No new jobs will therefore be allowed
+  to start until further notice.
+  </p>
