@@ -1,0 +1,21 @@
+catmeta_data:
+  title: CalcUA Tier-2 access closed
+  start_date: 2026-10-19 16:45:00
+  end_date: 
+  affected: tier2_antwerp
+  level: high
+  planned: no
+content: >
+
+  <p>
+  Due to a new critical vulnerability recently disclosed, access to the
+  login nodes has been closed. All compute nodes have been reserved
+  in order to perform urgent mantenance.
+  </p>
+  
+  <p>
+  No new jobs will be allowed to start until further notice.<br/>
+  Users can still access their data on the cluster through Globus.
+  </p>
+
+  <p>Our apologies for the inconvenience.</p>
