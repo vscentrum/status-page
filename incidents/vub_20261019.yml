@@ -1,13 +1,27 @@
 meta_data:
   title: Tier-2 + Tier-1 sofia - access closed (urgent security updates)
   start_date: 2026-10-19 17:00:00
-  end_date: 
+  end_date: 2026-10-21 17:00:00
   affected: tier2_brussels, tier1_compute
   level: high
   planned: no
 content: >
   <p>
-  <strong>Mon 19 Oct 2026, 17:00 CEST</strong></br>
+  <b>[Tue 20 Oct 2026, 17:00:00]</b><br/>
+  We are in the process of deploying the required system updates to fix the
+  security issues that caused this emergency lockdown.
+  </p>
+  <p>
+  Hydra and Anansi are expected to be partially online on Wednesday October
+  21st at 10:00 CEST. Login nodes and the OnDemand portal will be accessible to
+  all users. Compute nodes on Hydra will be fully online by the end of the day
+  at 17:00 CEST.
+  </p>
+  <p>
+  Sofia is expected to be fully online by Wednesday October 21st at 12:00 CEST
+  </p>
+  <p>
+  <b>[Mon 19 Oct 2026, 17:00 CEST]</b></br>
   Urgent maintenance needs to be performed because of a recently disclosed security bug in the Linux kernel.</br>
   We will do what we can to restore access ASAP.</br>
   </p>
