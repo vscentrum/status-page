@@ -7,7 +7,12 @@ meta_data:
   planned: no
 content: >
   <p>
-  Login node access has been closed and all compute nodes have been reserved
+  [Update 2026-10-20 13:00:00] After addressing the issue, the compute nodes will be released incrementally,
+  starting first with the Mindwell `batch_graniterapids` nodes.
+  </p>
+
+  <p>
+  [2026-10-19 15:45:00] Login node access has been closed and all compute nodes have been reserved
   in order to perform urgent maintenance. No new jobs will therefore be allowed
   to start until further notice.
   </p>
