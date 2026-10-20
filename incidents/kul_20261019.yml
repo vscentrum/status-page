@@ -7,6 +7,14 @@ meta_data:
   planned: no
 content: >
   <p>
+  [Update 2026-10-20 15:10:00] The wICE Icelake nodes are released
+  </p>
+
+  <p>
+  [Update 2026-10-20 13:53:00] The Mindwell GPU B200 nodes and wICE GPU A100 and P100 nodes are released.
+  </p>
+
+  <p>
   [Update 2026-10-20 13:00:00] After addressing the issue, the compute nodes will be released incrementally,
   starting first with the Mindwell `batch_graniterapids` nodes.
   </p>
