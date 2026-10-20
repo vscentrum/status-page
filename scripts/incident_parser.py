@@ -8,18 +8,42 @@ import sys
 import yaml
 
 
+def format_git_date(date_str):
+    return datetime.datetime.strptime(date_str, '%Y-%m-%d %H:%M:%S %z') \
+            .strftime('%Y-%m-%d %H:%M:%S')
+
+
 def get_modification_date(file_name):
-    process = subprocess.run(['git', '--no-pager', 'log', '--format=%ci', file_name],
+    process = subprocess.run(['git', '--no-pager', 'log', '-1', '--format=%ci', '--', file_name],
                              check=True, capture_output=True, text=True)
-    date_str = str(process.stdout)
+    date_str = str(process.stdout).strip()
     if date_str:
-        date_strs = date_str.split('\n')
-        return datetime.datetime.strptime(date_strs[0],
-                                          '%Y-%m-%d %H:%M:%S %z') \
-                .strftime('%Y-%m-%d %H:%M:%S')
+        return format_git_date(date_str)
     else:
         mtime = pathlib.Path(file_name).stat().st_mtime
-        return datetime.datetime.fromtimestamp(mtime).strftime('%Y-%m-%d %H:%M:S')
+        return datetime.datetime.fromtimestamp(mtime).strftime('%Y-%m-%d %H:%M:%S')
+
+
+def get_modification_dates(dir_name):
+    '''Return the last commit date of all files in a directory, using a
+    single pass over the history rather than one git log per file.'''
+    # paths are listed relative to the repository root (--relative is not
+    # applied to merge commits), so strip the directory's prefix
+    process = subprocess.run(['git', 'rev-parse', '--show-prefix'],
+                             cwd=dir_name, check=True, capture_output=True, text=True)
+    prefix = process.stdout.strip()
+    # --cc also lists files changed by merge commits, as git log <file> does
+    process = subprocess.run(['git', '--no-pager', 'log', '--format=date:%ci',
+                              '--name-only', '--cc', '--', '.'],
+                             cwd=dir_name, check=True, capture_output=True, text=True)
+    dates = {}
+    date_str = None
+    for line in process.stdout.splitlines():
+        if line.startswith('date:'):
+            date_str = line[len('date:'):]
+        elif line.startswith(prefix):
+            dates.setdefault(line[len(prefix):], format_git_date(date_str))
+    return dates
 
 
 class IncidentParser:
@@ -42,10 +66,11 @@ class IncidentParser:
         self._incidents['id'] = []
         self._incidents['content'] = []
 
-    def parse_file(self, incident_file_name):
+    def parse_file(self, incident_file_name, last_updated=None):
         if self._is_verbose:
             print(f"parsing file '{incident_file_name}'", file=sys.stderr)
-        last_updated = get_modification_date(incident_file_name)
+        if last_updated is None:
+            last_updated = get_modification_date(incident_file_name)
         with open(incident_file_name, 'r') as file:
             incident = yaml.load(file, Loader=yaml.FullLoader)
             if self._is_verbose:
@@ -69,14 +94,17 @@ class IncidentParser:
             print(f"parsing directory '{incident_dir_name}'", file=sys.stderr)
         incident_dir = pathlib.Path(incident_dir_name)
         all_succeed = True
-        for incident_file in incident_dir.glob('*'):
+        modification_dates = get_modification_dates(incident_dir)
+        # sort so incident ids do not depend on file system order
+        for incident_file in sorted(incident_dir.glob('*')):
             # ignore non-files and hidden files
             if (not incident_file.is_file() or
                 incident_file.stem.startswith('.')):
                 continue
             if incident_file.suffix == '.yml':
                 try:
-                    self.parse_file(incident_file)
+                    self.parse_file(incident_file,
+                                    modification_dates.get(incident_file.name))
                 except ValueError as error:
                     all_succeed = False
                     print(f'### error: {error}', file=sys.stderr)
