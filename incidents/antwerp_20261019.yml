@@ -8,14 +8,23 @@ meta_data:
 content: >
 
   <p>
-  Due to a new critical vulnerability recently disclosed, access to the
-  login nodes has been closed. All compute nodes have been reserved
-  in order to perform urgent mantenance.
+  Due to a recently disclosed critical vulnerability, access to the
+  CalcUA clusters has been closed.<br/>
+  Access to both the login and portal nodes has been disabled.
   </p>
-  
+ 
   <p>
   No new jobs will be allowed to start until further notice.<br/>
   Users can still access their data on the cluster through Globus.
   </p>
 
+  <p>
+  Running jobs are not affected, but new jobs will only start
+  after the necessary patches have been applied.<br/>
+  Users can still access their data on the cluster through Globus.
+  </p>
+
+  <p>We will do what we can to restore access as soon as possible. </p>
+
   <p>Our apologies for the inconvenience.</p>
+
