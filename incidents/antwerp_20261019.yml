@@ -1,13 +1,22 @@
 meta_data:
   title: CalcUA Tier-2 access closed
   start_date: 2026-10-19 16:45:00
-  end_date: 
+  end_date: 2026-01-21 03:30:00 
   affected: tier2_antwerp
   level: high
   planned: no
 content: >
 
   <p>
+  <b>[Update 2026-10-21 03:30:00]</b> 
+  Access to the login and portal nodes has been restored.<br/>
+  The majority of the compute nodes have been released again.
+  The remaining nodes will also be released later today.<br/>
+  Running jobs is possible again.
+  </p> 
+
+  <p>
+  [2026-10-19 16:45:00] 
   Due to a recently disclosed critical vulnerability, access to the
   CalcUA clusters has been closed.<br/>
   Access to both the login and portal nodes has been disabled.
