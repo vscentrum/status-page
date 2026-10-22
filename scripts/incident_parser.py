@@ -1,5 +1,6 @@
 import copy
 import datetime
+import zoneinfo
 import pandas as pd
 import pathlib
 import re
@@ -10,6 +11,7 @@ import yaml
 
 def format_git_date(date_str):
     return datetime.datetime.strptime(date_str, '%Y-%m-%d %H:%M:%S %z') \
+            .astimezone(zoneinfo.ZoneInfo('Europe/Brussels')) \
             .strftime('%Y-%m-%d %H:%M:%S')
 
 
