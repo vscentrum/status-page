@@ -86,8 +86,10 @@ class IncidentParser:
                         self._incidents[field].append(incident['meta_data'].get(field))
                 self._incidents['updated'].append(last_updated)
                 self._incidents['content'].append(incident['content'])
-                incident_nr = len(self._incidents['content'])
-                self._incidents['id'].append(f'incident_{incident_nr:04d}')
+                # derive the id from the file name so that links remain valid
+                # when other incident files are added or removed
+                incident_id = pathlib.Path(incident_file_name).stem
+                self._incidents['id'].append(f'incident_{incident_id}')
 
     def parse(self, incident_dir_name):
         if self._is_verbose:
@@ -95,7 +97,7 @@ class IncidentParser:
         incident_dir = pathlib.Path(incident_dir_name)
         all_succeed = True
         modification_dates = get_modification_dates(incident_dir)
-        # sort so incident ids do not depend on file system order
+        # sort so output does not depend on file system order
         for incident_file in sorted(incident_dir.glob('*')):
             # ignore non-files and hidden files
             if (not incident_file.is_file() or
