@@ -29,6 +29,8 @@ def get_modification_date(file_name):
 def get_modification_dates(dir_name):
     '''Return the last commit date of all files in a directory, using a
     single pass over the history rather than one git log per file.'''
+    if not pathlib.Path(dir_name).is_dir():                                                                             
+        raise FileNotFoundError(f"The provided incident directory {dir_name} does not exist")
     assert pathlib.Path(dir_name).exists(), \
         f"The provided incident directory {dir_name} does not exist"
     # paths are listed relative to the repository root (--relative is not
