@@ -1,14 +1,14 @@
 meta_data:
   title: Tier-2 clusters unavailable
   start_date: 2026-10-19 15:45:00
-  end_date: 
+  end_date: 2026-10-20 19:00:00 
   affected: tier2_leuven
   level: high
   planned: no
 content: >
   <p>
   [Update 2026-10-20 19:00:00] Our OS is upgraded, and the majority of Tier-2 nodes are released after being patched.
-  wICE and Mindwell back to operation.
+  wICE and Mindwell are back to operation.
   </p>
 
   <p>
