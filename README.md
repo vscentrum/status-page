@@ -82,6 +82,11 @@ it is a current event.
 Incident naming scheme:
 To keep it a bit organised, start the incident filename with the site that reported the incident followed by the date of report and in case of multiple incidents on a day, add an index (eg. kul_20221021_01)
 
+The filename also determines the incident's link anchor on the site (e.g.,
+`kul_20221021_01.yml` becomes `#incident_kul_20221021_01`).  Use only letters,
+digits, `_` and `-`, and do not rename an incident file once it has been
+published, since that breaks existing links to it.
+
 ## Development
 
 The `config/dev_config.yml` configuration file is intended for development
