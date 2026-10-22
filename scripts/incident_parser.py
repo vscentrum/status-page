@@ -81,7 +81,10 @@ class IncidentParser:
             incident = yaml.load(file, Loader=yaml.FullLoader)
             if self._is_verbose:
                 print(f"validating file '{incident_file_name}'", file=sys.stderr)
-            self.validate_incident(incident_file_name, incident)
+            # derive the id from the file name so that links remain valid
+            # when other incident files are added or removed
+            incident_id = pathlib.Path(incident_file_name).stem
+            self.validate_incident(incident_file_name, incident, incident_id)
             # since incidents can have an impact on multiple domains, they are
             # added to the list of incidents for each domain separately.
             for domain in re.split(self._sep, incident['meta_data']['affected']):
@@ -92,9 +95,6 @@ class IncidentParser:
                         self._incidents[field].append(incident['meta_data'].get(field))
                 self._incidents['updated'].append(last_updated)
                 self._incidents['content'].append(incident['content'])
-                # derive the id from the file name so that links remain valid
-                # when other incident files are added or removed
-                incident_id = pathlib.Path(incident_file_name).stem
                 self._incidents['id'].append(f'incident_{incident_id}')
 
     def parse(self, incident_dir_name):
@@ -131,7 +131,7 @@ class IncidentParser:
     def incidents(self):
         return pd.DataFrame(self._incidents)
     
-    def validate_incident(self, incident_file_name, incident):
+    def validate_incident(self, incident_file_name, incident, incident_id):
         if 'meta_data' not in incident:
             raise ValueError(f'{incident_file_name}: no meta_data')
         meta_data = incident['meta_data']
@@ -152,6 +152,11 @@ class IncidentParser:
             raise ValueError(f'{incident_file_name} planned is not boolean')
         if 'content' not in incident:
             raise ValueError(f'{incident_file_name}: no content')
+        # Make sure a valid anchor (the incident_id) was derived
+        if not re.match("^[A-Za-z0-9_-]*$", incident_id):
+            raise ValueError(f'{incident_file_name}: the derived incident_id '
+                             f'{incident_id} should only contain letters, '
+                             'digits, _ and -')
 
     @property
     def affected(self):
