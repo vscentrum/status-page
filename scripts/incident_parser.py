@@ -27,6 +27,8 @@ def get_modification_date(file_name):
 def get_modification_dates(dir_name):
     '''Return the last commit date of all files in a directory, using a
     single pass over the history rather than one git log per file.'''
+    assert pathlib.Path(dir_name).exists(), \
+        f"The provided incident directory {dir_name} does not exist"
     # paths are listed relative to the repository root (--relative is not
     # applied to merge commits), so strip the directory's prefix
     process = subprocess.run(['git', 'rev-parse', '--show-prefix'],
