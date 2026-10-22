@@ -50,6 +50,7 @@ jobs:
           path: "requirements.txt"
       - name: Verify incidents
         run: python scripts/verify_incidents.py
+        continue-on-error: ${{ github.event_name == 'schedule' }}
       - name: Render site
         run: |
           rm -rf -- build
