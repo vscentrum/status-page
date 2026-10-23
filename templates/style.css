@@ -194,6 +194,78 @@ tbody tr:last-child > * {
     font-weight: 500;
 }
 
+.level {
+    display: inline-block;
+    min-width: 4.5rem;
+    padding: 0.1rem 0.6rem;
+    border: 1px solid;
+    border-radius: 999px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.level-low {
+    background: #fffbe6;
+    border-color: #d4b106;
+    color: #665200;
+}
+
+.level-medium {
+    background: #fff5e8;
+    border-color: var(--accent);
+    color: var(--link);
+}
+
+.level-high {
+    background: #fdecea;
+    border-color: #d9534f;
+    color: #9b1c1c;
+}
+
+thead th a,
+.incident-meta th a {
+    color: inherit;
+    text-decoration-style: dotted;
+}
+
+#impact-levels {
+    scroll-margin-top: 1.5rem;
+}
+
+#impact-levels:target {
+    border-top-width: 6px;
+}
+
+.level-legend {
+    margin: 0;
+}
+
+.level-legend > div {
+    display: grid;
+    grid-template-columns: 6rem minmax(0, 1fr);
+    gap: 1rem;
+    align-items: baseline;
+    padding-block: 0.75rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.level-legend > div:first-child {
+    padding-top: 0;
+}
+
+.level-legend dd {
+    margin: 0;
+}
+
+.level-note {
+    margin: 1rem 0 0;
+    color: var(--muted);
+    font-size: 0.875rem;
+}
+
 .incident {
     scroll-margin-top: 1.5rem;
 }

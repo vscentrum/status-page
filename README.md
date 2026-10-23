@@ -50,8 +50,9 @@ Incident level:
 2. medium: performance is reduced, and some functionality may not be
   available.  For instance some node types may not be available, or non-critical
   storage could be impacted.
-3. high: functionality is impacted to a large extent.  You may be able to log
-  in, but not to launch jobs, and your data may be temporarily inaccessible.
+3. high: functionality is impacted to a large extent. You may or may not be
+   able to log in, but you will not be able launch jobs, and your data may be
+   temporarily inaccessible.
 
 This is a rough indication, the description of the incident should detail its
 scope and impact for the user.

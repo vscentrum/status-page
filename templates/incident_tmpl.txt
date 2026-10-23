@@ -15,8 +15,8 @@
         <td>{updated}</td>
     </tr>
     <tr>
-        <th scope="row">Level:</th>
-        <td>{level}</td>
+        <th scope="row"><a href="index.html#impact-levels">Impact level</a>:</th>
+        <td><span class="level level-{level}">{level}</span></td>
     </tr>
 </table>
 
