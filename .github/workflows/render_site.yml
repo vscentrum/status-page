@@ -1,5 +1,33 @@
 name: Render site
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'incidents/**'
+      - 'config/**'
+      - 'scripts/**'
+      - 'templates/**'
+      - 'requirements.txt'
+      - '.github/workflows/render_site.yml'
+  pull_request:
+    paths:
+      - 'incidents/**'
+      - 'config/**'
+      - 'scripts/**'
+      - 'templates/**'
+      - 'requirements.txt'
+      - '.github/workflows/render_site.yml'
+  schedule:
+    - cron: '13/15 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   Render-site:
     runs-on: ubuntu-latest
@@ -10,27 +38,44 @@ jobs:
             timezoneLinux: "Europe/Brussels"
             timezoneMacos: "Europe/Brussels"
             timezoneWindows: "Brussels standard time"
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-      - run: echo "🔎 The name of your branch is ${{ github.ref }} and your repository is ${{ github.repository }}."
-      - run: echo "Current time is $(date)."
       - name: Check out repository code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
-            fetch-depth: 0
-      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+          ref: ${{ github.event_name == 'pull_request' && github.ref || github.ref_name }}
+          fetch-depth: 0
+          persist-credentials: false
       - name: Install Python dependencies
         uses: py-actions/py-dependency-install@v4
         with:
           path: "requirements.txt"
-      - run: mkdir -p build
-      - name: render
+      - name: Verify incidents
+        run: python scripts/verify_incidents.py
+        continue-on-error: ${{ github.event_name == 'schedule' }}
+      - name: Render site
         run: |
+          rm -rf -- build
           python scripts/render_site.py
-      - uses: JamesIves/github-pages-deploy-action@v4
-        if: ${{ github.event_name == 'push' }}
+          if [[ -f docs/CNAME ]]; then
+            cp docs/CNAME build/CNAME
+          fi
+      - name: Check for published content changes
+        id: changes
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        run: |
+          if diff --recursive --brief build docs; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            status=$?
+            if [[ "$status" -ne 1 ]]; then
+              exit "$status"
+            fi
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Publish changed site
+        uses: JamesIves/github-pages-deploy-action@v4
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main' && steps.changes.outputs.changed == 'true'
         with:
           branch: main
           folder: build
           target-folder: docs
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+          clean-exclude: CNAME
