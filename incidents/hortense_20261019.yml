@@ -1,0 +1,16 @@
+meta_data:
+  title: Access closed to Tier-1 Hortense (urgent security updates)
+  start_date: 2026-10-19 15:30:00
+  end_date: 
+  affected: tier1_compute
+  level: high
+  planned: no
+content: >
+  <p>
+  <strong>Mon 19 Oct 2026, 15:30 CEST</strong></br>
+  Urgent maintenance needs to be performed because of a recently disclosed security bug in the Linux kernel.</br>
+  We will do what we can to restore access ASAP.</br>
+  </p>
+  <p>
+  Running jobs are not affected, jobs in the queue will only start after security updates have been applied.
+  </p>
