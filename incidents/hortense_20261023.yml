@@ -1,0 +1,14 @@
+meta_data:
+  title: Temporary restrictions on Tier-1 Hortense user namespaces, impacting containers
+  start_date: 2026-10-23 15:00:00
+  end_date: 
+  affected: tier1_compute
+  level: low
+  planned: yes
+content: >
+  <p>
+  Temporary restrictions are in place on user namespaces for the Tier-1 Hortense system, for security reasons.
+  </p>
+  <p>
+  This implies that containers in jobs and the apptainer module won't work.
+  </p>
