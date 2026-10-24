@@ -4,6 +4,9 @@ import markdown
 
 NONE_DATE = datetime.datetime.fromisoformat('2030-01-01 00:00:00')
 NONE_DATE_STR = 'Unknown'
+HEADER_NAMES = {
+    'level': '<a href="#impact-levels">Impact level</a>',
+}
 
 def select_relevant_incidents(incidents, date=None):
     if date is None:
@@ -25,7 +28,10 @@ def format_name(tech_name):
     return tech_name.replace('_', ' ').title()
 
 def format_headers(df):
-    df.columns = list(map(format_name, df.columns))
+    df.columns = [HEADER_NAMES.get(column, format_name(column)) for column in df.columns]
+
+def format_level(level):
+    return f'<span class="level level-{level}">{level}</span>'
 
 def add_href(input_df):
     if len(input_df) > 0:
@@ -48,6 +54,8 @@ def dataframe_to_html_table(input_df, alt_text):
         if 'start_date' in df.columns:
             sort_fields.append('start_date')
         df.sort_values(sort_fields, inplace=True)
+        if 'level' in df.columns:
+            df['level'] = df['level'].apply(format_level)
         format_headers(df)
         return df.to_html(index=False, escape=False)
     else:

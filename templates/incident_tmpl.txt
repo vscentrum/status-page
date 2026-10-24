@@ -1,22 +1,26 @@
-<h3><a id="{id}">{title}</a></h3>
+<article class="incident" id="{id}">
+<h3>{title}</h3>
 
-<table>
+<table class="incident-meta">
     <tr>
-        <td><span class="td_name">Start:</span></td>
+        <th scope="row">Start:</th>
         <td>{start_date}</td>
     </tr>
     <tr>
-        <td><span class="td_name">End:</span></td>
+        <th scope="row">End:</th>
         <td>{end_date}</td>
     </tr>
     <tr>
-        <td><span class="td_name">Updated:</span></td>
+        <th scope="row">Updated:</th>
         <td>{updated}</td>
     </tr>
     <tr>
-        <td><span class="td_name">Level:</span></td>
-        <td>{level}</td>
+        <th scope="row"><a href="index.html#impact-levels">Impact level</a>:</th>
+        <td><span class="level level-{level}">{level}</span></td>
     </tr>
 </table>
 
+<div class="incident-description">
 {description}
+</div>
+</article>
