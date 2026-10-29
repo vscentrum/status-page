@@ -1,5 +1,6 @@
 import copy
 import datetime
+import zoneinfo
 import pandas as pd
 import pathlib
 import re
@@ -8,18 +9,47 @@ import sys
 import yaml
 
 
+def format_git_date(date_str):
+    return datetime.datetime.strptime(date_str, '%Y-%m-%d %H:%M:%S %z') \
+            .astimezone(zoneinfo.ZoneInfo('Europe/Brussels')) \
+            .strftime('%Y-%m-%d %H:%M:%S')
+
+
 def get_modification_date(file_name):
-    process = subprocess.run(['git', '--no-pager', 'log', '--format=%ci', file_name],
+    process = subprocess.run(['git', '--no-pager', 'log', '-1', '--format=%ci', '--', file_name],
                              check=True, capture_output=True, text=True)
-    date_str = str(process.stdout)
+    date_str = str(process.stdout).strip()
     if date_str:
-        date_strs = date_str.split('\n')
-        return datetime.datetime.strptime(date_strs[0],
-                                          '%Y-%m-%d %H:%M:%S %z') \
-                .strftime('%Y-%m-%d %H:%M:%S')
+        return format_git_date(date_str)
     else:
         mtime = pathlib.Path(file_name).stat().st_mtime
-        return datetime.datetime.fromtimestamp(mtime).strftime('%Y-%m-%d %H:%M:S')
+        return datetime.datetime.fromtimestamp(mtime).strftime('%Y-%m-%d %H:%M:%S')
+
+
+def get_modification_dates(dir_name):
+    '''Return the last commit date of all files in a directory, using a
+    single pass over the history rather than one git log per file.'''
+    if not pathlib.Path(dir_name).is_dir():                                                                             
+        raise FileNotFoundError(f"The provided incident directory {dir_name} does not exist")
+    assert pathlib.Path(dir_name).exists(), \
+        f"The provided incident directory {dir_name} does not exist"
+    # paths are listed relative to the repository root (--relative is not
+    # applied to merge commits), so strip the directory's prefix
+    process = subprocess.run(['git', 'rev-parse', '--show-prefix'],
+                             cwd=dir_name, check=True, capture_output=True, text=True)
+    prefix = process.stdout.strip()
+    # --cc also lists files changed by merge commits, as git log <file> does
+    process = subprocess.run(['git', '--no-pager', 'log', '--format=date:%ci',
+                              '--name-only', '--cc', '--', '.'],
+                             cwd=dir_name, check=True, capture_output=True, text=True)
+    dates = {}
+    date_str = None
+    for line in process.stdout.splitlines():
+        if line.startswith('date:'):
+            date_str = line[len('date:'):]
+        elif line.startswith(prefix):
+            dates.setdefault(line[len(prefix):], format_git_date(date_str))
+    return dates
 
 
 class IncidentParser:
@@ -42,15 +72,19 @@ class IncidentParser:
         self._incidents['id'] = []
         self._incidents['content'] = []
 
-    def parse_file(self, incident_file_name):
+    def parse_file(self, incident_file_name, last_updated=None):
         if self._is_verbose:
             print(f"parsing file '{incident_file_name}'", file=sys.stderr)
-        last_updated = get_modification_date(incident_file_name)
+        if last_updated is None:
+            last_updated = get_modification_date(incident_file_name)
         with open(incident_file_name, 'r') as file:
             incident = yaml.load(file, Loader=yaml.FullLoader)
             if self._is_verbose:
                 print(f"validating file '{incident_file_name}'", file=sys.stderr)
-            self.validate_incident(incident_file_name, incident)
+            # derive the id from the file name so that links remain valid
+            # when other incident files are added or removed
+            incident_id = pathlib.Path(incident_file_name).stem
+            self.validate_incident(incident_file_name, incident, incident_id)
             # since incidents can have an impact on multiple domains, they are
             # added to the list of incidents for each domain separately.
             for domain in re.split(self._sep, incident['meta_data']['affected']):
@@ -61,22 +95,24 @@ class IncidentParser:
                         self._incidents[field].append(incident['meta_data'].get(field))
                 self._incidents['updated'].append(last_updated)
                 self._incidents['content'].append(incident['content'])
-                incident_nr = len(self._incidents['content'])
-                self._incidents['id'].append(f'incident_{incident_nr:04d}')
+                self._incidents['id'].append(f'incident_{incident_id}')
 
     def parse(self, incident_dir_name):
         if self._is_verbose:
             print(f"parsing directory '{incident_dir_name}'", file=sys.stderr)
         incident_dir = pathlib.Path(incident_dir_name)
         all_succeed = True
-        for incident_file in incident_dir.glob('*'):
+        modification_dates = get_modification_dates(incident_dir)
+        # sort so output does not depend on file system order
+        for incident_file in sorted(incident_dir.glob('*')):
             # ignore non-files and hidden files
             if (not incident_file.is_file() or
                 incident_file.stem.startswith('.')):
                 continue
             if incident_file.suffix == '.yml':
                 try:
-                    self.parse_file(incident_file)
+                    self.parse_file(incident_file,
+                                    modification_dates.get(incident_file.name))
                 except ValueError as error:
                     all_succeed = False
                     print(f'### error: {error}', file=sys.stderr)
@@ -95,7 +131,7 @@ class IncidentParser:
     def incidents(self):
         return pd.DataFrame(self._incidents)
     
-    def validate_incident(self, incident_file_name, incident):
+    def validate_incident(self, incident_file_name, incident, incident_id):
         if 'meta_data' not in incident:
             raise ValueError(f'{incident_file_name}: no meta_data')
         meta_data = incident['meta_data']
@@ -116,6 +152,11 @@ class IncidentParser:
             raise ValueError(f'{incident_file_name} planned is not boolean')
         if 'content' not in incident:
             raise ValueError(f'{incident_file_name}: no content')
+        # Make sure a valid anchor (the incident_id) was derived
+        if not re.match("^[A-Za-z0-9_-]*$", incident_id):
+            raise ValueError(f'{incident_file_name}: the derived incident_id '
+                             f'{incident_id} should only contain letters, '
+                             'digits, _ and -')
 
     @property
     def affected(self):

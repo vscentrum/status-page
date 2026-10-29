@@ -47,7 +47,7 @@ def dataframe_to_html_table(input_df, alt_text):
         sort_fields = ['end_date']
         if 'start_date' in df.columns:
             sort_fields.append('start_date')
-        df.sort_values(sort_fields, inplace=True)
+        df.sort_values(sort_fields, inplace=True, kind='stable')
         format_headers(df)
         return df.to_html(index=False, escape=False)
     else:
@@ -62,7 +62,7 @@ def dataframe_to_html_text(input_df, template, alt_text):
         if len(df) == 0:
             return alt_text
         incident_texts = []
-        for _, row in df.sort_values(['end_date', 'start_date']).iterrows():
+        for _, row in df.sort_values(['end_date', 'start_date'], kind='stable').iterrows():
             row['description'] = markdown.markdown(row['content'])
             incident_texts.append(template.format(**row))
         return '\n\n'.join(incident_texts)

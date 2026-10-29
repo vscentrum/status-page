@@ -20,13 +20,23 @@ Repository that drives the VSC status page.
 
 ## How to use it?
 
-Two workflows have been defined:
-1. a workflow triggered by a push to the main branch, and
-1. a workflow that is executed every 30 minutes.
+One workflow verifies incidents and renders the site:
+1. on pushes to `main` and pull requests that change incidents, configuration,
+   scripts, templates, dependencies, or the workflow itself;
+1. every 15 minutes, at minutes 13, 28, 43, and 58; and
+1. on manual dispatch from the Actions tab.
 
-Both workflows render the site into the `docs` directory.  This
-directory is exposed by Github Pages and will be linked to
-https://status.vscentrum.be/
+Verification must succeed before rendering. All runs fetch full Git history
+so incident update timestamps reflect the last incident commit, and use the
+Europe/Brussels timezone.
+
+Pull requests only verify and render; they never publish. Runs on `main`
+compare freshly rendered output with `docs` and only publish and commit when
+the content differs. Publication preserves `docs/CNAME`, and runs for the
+same Git ref are serialized to prevent overlapping deployments.
+
+The `docs` directory is exposed by Github Pages at
+https://status.vscentrum.be/. No Pages configuration change is required.
 
 To create an incident:
 1. do a git pull of the main branch;
@@ -39,8 +49,8 @@ You will find some example incidents in the
 
 The push event triggers rendering the website.
 
-The script that runs every 30 minutes will ensure that an incident with
-and end date will no longer show up when that date is reached.
+The scheduled run updates the site as incidents start or end, even when
+no source files have changed. Scheduled runs can be delayed by GitHub Actions.
 
 ## Semantics
 
@@ -71,6 +81,11 @@ it is a current event.
 
 Incident naming scheme:
 To keep it a bit organised, start the incident filename with the site that reported the incident followed by the date of report and in case of multiple incidents on a day, add an index (eg. kul_20221021_01)
+
+The filename also determines the incident's link anchor on the site (e.g.,
+`kul_20221021_01.yml` becomes `#incident_kul_20221021_01`).  Use only letters,
+digits, `_` and `-`, and do not rename an incident file once it has been
+published, since that breaks existing links to it.
 
 ## Development
 
