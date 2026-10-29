@@ -9,18 +9,21 @@ from pathlib import Path
 import shutil
 import sys
 import utils
+from zoneinfo import ZoneInfo
 
 
-def create_overview_page(current_incidents, planned_maintenance, config):
+def create_overview_page(current_incidents, planned_maintenance, config, generated_at):
     current_table = utils.dataframe_to_html_table(current_incidents[config['current_overview_columns']], config['no_news_message_incidents'])
     planned_table = utils.dataframe_to_html_table(planned_maintenance[config['planned_overview_columns']], config['no_news_message_maintenance'])
     config['build_dir'].mkdir(exist_ok=True)
     utils.process_template(config['template_dir'] / 'index.html', config['build_dir'] / 'index.html',
                            {'overview_table_current': current_table,
-                            'overview_table_planned': planned_table})
+                            'overview_table_planned': planned_table,
+                            'generated_at_iso': generated_at.isoformat(),
+                            'generated_at': generated_at.strftime('%Y-%m-%d %H:%M:%S %Z')})
 
 
-def create_service_page(service, current_incidents, planned_maintenance, config):
+def create_service_page(service, current_incidents, planned_maintenance, config, generated_at):
     service_name = utils.format_name(service)
     incident_tmpl = utils.read_template(config['template_dir'] / config['incident_template_file'])
     current_incidents_text = utils.dataframe_to_html_text(current_incidents, incident_tmpl, config['no_news_message_incidents'])
@@ -28,7 +31,9 @@ def create_service_page(service, current_incidents, planned_maintenance, config)
     utils.process_template(config['template_dir'] / config['service_template_file'], config['build_dir'] / f'{service}.html',
                            {'service_name': service_name,
                             'current_text': current_incidents_text,
-                            'planned_text': planned_maintenance_text})
+                            'planned_text': planned_maintenance_text,
+                            'generated_at_iso': generated_at.isoformat(),
+                            'generated_at': generated_at.strftime('%Y-%m-%d %H:%M:%S %Z')})
 
 
 def copy_resources(config):
@@ -48,6 +53,7 @@ def main():
     arg_parser.add_argument('--verbose', action='store_true',
                             help='verbose output for monitoring/debugging')
     options = arg_parser.parse_args()
+    generated_at = datetime.datetime.now(ZoneInfo('Europe/Brussels')).replace(microsecond=0)
     if options.now is not None:
         now = datetime.datetime.fromisoformat(options.now)
     else:
@@ -79,12 +85,13 @@ def main():
 
     create_overview_page(current_incidents=index_current_incidents,
                          planned_maintenance=index_planned_maintenance,
-                         config=config)
+                         config=config,
+                         generated_at=generated_at)
 
     for service in parser.services:
         current_service_incidents = current_incidents[current_incidents.affected == service]
         planned_service_maintenance = planned_maintenance[planned_maintenance.affected == service]
-        create_service_page(service, current_service_incidents, planned_service_maintenance, config)
+        create_service_page(service, current_service_incidents, planned_service_maintenance, config, generated_at)
 
         
     copy_resources(config)
