@@ -1,0 +1,9 @@
+meta_data:
+  title: Tier-2 test incident
+  start_date: 2026-10-29 17:00:00
+  end_date: 2026-10-29 17:45:00 
+  affected: tier2_leuven
+  level: low
+  planned: yes
+content: >
+  This incident just serves to test the functioning of the status page.
