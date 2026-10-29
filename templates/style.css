@@ -34,7 +34,7 @@ body {
     color: var(--text);
     font-family: "Flanders Art Sans", Arial, sans-serif;
     font-size: 1rem;
-    line-height: 1.65;
+    line-height: 1.5;
 }
 
 a {
@@ -72,7 +72,7 @@ a:hover {
 .site-header-inner,
 .page-content,
 .site-footer nav {
-    width: min(100% - 3rem, 1120px);
+    width: min(100% - 2rem, 1120px);
     margin-inline: auto;
 }
 
@@ -80,13 +80,13 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1.5rem;
-    padding-block: 1.5rem;
+    gap: 1rem;
+    padding-block: 0.9rem;
 }
 
 img.logo {
     display: block;
-    width: 280px;
+    width: 220px;
     max-width: 100%;
     height: auto;
 }
@@ -98,11 +98,11 @@ img.logo {
 }
 
 .page-content {
-    padding-block: 2.75rem 3rem;
+    padding-block: 1.75rem 2rem;
 }
 
 .page-heading {
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
 }
 
 h1,
@@ -128,22 +128,24 @@ h1.page_title {
 }
 
 .status-section {
-    margin-top: 1.5rem;
-    padding: 1.75rem 2rem;
+    margin-top: 1rem;
+    padding: 1.1rem 1.25rem;
     background: white;
     border: 1px solid var(--border);
     border-top: 3px solid var(--accent);
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 h2 {
-    margin: 0 0 1.25rem;
-    font-size: 1.5rem;
+    margin: 0 0 0.75rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
 h3 {
-    margin: 0 0 1rem;
-    font-size: 1.15rem;
+    margin: 0 0 0.5rem;
+    font-size: 1.05rem;
     font-weight: 500;
 }
 
@@ -165,7 +167,7 @@ table {
 
 th,
 td {
-    padding: 0.85rem 1rem;
+    padding: 0.45rem 0.65rem;
     border: 0;
     border-bottom: 1px solid var(--border);
     text-align: left;
@@ -248,7 +250,7 @@ thead th a,
     grid-template-columns: 6rem minmax(0, 1fr);
     gap: 1rem;
     align-items: baseline;
-    padding-block: 0.75rem;
+    padding-block: 0.4rem;
     border-bottom: 1px solid var(--border);
 }
 
@@ -271,8 +273,8 @@ thead th a,
 }
 
 .incident + .incident {
-    margin-top: 2rem;
-    padding-top: 2rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
     border-top: 1px solid var(--border);
 }
 
@@ -287,7 +289,7 @@ thead th a,
 
 .incident-meta th,
 .incident-meta td {
-    padding: 0.25rem 1rem 0.25rem 0;
+    padding: 0.1rem 0.75rem 0.1rem 0;
     border: 0;
 }
 
@@ -311,6 +313,10 @@ thead th a,
     margin-bottom: 0.35rem;
 }
 
+.incident-description p {
+    margin: 0.4rem 0;
+}
+
 .incident-description > :last-child {
     margin-bottom: 0;
 }
@@ -322,12 +328,13 @@ thead th a,
 
 .incident-description pre {
     overflow-x: auto;
-    padding: 1rem;
+    padding: 0.6rem 0.75rem;
     background: var(--background);
+    border-radius: 4px;
 }
 
 .site-footer {
-    padding-block: 2rem;
+    padding-block: 1.25rem;
     background: white;
     border-top: 1px solid var(--border);
 }
@@ -339,13 +346,14 @@ thead th a,
 .navigation {
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 0.5rem 0.75rem;
+    gap: 0.4rem 0.5rem;
     margin: 0.5rem 0 0;
 }
 
 .navigation a {
     display: inline-block;
-    padding: 0.45rem 0.85rem;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
     border: 1px solid var(--border);
     text-decoration: none;
     font-size: 0.875rem;
@@ -371,7 +379,7 @@ thead th a,
     .site-header-inner,
     .page-content,
     .site-footer nav {
-        width: calc(100% - 2rem);
+        width: calc(100% - 1.5rem);
     }
 
     .site-header-inner {
@@ -389,11 +397,11 @@ thead th a,
     }
 
     .status-section {
-        padding: 1.25rem;
+        padding: 0.85rem;
     }
 
     th,
     td {
-        padding: 0.65rem 0.75rem;
+        padding: 0.4rem 0.5rem;
     }
 }
