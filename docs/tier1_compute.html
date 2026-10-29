@@ -1,4 +1,5 @@
-<html>
+<!doctype html>
+<html lang="en">
 	<head>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,60 +11,75 @@
 
 	  <link rel="icon" type="image/png" href="images/favicon.png" />
 	  <link rel="stylesheet" href="style.css">
-	  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:700,300|Open+Sans:400i,600i,700i,300,400,700,600&display=swap" crossorigin="anonymous">
 	</head>
     <body>
-		<div class="logo">
-			<a href="https://vscentrum.be/"><img class="logo" src="images/vsc_logo.png" alt="VSC logo"/></a>
-		</div>
-        <h1 class="page_title">VSC Tier1 Compute status page</h1>
-        
-        <h2>Current incidents</h2>
-        
-        <h3><a id="incident_hortense_20261023">Temporary restrictions on Tier-1 Hortense user namespaces, impacting containers</a></h3>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header class="site-header">
+            <div class="site-header-inner">
+                <a href="https://vscentrum.be/"><img class="logo" src="images/vsc_logo.png" alt="Vlaams Supercomputer Centrum"/></a>
+                <a class="header-link" href="https://www.vscentrum.be/">VSC website &rarr;</a>
+            </div>
+        </header>
+        <main id="main" class="page-content">
+            <div class="page-heading">
+                <a class="back-link" href="index.html">&larr; All services</a>
+                <h1 class="page_title">VSC Tier1 Compute status page</h1>
+            </div>
+            <section class="status-section" aria-labelledby="current-heading">
+                <h2 id="current-heading">Current incidents</h2>
+                <article class="incident" id="incident_hortense_20261023">
+<h3>Temporary restrictions on Tier-1 Hortense user namespaces, impacting containers</h3>
 
-<table>
+<table class="incident-meta">
     <tr>
-        <td><span class="td_name">Start:</span></td>
+        <th scope="row">Start:</th>
         <td>2026-10-23 15:00:00</td>
     </tr>
     <tr>
-        <td><span class="td_name">End:</span></td>
+        <th scope="row">End:</th>
         <td>Unknown</td>
     </tr>
     <tr>
-        <td><span class="td_name">Updated:</span></td>
+        <th scope="row">Updated:</th>
         <td>2026-10-23 16:18:06</td>
     </tr>
     <tr>
-        <td><span class="td_name">Level:</span></td>
-        <td>low</td>
+        <th scope="row"><a href="index.html#impact-levels">Impact level</a>:</th>
+        <td><span class="level level-low">low</span></td>
     </tr>
 </table>
 
+<div class="incident-description">
 <p> Temporary restrictions are in place on user namespaces for the Tier-1 Hortense system, for security reasons. </p>
 <p> This implies that containers in jobs and the apptainer module won't work. </p>
+</div>
+</article>
 
-        
-        <h2>Planned maintenance</h2>
-        
-        <p>No maintenance planned currently.</p>
-        
-        <hr/>
+            </section>
+            <section class="status-section" aria-labelledby="planned-heading">
+                <h2 id="planned-heading">Planned maintenance</h2>
+                <p>No maintenance planned currently.</p>
+            </section>
+        </main>
+        <footer class="site-footer">
+        <nav aria-label="Service status">
+        <h2>Service status</h2>
+        <p><a href="index.html">Overview</a></p>
         <p class="navigation">
-            <a href="index.html">Overview</a> |
-            <a href="tier1_compute.html">Tier-1 Compute</a> |
-            <a href="tier1_cloud.html">Tier-1 Cloud</a> |
-            <a href="tier1_data.html">Tier-1 Data</a> |
+            <a href="tier1_compute.html">Tier-1 Compute</a>
+            <a href="tier1_cloud.html">Tier-1 Cloud</a>
+            <a href="tier1_data.html">Tier-1 Data</a>
             <a href="backbone.html">VSC backbone</a>
         </p>
         <p class="navigation">
-            <a href="tier2_antwerp.html">Tier-2 Antwerpen</a> |
-            <a href="tier2_brussels.html">Tier-2 Brussel</a> |
-            <a href="tier2_gent.html">Tier-2 Gent</a> |
+            <a href="tier2_antwerp.html">Tier-2 Antwerpen</a>
+            <a href="tier2_brussels.html">Tier-2 Brussel</a>
+            <a href="tier2_gent.html">Tier-2 Gent</a>
             <a href="tier2_leuven.html">Tier-2 Leuven</a>
         </p>
-        <hr/>
+        <p class="generated-at">This page was generated at <time datetime="2026-10-29T17:30:21+01:00">2026-10-29 17:30:21 CET</time></p>
+        </nav>
+        </footer>
         
     </body>
 </html>
