@@ -62,7 +62,7 @@ jobs:
         id: changes
         if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
         run: |
-          if diff --recursive --brief build docs; then
+          if diff -I 'generated-at' --recursive --brief build docs; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             status=$?
