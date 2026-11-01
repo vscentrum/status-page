@@ -52,6 +52,42 @@ def get_modification_dates(dir_name):
     return dates
 
 
+INCIDENT_SUFFIXES = ('.yml', '.md')
+FRONT_MATTER_DELIMITER = '---'
+
+
+def read_yaml_incident(file):
+    return yaml.safe_load(file)
+
+
+def read_markdown_incident(file):
+    '''Read an incident written as Markdown with a YAML front matter block,
+    i.e., the metadata fields between two '---' lines, followed by the
+    description in Markdown.  The result has the same structure as a YAML
+    incident file.'''
+    lines = file.read().splitlines(keepends=True)
+    if not lines or lines[0].strip() != FRONT_MATTER_DELIMITER:
+        raise ValueError(f"{file.name}: file should start with a "
+                         f"'{FRONT_MATTER_DELIMITER}' line")
+    for end, line in enumerate(lines[1:], start=1):
+        if line.strip() == FRONT_MATTER_DELIMITER:
+            break
+    else:
+        raise ValueError(f"{file.name}: no closing '{FRONT_MATTER_DELIMITER}' "
+                         "line for the metadata")
+    try:
+        meta_data = yaml.safe_load(''.join(lines[1:end]))
+    except yaml.YAMLError as error:
+        raise ValueError(f'{file.name}: invalid metadata: {error}') from error
+    if not isinstance(meta_data, dict):
+        raise ValueError(f'{file.name}: no meta_data')
+    incident = {'meta_data': meta_data}
+    content = ''.join(lines[end + 1:]).strip()
+    if content:
+        incident['content'] = content
+    return incident
+
+
 class IncidentParser:
     
     def __init__(self, meta_data_fields, affected, level,
@@ -77,8 +113,15 @@ class IncidentParser:
             print(f"parsing file '{incident_file_name}'", file=sys.stderr)
         if last_updated is None:
             last_updated = get_modification_date(incident_file_name)
+        suffix = pathlib.Path(incident_file_name).suffix
+        if suffix not in INCIDENT_SUFFIXES:
+            raise ValueError(f'{incident_file_name}: incident file should have '
+                             f'one of the extensions {", ".join(INCIDENT_SUFFIXES)}')
         with open(incident_file_name, 'r') as file:
-            incident = yaml.load(file, Loader=yaml.FullLoader)
+            if suffix == '.md':
+                incident = read_markdown_incident(file)
+            else:
+                incident = read_yaml_incident(file)
             if self._is_verbose:
                 print(f"validating file '{incident_file_name}'", file=sys.stderr)
             # derive the id from the file name so that links remain valid
@@ -109,22 +152,16 @@ class IncidentParser:
             if (not incident_file.is_file() or
                 incident_file.stem.startswith('.')):
                 continue
-            if incident_file.suffix == '.yml':
-                try:
-                    self.parse_file(incident_file,
-                                    modification_dates.get(incident_file.name))
-                except ValueError as error:
-                    all_succeed = False
-                    print(f'### error: {error}', file=sys.stderr)
-                    if not self._is_permissive:
-                        raise error
-            # all non-hidden files in incidents dir must me *.yml files
-            else:
+            # all non-hidden files in incidents dir must be *.yml or *.md
+            # files, parse_file reports other files as errors
+            try:
+                self.parse_file(incident_file,
+                                modification_dates.get(incident_file.name))
+            except ValueError as error:
                 all_succeed = False
-                error_msg = f"Found indicent file that does not have .yml extension: {incident_file}"
-                print(f'### error: {error_msg}', file=sys.stderr)
+                print(f'### error: {error}', file=sys.stderr)
                 if not self._is_permissive:
-                    raise ValueError(error_msg)
+                    raise error
         return all_succeed
             
     @property

@@ -40,12 +40,45 @@ https://status.vscentrum.be/. No Pages configuration change is required.
 
 To create an incident:
 1. do a git pull of the main branch;
-1. add your incident description as a YAML file in the `incidents`
-   directory;
+1. add your incident description as a Markdown (`.md`) or YAML (`.yml`) file
+   in the `incidents` directory (see [Incident file formats](#incident-file-formats));
 1. commit your change and push;
 
 You will find some example incidents in the
 [example_incidents/](`example_incidents`) directory.
+
+### Incident file formats
+
+The preferred format is a Markdown file (`.md`) that starts with the metadata
+as YAML between two `---` lines (a so-called front matter block), followed by
+the description of the incident in plain
+[Markdown](https://www.markdownguide.org/basic-syntax/):
+```markdown
+---
+title: login nodes down
+start_date: 2022-01-20 09:00:00
+end_date:
+affected: tier2_leuven
+level: high
+planned: no
+---
+
+**[Update 2022-01-20 11:00:00]** The login nodes are reachable again.
+
+The login nodes seem to be down, so
+
+* you can not log in;
+* running jobs are not affected.
+```
+No HTML or YAML quoting is needed for the description.  Note that a list
+must be preceded by a blank line, and a line break inside a paragraph is
+ignored (use a blank line to start a new paragraph).
+
+Alternatively, an incident can be a YAML file (`.yml`) with the metadata
+fields under `meta_data` and the description in a `content` field, see
+[example_incidents/incident_01.yml](example_incidents/incident_01.yml).
+The `content` field is also rendered as Markdown, but YAML folding rules
+apply, which is error-prone.
 
 The push event triggers rendering the website.
 
@@ -84,18 +117,24 @@ Incident naming scheme:
 To keep it a bit organised, start the incident filename with the site that reported the incident followed by the date of report and in case of multiple incidents on a day, add an index (eg. kul_20221021_01)
 
 The filename also determines the incident's link anchor on the site (e.g.,
-`kul_20221021_01.yml` becomes `#incident_kul_20221021_01`).  Use only letters,
+`kul_20221021_01.md` becomes `#incident_kul_20221021_01`).  Use only letters,
 digits, `_` and `-`, and do not rename an incident file once it has been
 published, since that breaks existing links to it.
 
 ## Development
 
 The `config/dev_config.yml` configuration file is intended for development
-and testing.  The render script takes an options `--now` that can be used
-to set the "current time".  The example incidents in the `example_incidents`
-directory can be used with `--now '2022-01-20 10:00:00'`, e.g,.
+and testing; it uses the incidents in the `dev_incidents` directory.  The
+render script takes an option `--now` that can be used to set the "current
+time".  The dev incidents can be used with `--now '2022-01-20 10:00:00'`, e.g.,
 ```bash
 $ ./scripts/render_site.py  --now '2022-01-20 10:00:00'  --config config/dev_config.yml
 ```
-Note that one of those example incidents contains an error on purpose.
+The dev incidents with `broken` in their file name contain errors on purpose,
+to test the verification, so the verify script is expected to report them:
+```bash
+$ ./scripts/verify_incidents.py  --config config/dev_config.yml
+```
+The hidden file `.incident_02_broken.yml` should be ignored, so it is
+expected not to be reported.
 
