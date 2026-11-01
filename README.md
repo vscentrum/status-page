@@ -121,10 +121,12 @@ users will not be able to use infrastructure on other sites either.  You may
 want to lists such issues also for the VSC storage domain.
 
 Planned:
-Note that the `planned` field is intended for bookkeeping purposes only.  By
-construction, an incident is planned when its start date is in the future.
-As soon as the start date is in the past, and the end date still in the future,
-it is a current event.
+The `planned` field states whether the incident was announced in advance
+(`yes`) or not (`no`), and is shown as the type of the incident (`planned` or
+`unplanned`) on the service pages.  It does not determine in which section an
+incident is listed: an incident is listed under planned maintenance when its
+start date is in the future.  As soon as the start date is in the past, and the
+end date still in the future, it is a current event.
 
 Incident naming scheme:
 To keep it a bit organised, start the incident filename with the site that reported the incident followed by the date of report and in case of multiple incidents on a day, add an index (eg. kul_20221021_01)

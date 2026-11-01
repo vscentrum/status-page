@@ -18,6 +18,10 @@
         <th scope="row"><a href="index.html#impact-levels">Impact level</a>:</th>
         <td><span class="level level-{level}">{level}</span></td>
     </tr>
+    <tr>
+        <th scope="row">Type:</th>
+        <td>{type}</td>
+    </tr>
 </table>
 
 <div class="incident-description">
