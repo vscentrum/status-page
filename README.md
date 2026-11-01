@@ -86,8 +86,6 @@ Our apologies for the inconvenience.
 ```
 No HTML or YAML quoting is needed for the description.  A few things to keep
 in mind:
-* use `####` for headings in the description, e.g., for the timestamps of
-  updates, since the title of the incident is already a heading on the page;
 * a list must be preceded by a blank line;
 * a single line break inside a paragraph is ignored, use a blank line to
   start a new paragraph.
