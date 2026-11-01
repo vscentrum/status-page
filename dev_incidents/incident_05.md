@@ -9,13 +9,13 @@ planned: no
 
 **Note: this is a test incident**
 
-**[Update 2022-01-22 03:30:00]**
+## [Update 2022-01-22 03:30:00]
 Access to the login and portal nodes has been restored.
 Running jobs is possible again.
 
-[2022-01-20 16:45:00]
-Due to a recently disclosed critical vulnerability, access to the
-CalcUA clusters has been closed:
+## [2022-01-20 16:45:00]
+Due to a recently disclosed critical vulnerability, *access* to the
+CalcUA clusters has been **closed**:
 
 * access to both the login and portal nodes has been disabled;
 * no new jobs will be allowed to start until further notice;
