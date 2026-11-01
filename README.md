@@ -131,7 +131,9 @@ time".  The dev incidents can be used with `--now '2022-01-20 10:00:00'`, e.g.,
 $ ./scripts/render_site.py  --now '2022-01-20 10:00:00'  --config config/dev_config.yml
 ```
 The dev incidents with `broken` in their file name contain errors on purpose,
-to test the verification, so the verify script is expected to report them:
+to test the verification.  Both the render script and the verify script are
+expected to report them.  The render script skips them and renders the other
+incidents, while the verify script exits with a non-zero status:
 ```bash
 $ ./scripts/verify_incidents.py  --config config/dev_config.yml
 ```
