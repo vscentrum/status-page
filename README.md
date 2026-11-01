@@ -69,6 +69,11 @@ scope and impact for the user.
 
 Affected:
 The domain are fairly self-explanatory (eg. tier1_compute, tier1_data, tier1_cloud, tier2_antwerp, tier2_xxx, backbone) and are define in the config.yml file. 
+On the site, the domains are shown with the names defined in
+`affected_display_names` in the config.yml file, e.g., `tier2_brussels` is
+shown as "Tier-2 Brussel".  Some domains also have an alternative name, defined
+in `affected_aliases`, that can be used in incident files, e.g., `tier2_brussel`
+for `tier2_brussels` and `tier2_antwerpen` for `tier2_antwerp`.
 Note however that a problem with local storage may have impact on other systems.  If the storage system that
 hosts the home and data directories of users at an institute is down, these
 users will not be able to use infrastructure on other sites either.  You may

@@ -55,9 +55,13 @@ def get_modification_dates(dir_name):
 class IncidentParser:
     
     def __init__(self, meta_data_fields, affected, level,
+                 affected_aliases=None,
                  sep=r'\s*,\s*',
                  is_permissive=True, is_verbose=False):
         self._meta_data_fields = meta_data_fields
+        # maps alternative names of affected domains to their name in the
+        # list of affected domains
+        self._affected_aliases = dict(affected_aliases or {})
         self._field_values = {
             'affected': affected,
             'level': level,
@@ -87,7 +91,13 @@ class IncidentParser:
             self.validate_incident(incident_file_name, incident, incident_id)
             # since incidents can have an impact on multiple domains, they are
             # added to the list of incidents for each domain separately.
-            for domain in re.split(self._sep, incident['meta_data']['affected']):
+            # aliases are replaced by the name of the domain they refer to,
+            # and an incident is added only once for each domain
+            domains = dict.fromkeys(
+                self._affected_aliases.get(domain, domain)
+                for domain in re.split(self._sep, incident['meta_data']['affected'])
+            )
+            for domain in domains:
                 for field in self._meta_data_fields:
                     if field == 'affected':
                         self._incidents[field].append(domain)
@@ -140,6 +150,8 @@ class IncidentParser:
                 raise ValueError(f'{incident_file_name}: metadata field "{field}" is missing')
         for field, expected_values in self._field_values.items():
             for value in re.split(self._sep, meta_data[field]):
+                if field == 'affected':
+                    value = self._affected_aliases.get(value, value)
                 if value not in expected_values:
                     raise ValueError(f'{incident_file_name}: invalid {field} value {value}')
         if not isinstance(meta_data['start_date'], datetime.datetime):
