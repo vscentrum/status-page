@@ -47,43 +47,56 @@ To create an incident:
 You will find some example incidents in the
 [example_incidents/](`example_incidents`) directory.
 
+The push event triggers rendering the website.
+
+The scheduled run updates the site as incidents start or end, even when
+no source files have changed. Scheduled runs can be delayed by GitHub Actions.
+
 ### Incident file formats
 
 The preferred format is a Markdown file (`.md`) that starts with the metadata
-as YAML between two `---` lines (a so-called front matter block), followed by
-the description of the incident in plain
-[Markdown](https://www.markdownguide.org/basic-syntax/):
+as YAML between two `---` lines, followed by the description of the incident
+in plain [Markdown](https://www.markdownguide.org/basic-syntax/), e.g.,
+[example_incidents/incident_02.md](example_incidents/incident_02.md):
 ```markdown
 ---
-title: login nodes down
-start_date: 2022-01-20 09:00:00
-end_date:
-affected: tier2_leuven
+title: CalcUA Tier-2 access closed (Markdown test incident)
+start_date: 2022-01-20 16:45:00
+end_date: 2022-01-22 03:30:00
+affected: tier2_antwerp
 level: high
 planned: no
 ---
 
-**[Update 2022-01-20 11:00:00]** The login nodes are reachable again.
+**Note: this is a test incident**
 
-The login nodes seem to be down, so
+#### [Update 2022-01-22 03:30:00]
+Access to the login and portal nodes has been restored.
+Running jobs is possible again.
 
-* you can not log in;
-* running jobs are not affected.
+#### [2022-01-20 16:45:00]
+Due to a recently disclosed critical vulnerability, *access* to the
+CalcUA clusters has been **closed**:
+
+* access to both the login and portal nodes has been disabled;
+* no new jobs will be allowed to start until further notice;
+* users can still access their data through [Globus](https://www.globus.org/).
+
+Our apologies for the inconvenience.
 ```
-No HTML or YAML quoting is needed for the description.  Note that a list
-must be preceded by a blank line, and a line break inside a paragraph is
-ignored (use a blank line to start a new paragraph).
+No HTML or YAML quoting is needed for the description.  A few things to keep
+in mind:
+* use `####` for headings in the description, e.g., for the timestamps of
+  updates, since the title of the incident is already a heading on the page;
+* a list must be preceded by a blank line;
+* a single line break inside a paragraph is ignored, use a blank line to
+  start a new paragraph.
 
 Alternatively, an incident can be a YAML file (`.yml`) with the metadata
 fields under `meta_data` and the description in a `content` field, see
 [example_incidents/incident_01.yml](example_incidents/incident_01.yml).
 The `content` field is also rendered as Markdown, but YAML folding rules
 apply, which is error-prone.
-
-The push event triggers rendering the website.
-
-The scheduled run updates the site as incidents start or end, even when
-no source files have changed. Scheduled runs can be delayed by GitHub Actions.
 
 ## Semantics
 
