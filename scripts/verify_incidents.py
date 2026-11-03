@@ -23,6 +23,7 @@ def main():
         meta_data_fields=config['meta_data_fields'],
         affected=config['affected'],
         level=config['level'],
+        affected_aliases=config['affected_aliases'],
         is_verbose=options.verbose
     )
     if options.incidents is None:

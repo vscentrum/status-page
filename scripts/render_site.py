@@ -24,7 +24,7 @@ def create_overview_page(current_incidents, planned_maintenance, config, generat
 
 
 def create_service_page(service, current_incidents, planned_maintenance, config, generated_at):
-    service_name = utils.format_name(service)
+    service_name = config['affected_display_names'].get(service, utils.format_name(service))
     incident_tmpl = utils.read_template(config['template_dir'] / config['incident_template_file'])
     current_incidents_text = utils.dataframe_to_html_text(current_incidents, incident_tmpl, config['no_news_message_incidents'])
     planned_maintenance_text = utils.dataframe_to_html_text(planned_maintenance, incident_tmpl, config['no_news_message_maintenance'])
@@ -70,6 +70,7 @@ def main():
         meta_data_fields=config['meta_data_fields'],
         affected=config['affected'],
         level=config['level'],
+        affected_aliases=config['affected_aliases'],
         is_verbose=options.verbose
     )
     for dir_path in config['incident_dirs']:
@@ -78,10 +79,12 @@ def main():
 
     current_incidents = utils.select_current_incidents(incidents,
                                                        date=now)
-    index_current_incidents = utils.add_href(current_incidents)
+    index_current_incidents = utils.display_affected(
+        utils.add_href(current_incidents), config['affected_display_names'])
     planned_maintenance = utils.select_planned_maintenance(incidents,
                                                            date=now)
-    index_planned_maintenance = utils.add_href(planned_maintenance)
+    index_planned_maintenance = utils.display_affected(
+        utils.add_href(planned_maintenance), config['affected_display_names'])
 
     create_overview_page(current_incidents=index_current_incidents,
                          planned_maintenance=index_planned_maintenance,
