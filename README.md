@@ -54,9 +54,13 @@ no source files have changed. Scheduled runs can be delayed by GitHub Actions.
 
 ### Incident file formats
 
-The preferred format is a Markdown file (`.md`) that starts with the metadata
-as YAML between two `---` lines, followed by the description of the incident
-in plain [Markdown](https://www.markdownguide.org/basic-syntax/), e.g.,
+Two file formats are supported for incidents: Markdown and YAML.
+
+#### Markdown
+
+A Markdown file (`.md`) starts with the metadata as YAML between two `---`
+lines, followed by the description of the incident in plain
+[Markdown](https://www.markdownguide.org/basic-syntax/), e.g.,
 [example_incidents/incident_02.md](example_incidents/incident_02.md):
 ```markdown
 ---
@@ -90,7 +94,9 @@ in mind:
 * a single line break inside a paragraph is ignored, use a blank line to
   start a new paragraph.
 
-Alternatively, an incident can be a YAML file (`.yml`) with the metadata
+#### YAML
+
+An incident can also be written as a YAML file (`.yml`) with the metadata
 fields under `meta_data` and the description in a `content` field, see
 [example_incidents/incident_01.yml](example_incidents/incident_01.yml).
 The `content` field is also rendered as Markdown, but YAML folding rules
@@ -112,22 +118,27 @@ This is a rough indication, the description of the incident should detail its
 scope and impact for the user.
 
 Affected:
-The domain are fairly self-explanatory (eg. tier1_compute, tier1_data, tier1_cloud, tier2_antwerp, tier2_xxx, backbone) and are define in the config.yml file. 
-Note however that a problem with local storage may have impact on other systems.  If the storage system that
-hosts the home and data directories of users at an institute is down, these
-users will not be able to use infrastructure on other sites either.  You may
-want to lists such issues also for the VSC storage domain.
+The domains are fairly self-explanatory (e.g., tier1_compute, tier1_data,
+tier1_cloud, tier2_antwerp, tier2_xxx, backbone) and are defined in the
+`config/config.yml` file.  Note, however, that a problem with local storage
+may have impact on other systems.  If the storage system that hosts the home
+and data directories of users at an institute is down, these users will not be
+able to use infrastructure on other sites either.  You may want to list such
+issues also for the VSC storage domain.
 
 Planned:
-The `planned` field states whether the incident was announced in advance
-(`yes`) or not (`no`), and is shown as the type of the incident (`planned` or
-`unplanned`) on the service pages.  It does not determine in which section an
-incident is listed: an incident is listed under planned maintenance when its
-start date is in the future.  As soon as the start date is in the past, and the
-end date still in the future, it is a current event.
+The `planned` field states whether the incident was scheduled in advance
+(`yes`) or is an unexpected issue (`no`), and is shown as the type of the
+incident (`planned` or `unplanned`) on the service pages.  It does not
+determine in which section an incident is listed: an incident is listed under
+planned maintenance when its start date is in the future.  As soon as the start
+date is in the past, and the end date still in the future, it is a current
+event.
 
 Incident naming scheme:
-To keep it a bit organised, start the incident filename with the site that reported the incident followed by the date of report and in case of multiple incidents on a day, add an index (eg. kul_20221021_01)
+To keep it a bit organised, start the incident filename with the site that
+reported the incident followed by the date of report and in case of multiple
+incidents on a day, add an index (e.g., kul_20221021_01).
 
 The filename also determines the incident's link anchor on the site (e.g.,
 `kul_20221021_01.md` becomes `#incident_kul_20221021_01`).  Use only letters,
