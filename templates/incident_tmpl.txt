@@ -15,6 +15,10 @@
         <td>{updated}</td>
     </tr>
     <tr>
+        <th scope="row">Type:</th>
+        <td>{type}</td>
+    </tr>
+    <tr>
         <th scope="row"><a href="index.html#impact-levels">Impact level</a>:</th>
         <td><span class="level level-{level}">{level}</span></td>
     </tr>
