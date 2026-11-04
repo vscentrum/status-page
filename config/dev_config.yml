@@ -37,6 +37,22 @@ affected:
     - tier2_gent
     - tier2_leuven
     - backbone
+# alternative names that can be used in the affected field of incidents
+affected_aliases:
+    tier2_antwerpen: tier2_antwerp
+    tier2_brussel: tier2_brussels
+# names shown on the site; keep these in sync with the labels of the
+# navigation buttons at the bottom of templates/index.html and
+# templates/service_tmpl.html
+affected_display_names:
+    tier1_compute: Tier-1 Compute
+    tier1_cloud: Tier-1 Cloud
+    tier1_data: Tier-1 Data
+    backbone: VSC backbone
+    tier2_antwerp: Tier-2 Antwerpen
+    tier2_brussels: Tier-2 Brussel
+    tier2_gent: Tier-2 Gent
+    tier2_leuven: Tier-2 Leuven
 level:
     - low
     - medium

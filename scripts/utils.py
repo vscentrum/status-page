@@ -42,6 +42,12 @@ def add_href(input_df):
     else:
         return input_df
 
+def display_affected(input_df, display_names):
+    '''Replace the names of the affected domains by their display names.'''
+    df = input_df.copy()
+    df['affected'] = df['affected'].map(lambda name: display_names.get(name, name))
+    return df
+
 def dataframe_to_html_table(input_df, alt_text):
     if len(input_df) > 0:
         df = input_df.copy()

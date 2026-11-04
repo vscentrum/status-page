@@ -11,4 +11,6 @@ def read_config(config_file_name):
         elif field.endswith('_dirs') or field.endswith('_files'):
             config[field] = list(map(lambda x: pathlib.Path(x),
                                      config[field]))
+    for field in ('affected_aliases', 'affected_display_names'):
+        config[field] = config.get(field) or {}
     return config

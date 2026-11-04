@@ -1,0 +1,23 @@
+meta_data:
+  title: Tier-1 sofia System Update
+  start_date: 2026-11-05 00:00:00
+  end_date: 2026-11-10 00:00:00
+  affected: tier1_compute
+  level: low
+  planned: yes
+content: >
+  <p>
+    We are updating the operating system on VSC Tier-1 cluster <b>sofia</b>
+    with the latest security and bug fixes.
+    <b>Access to these clusters will be unavailable for 15-30 min on Thursday 5th
+    November at 02:00 CET.</b> We will reboot the login nodes and the OnDemand
+    service of <i>portal.sofia.vub.be</i>, disconnecting any
+    active user sessions on those systems.
+  </p>
+  <p>
+    The roll-out of updates to the computes nodes will start on <b>Thursday Nov
+    5th</b> and will be progressively carried out in the coming days.
+    This operation has a <b>minimal impact</b> on our users: compute capacity will
+    be slightly lower during the update, but there will be no downtime of the
+    clusters and all job queues will remain operational.
+  </p>
