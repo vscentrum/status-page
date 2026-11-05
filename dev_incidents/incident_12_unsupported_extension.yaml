@@ -1,0 +1,12 @@
+meta_data:
+  title: Valid YAML incident using the unsupported .yaml extension
+  start_date: 2022-01-20 09:00:00
+  end_date: 2022-01-20 11:00:00
+  affected: tier2_leuven
+  level: low
+  planned: no
+content: >
+
+  **Note: this is a parser robustness test.**
+
+  This is valid incident YAML, but only the .yml and .md suffixes are accepted.
