@@ -1,4 +1,3 @@
-import datetime
 import pathlib
 import sys
 
@@ -12,7 +11,6 @@ sys.path.insert(0, str(SCRIPTS_DIR))
 
 from config_reader import read_config  # noqa: E402
 from incident_parser import IncidentParser, read_markdown_incident  # noqa: E402
-import utils  # noqa: E402
 
 
 CONFIG = read_config(PROJECT_ROOT / 'config' / 'dev_config.yml')
@@ -23,13 +21,13 @@ VALID_INCIDENTS = {
     'incident_03.yml',
     'incident_04.yml',
     'incident_05.md',
+    'incident_12_yaml_extension.yaml',
 }
 
 CONTROLLED_INVALID_INCIDENTS = {
     'incident_02_broken.yml',
     'incident_04_broken',
     'incident_06_broken.md',
-    'incident_12_unsupported_extension.yaml',
 }
 
 ROBUSTNESS_INCIDENTS = {
@@ -81,6 +79,7 @@ def test_all_development_incidents_are_classified():
         pytest.param('incident_03.yml', 2, id='yaml-multiple-services'),
         pytest.param('incident_04.yml', 1, id='yaml-open-ended'),
         pytest.param('incident_05.md', 1, id='markdown'),
+        pytest.param('incident_12_yaml_extension.yaml', 1, id='yaml-extension'),
     ],
 )
 def test_valid_development_incidents_parse(file_name, expected_rows):
@@ -108,11 +107,6 @@ def test_valid_development_incidents_parse(file_name, expected_rows):
             "no closing '---' line",
             id='missing-front-matter-delimiter',
         ),
-        pytest.param(
-            'incident_12_unsupported_extension.yaml',
-            'incident file should have one of the extensions',
-            id='unsupported-yaml-extension',
-        ),
     ],
 )
 def test_invalid_development_incidents_raise_value_error(file_name, message):
@@ -120,10 +114,6 @@ def test_invalid_development_incidents_raise_value_error(file_name, message):
         parse_incident(file_name)
 
 
-@pytest.mark.xfail(
-    strict=True,
-    reason='timezone-aware timestamps are accepted but fail during rendering',
-)
 @pytest.mark.parametrize(
     'file_name',
     [
@@ -132,44 +122,25 @@ def test_invalid_development_incidents_raise_value_error(file_name, message):
     ],
     ids=['markdown', 'yaml'],
 )
-def test_timezone_aware_incident_is_rejected_or_renderable(file_name):
-    try:
-        parser = parse_incident(file_name)
-    except ValueError:
-        return
-
-    utils.select_current_incidents(
-        parser.incidents,
-        date=datetime.datetime(2022, 1, 20, 10, 0),
-    )
+def test_timezone_aware_incident_is_rejected(file_name):
+    with pytest.raises(ValueError, match='timezone-aware'):
+        parse_incident(file_name)
 
 
-@pytest.mark.xfail(
-    strict=True,
-    reason='different incident formats can currently create duplicate anchors',
-)
-def test_duplicate_incident_stems_are_rejected_or_deduplicated():
+def test_duplicate_incident_stems_are_rejected():
     parser = make_parser()
     parser.parse_file(
         DEV_INCIDENTS_DIR / 'incident_09_duplicate_stem.md',
         LAST_UPDATED,
     )
 
-    try:
+    with pytest.raises(ValueError, match='duplicate incident id'):
         parser.parse_file(
             DEV_INCIDENTS_DIR / 'incident_09_duplicate_stem.yml',
             LAST_UPDATED,
         )
-    except ValueError:
-        return
-
-    assert parser.incidents['id'].is_unique
 
 
-@pytest.mark.xfail(
-    strict=True,
-    reason='the Markdown reader strips indentation from the first content line',
-)
 def test_markdown_content_preserves_leading_indentation():
     path = DEV_INCIDENTS_DIR / 'incident_10_leading_indented_code.md'
     with path.open(encoding='utf-8') as stream:
@@ -181,10 +152,6 @@ def test_markdown_content_preserves_leading_indentation():
     )
 
 
-@pytest.mark.xfail(
-    strict=True,
-    reason='an indented delimiter-like scalar line closes front matter early',
-)
 def test_markdown_front_matter_allows_indented_delimiter_line():
     incidents = parse_incident(
         'incident_11_indented_front_matter_delimiter.md'
@@ -197,10 +164,6 @@ def test_markdown_front_matter_allows_indented_delimiter_line():
     )
 
 
-@pytest.mark.xfail(
-    strict=True,
-    reason='sequence-valued affected metadata raises TypeError, not ValueError',
-)
 @pytest.mark.parametrize(
     'file_name',
     [

@@ -40,7 +40,8 @@ https://status.vscentrum.be/. No Pages configuration change is required.
 
 To create an incident:
 1. do a git pull of the main branch;
-1. add your incident description as a Markdown (`.md`) or YAML (`.yml`) file
+1. add your incident description as a Markdown (`.md`) or YAML (`.yml` or
+   `.yaml`) file
    in the `incidents` directory (see [Incident file formats](#incident-file-formats));
 1. commit your change and push;
 
@@ -96,11 +97,15 @@ in mind:
 
 #### YAML
 
-An incident can also be written as a YAML file (`.yml`) with the metadata
+An incident can also be written as a YAML file (`.yml` or `.yaml`) with the metadata
 fields under `meta_data` and the description in a `content` field, see
 [example_incidents/incident_01.yml](example_incidents/incident_01.yml).
 The `content` field is also rendered as Markdown, but YAML folding rules
 apply, which is error-prone.
+
+Dates must be written as local Europe/Brussels times without a timezone name
+or UTC offset. Timezone-qualified dates are rejected because the renderer uses
+naive local datetimes throughout.
 
 ## Semantics
 
@@ -173,21 +178,20 @@ The development corpus also contains targeted parser-robustness examples:
 
 | Example | Intended coverage |
 | --- | --- |
-| `incident_07_markdown_timezone_aware.md` | A timezone-aware Markdown timestamp accepted by validation but incompatible with the renderer's naive current time. |
-| `incident_08_yaml_timezone_aware.yml` | The equivalent shared-validator problem in the YAML format. |
-| `incident_09_duplicate_stem.md` and `.yml` | Two formats producing the same incident anchor. |
+| `incident_07_markdown_timezone_aware.md` | A timezone-aware Markdown timestamp rejected by the shared validator. |
+| `incident_08_yaml_timezone_aware.yml` | The equivalent validation case in the YAML format. |
+| `incident_09_duplicate_stem.md` and `.yml` | Two formats that would otherwise produce the same incident anchor. |
 | `incident_10_leading_indented_code.md` | Markdown-significant leading indentation that must be preserved. |
 | `incident_11_indented_front_matter_delimiter.md` | An indented `---` inside a valid YAML block scalar. |
-| `incident_12_unsupported_extension.yaml` | Valid incident YAML using the unsupported `.yaml` suffix. |
+| `incident_12_yaml_extension.yaml` | Valid incident YAML using the supported `.yaml` suffix. |
 | `incident_98_markdown_affected_sequence_broken.md` | A metadata sequence that should produce a controlled validation error. |
 | `incident_99_yaml_affected_sequence_broken.yml` | The equivalent shared-validator problem in the YAML format. |
 
-The sequence-valued `affected` examples currently raise an uncaught `TypeError`,
-so use the verifier's optional path argument to exercise either one in
-isolation.  The full development corpus intentionally contains invalid files
-and is expected to return a non-zero status; after the parser issues are fixed,
-each invalid example should produce a controlled validation error and each
-valid example should preserve its intended content.
+The sequence-valued `affected` examples produce controlled validation errors.
+The full development corpus intentionally contains invalid files and is
+expected to return a non-zero status; each invalid example should produce a
+controlled validation error and each valid example should preserve its
+intended content.
 
 Install the development dependencies and run the unit tests with:
 
@@ -196,9 +200,9 @@ python -m pip install -r requirements-dev.txt
 python -m pytest tests/test_incident_parser.py
 ```
 
-Known parser defects are marked as strict expected failures.  When a defect is
-fixed, pytest reports an unexpected pass until the corresponding marker is
-removed.
+Parser robustness cases are ordinary regression tests. The only expected
+failure in the complete suite covers a separate pandas 3.0+ deprecation in the
+rendering code.
 
 The application-level tests require Python 3.14.  They strictly validate every
 production incident, invoke the production verifier, render the complete site

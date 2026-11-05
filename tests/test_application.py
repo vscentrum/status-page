@@ -167,7 +167,7 @@ def test_every_production_incident_is_parsed_once_per_service(production_data):
     }
     expected_ids = {f'incident_{path.stem}' for path in source_files}
 
-    assert {path.suffix for path in source_files} <= {'.md', '.yml'}
+    assert {path.suffix for path in source_files} <= {'.md', '.yml', '.yaml'}
     assert len(expected_ids) == len(source_files)
     assert set(incidents['id']) == expected_ids
     assert not incidents.duplicated(['affected', 'id']).any()
