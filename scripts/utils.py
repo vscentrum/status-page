@@ -21,7 +21,7 @@ def select_planned_maintenance(incidents, date=None):
 def select_current_incidents(incidents, date=None):
     if date is None:
         date = datetime.datetime.now()
-    incidents.fillna({'end_date': NONE_DATE}, inplace=True)
+    incidents = incidents.fillna({'end_date': NONE_DATE})
     return incidents[(incidents.start_date <= date) & (date <= incidents.end_date)].copy()
 
 def format_name(tech_name):
@@ -59,7 +59,7 @@ def dataframe_to_html_table(input_df, alt_text):
         sort_fields = ['end_date']
         if 'start_date' in df.columns:
             sort_fields.append('start_date')
-        df.sort_values(sort_fields, inplace=True, kind='stable')
+        df = df.sort_values(sort_fields, kind='stable')
         if 'level' in df.columns:
             df['level'] = df['level'].apply(format_level)
         format_headers(df)

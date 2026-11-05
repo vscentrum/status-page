@@ -289,10 +289,6 @@ def test_production_render_is_deterministic(rendered_sites):
         ), str(relative_path)
 
 
-@pytest.mark.xfail(
-    strict=True,
-    reason='pandas 3.1 deprecates DataFrame.sort_values(inplace=True)',
-)
 def test_production_render_has_no_deprecation_warnings(tmp_path):
     build_dir = tmp_path / 'build'
     config_path = tmp_path / 'config.yml'

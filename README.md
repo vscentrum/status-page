@@ -200,9 +200,8 @@ python -m pip install -r requirements-dev.txt
 python -m pytest tests/test_incident_parser.py
 ```
 
-Parser robustness cases are ordinary regression tests. The only expected
-failure in the complete suite covers a separate pandas 3.0+ deprecation in the
-rendering code.
+Parser robustness and warning checks are ordinary regression tests; the
+complete suite is expected to pass without expected failures.
 
 The application-level tests require Python 3.14.  They strictly validate every
 production incident, invoke the production verifier, render the complete site
