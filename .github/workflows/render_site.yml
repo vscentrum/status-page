@@ -44,6 +44,10 @@ jobs:
           ref: ${{ github.event_name == 'pull_request' && github.ref || github.ref_name }}
           fetch-depth: 0
           persist-credentials: false
+      - name: Set up Python 3.14.7
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.14.7'
       - name: Install Python dependencies
         uses: py-actions/py-dependency-install@v4
         with:
