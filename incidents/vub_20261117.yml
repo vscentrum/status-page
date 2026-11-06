@@ -1,0 +1,19 @@
+meta_data:
+  title: Tier-2 Hydra Zen4 nodes unavailable for network maintenance
+  start_date: 2026-11-17 13:00:00
+  end_date: 2026-11-17 17:00:00
+  affected: tier2_brussels
+  level: low
+  planned: yes
+content: >
+  <p>
+    A hardware maintenance operation will be carried out on the main network
+    switch connecting the Zen4 nodes of Hydra on November 17th 13:00 CET. This
+    operation is expected to last for a few hours.
+  </p>
+  <p>
+    During the intervention no jobs will be allowed to run on the *zen4*
+    partition of Hydra. Users will be able to submit jobs to the *zen4*
+    without interruptions, but those jobs will stay in queue until the
+    maintenance ends.
+  </p>
