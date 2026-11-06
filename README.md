@@ -150,6 +150,25 @@ The filename also determines the incident's link anchor on the site (e.g.,
 digits, `_` and `-`, and do not rename an incident file once it has been
 published, since that breaks existing links to it.
 
+## Install the incident validation hook
+
+The [pre-commit configuration](.pre-commit-config.yaml) validates incident
+files before Git creates a commit. The operator requirements include both the
+project requirements and `pre-commit`. Install them in the Python environment
+used for this repository, then install the hook from the repository root:
+
+```bash
+python3 -m pip install -r requirements-operator.txt
+pre-commit install
+```
+
+Keep that Python environment active when committing. To check the installation
+and validate all existing incidents manually, run:
+
+```bash
+pre-commit run validate-incidents --all-files
+```
+
 ## Development
 
 The `config/dev_config.yml` configuration file is intended for development
