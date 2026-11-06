@@ -1,3 +1,4 @@
+import datetime
 import pathlib
 import sys
 
@@ -11,6 +12,7 @@ sys.path.insert(0, str(SCRIPTS_DIR))
 
 from config_reader import read_config  # noqa: E402
 from incident_parser import IncidentParser, read_markdown_incident  # noqa: E402
+import utils  # noqa: E402
 
 
 CONFIG = read_config(PROJECT_ROOT / 'config' / 'dev_config.yml')
@@ -87,6 +89,20 @@ def test_valid_development_incidents_parse(file_name, expected_rows):
 
     assert len(incidents) == expected_rows
     assert incidents['content'].str.len().gt(0).all()
+
+
+def test_open_ended_incident_is_current_and_normalized_for_rendering():
+    incidents = parse_incident('incident_04.yml').incidents
+
+    current = utils.select_current_incidents(
+        incidents,
+        date=datetime.datetime(2022, 1, 21),
+    )
+
+    assert len(current) == 1
+    assert current['end_date'].eq(utils.NONE_DATE).all()
+    # Rendering reuses the parser's DataFrame after selecting current incidents.
+    assert incidents['end_date'].eq(utils.NONE_DATE).all()
 
 
 @pytest.mark.parametrize(
