@@ -21,7 +21,7 @@ def select_planned_maintenance(incidents, date=None):
 def select_current_incidents(incidents, date=None):
     if date is None:
         date = datetime.datetime.now()
-    incidents = incidents.fillna({'end_date': NONE_DATE})
+    incidents['end_date'] = incidents['end_date'].fillna(NONE_DATE)
     return incidents[(incidents.start_date <= date) & (date <= incidents.end_date)].copy()
 
 def format_name(tech_name):
