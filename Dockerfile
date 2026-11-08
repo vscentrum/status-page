@@ -1,6 +1,9 @@
 # Pin the Python and Debian base used for production rendering.
 FROM python:3.14.7-slim-trixie
 
+# incident dates are naive Europe/Brussels times
+ENV TZ=Europe/Brussels
+
 # install git
 RUN apt update; apt install -y git
 
