@@ -7,5 +7,5 @@ repos:
         entry: python3 scripts/verify_incidents.py
         language: system
         pass_filenames: false
-        files: '^incidents/[^/]+\.(md|ya?ml)$'
+        files: '^incidents/[^/.][^/]*$'
         stages: [pre-commit]
