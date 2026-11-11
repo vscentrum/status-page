@@ -1,0 +1,11 @@
+# This configuration is inert until `pre-commit install` is run explicitly.
+repos:
+  - repo: local
+    hooks:
+      - id: validate-incidents
+        name: validate incident files
+        entry: python3 scripts/verify_incidents.py
+        language: system
+        pass_filenames: false
+        files: '^incidents/[^/.][^/]*$'
+        stages: [pre-commit]
