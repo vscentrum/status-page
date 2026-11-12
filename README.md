@@ -105,14 +105,15 @@ apply, which is error-prone.
 ## Semantics
 
 Incident level:
-1. low: you can expect reduced capacity, but functionality and node performance
-   is intact. For instance, a minor part of the system is offline for maintenance.
-2. medium: capacity and/or performance is reduced, and some functionality may
-   not be available. For instance some node types may not be available, or
-   non-critical storage could be impacted.
-3. high: functionality is impacted to a large extent. You may or may not be
-   able to log in, but you will not be able launch jobs, and your data may be
-   temporarily inaccessible.
+1. **low**: Users can expect reduced capacity, but functionality and
+   performance of working systems is intact. For instance, small non-critical
+   parts of the system are offline for maintenance.
+2. **medium**: Capacity and/or performance is reduced, and some functionality
+   may not be available. For instance, some node types may not be available,
+   non-critical storage could be impacted or some services could be offline
+   such as web portals.
+3. **high**: Access to the system is closed or restricted, cluster job queues
+   are on hold, and your data may be temporarily inaccessible.
 
 This is a rough indication, the description of the incident should detail its
 scope and impact for the user.
