@@ -1,5 +1,8 @@
-# base image provided bij Continuum with miniconda3 preinstalled
-FROM python:3.10.4-slim-buster
+# Pin the Python and Debian base used for production rendering.
+FROM python:3.14.7-slim-trixie
+
+# incident dates are naive Europe/Brussels times
+ENV TZ=Europe/Brussels
 
 # install git
 RUN apt update; apt install -y git

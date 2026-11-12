@@ -40,7 +40,8 @@ https://status.vscentrum.be/. No Pages configuration change is required.
 
 To create an incident:
 1. do a git pull of the main branch;
-1. add your incident description as a Markdown (`.md`) or YAML (`.yml`) file
+1. add your incident description as a Markdown (`.md`) or YAML (`.yml` or
+   `.yaml`) file
    in the `incidents` directory (see [Incident file formats](#incident-file-formats));
 1. commit your change and push;
 
@@ -96,11 +97,15 @@ in mind:
 
 #### YAML
 
-An incident can also be written as a YAML file (`.yml`) with the metadata
+An incident can also be written as a YAML file (`.yml` or `.yaml`) with the metadata
 fields under `meta_data` and the description in a `content` field, see
 [example_incidents/incident_01.yml](example_incidents/incident_01.yml).
 The `content` field is also rendered as Markdown, but YAML folding rules
 apply, which is error-prone.
+
+Dates must be written as local Europe/Brussels times without a timezone name
+or UTC offset. Timezone-qualified dates are rejected because the renderer uses
+naive local datetimes throughout.
 
 ## Semantics
 
@@ -169,4 +174,44 @@ $ ./scripts/verify_incidents.py  --config config/dev_config.yml
 ```
 The hidden file `.incident_02_broken.yml` should be ignored, so it is
 expected not to be reported.
+
+The development corpus also contains targeted parser-robustness examples:
+
+| Example | Intended coverage |
+| --- | --- |
+| `incident_07_markdown_timezone_aware.md` | A timezone-aware Markdown timestamp rejected by the shared validator. |
+| `incident_08_yaml_timezone_aware.yml` | The equivalent validation case in the YAML format. |
+| `incident_09_duplicate_stem.md` and `.yml` | Two formats that would otherwise produce the same incident anchor. |
+| `incident_10_leading_indented_code.md` | Markdown-significant leading indentation that must be preserved. |
+| `incident_11_indented_front_matter_delimiter.md` | An indented `---` inside a valid YAML block scalar. |
+| `incident_12_yaml_extension.yaml` | Valid incident YAML using the supported `.yaml` suffix. |
+| `incident_98_markdown_affected_sequence_broken.md` | A metadata sequence that should produce a controlled validation error. |
+| `incident_99_yaml_affected_sequence_broken.yml` | The equivalent shared-validator problem in the YAML format. |
+
+The sequence-valued `affected` examples produce controlled validation errors.
+The full development corpus intentionally contains invalid files and is
+expected to return a non-zero status; each invalid example should produce a
+controlled validation error and each valid example should preserve its
+intended content.
+
+Install the development dependencies and run the unit tests with:
+
+```bash
+python -m pip install -r requirements-dev.txt
+python -m pytest tests/test_incident_parser.py
+```
+
+Parser robustness and warning checks are ordinary regression tests; the
+complete suite is expected to pass without expected failures.
+
+The application-level tests require Python 3.14.  They strictly validate every
+production incident, invoke the production verifier, render the complete site
+twice at a fixed time, check all incident anchors and local links, and compare
+the normalized render outputs for determinism.  Run the complete Python 3.14
+acceptance suite with:
+
+```bash
+python3.14 -m pip install -r requirements-dev.txt
+python3.14 -m pytest
+```
 
