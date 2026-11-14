@@ -1,0 +1,31 @@
+meta_data:
+  title: Tier-2 clusters unavailable
+  start_date: 2026-10-19 15:45:00
+  end_date: 
+  affected: tier2_leuven_foo
+  level: high
+  planned: no
+content: >
+  <p>
+  [Update 2026-10-20 19:00:00] Our OS is upgraded, and the majority of Tier-2 nodes are released after being patched.
+  wICE and Mindwell back to operation.
+  </p>
+
+  <p>
+  [Update 2026-10-20 15:10:00] The wICE Icelake nodes are released
+  </p>
+
+  <p>
+  [Update 2026-10-20 13:53:00] The Mindwell GPU B200 nodes and wICE GPU A100 and P100 nodes are released.
+  </p>
+
+  <p>
+  [Update 2026-10-20 13:00:00] After addressing the issue, the compute nodes will be released incrementally,
+  starting first with the Mindwell `batch_graniterapids` nodes.
+  </p>
+
+  <p>
+  [2026-10-19 15:45:00] Login node access has been closed and all compute nodes have been reserved
+  in order to perform urgent maintenance. No new jobs will therefore be allowed
+  to start until further notice.
+  </p>
