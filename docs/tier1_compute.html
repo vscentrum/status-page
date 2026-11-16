@@ -31,7 +31,50 @@
             </section>
             <section class="status-section" aria-labelledby="planned-heading">
                 <h2 id="planned-heading">Planned maintenance</h2>
-                <p>No maintenance planned currently.</p>
+                <article class="incident" id="incident_sofia_20261202">
+<h3>Tier-1 sofia - planned data center maintenance</h3>
+
+<table class="incident-meta">
+    <tr>
+        <th scope="row">Start:</th>
+        <td>2026-12-02 06:00:00</td>
+    </tr>
+    <tr>
+        <th scope="row">End:</th>
+        <td>2026-12-04 19:00:00</td>
+    </tr>
+    <tr>
+        <th scope="row">Updated:</th>
+        <td>2026-11-16 10:02:16</td>
+    </tr>
+    <tr>
+        <th scope="row">Type:</th>
+        <td>planned</td>
+    </tr>
+    <tr>
+        <th scope="row"><a href="index.html#impact-levels">Impact level</a>:</th>
+        <td><span class="level level-high">high</span></td>
+    </tr>
+</table>
+
+<div class="incident-description">
+<p>The data center hosting Tier-1 <strong>sofia</strong> will carry out maintenance tests on 2,
+3 and 4 December. The <strong>sofia</strong> cluster will be fully shut down during this
+period.</p>
+<p>The following services will be unavailable during the shutdown:</p>
+<ul>
+<li>OnDemand web portal at <a href="https://portal.sofia.vub.be">https://portal.sofia.vub.be</a></li>
+<li>Terminal access through the login nodes</li>
+<li>Globus endpoint for sofia</li>
+</ul>
+<p>A reservation will be put in place to ensure no jobs are running when the
+shutdown starts.  Queued jobs that cannot finish before the maintenance window
+will remain in the queue and will automatically start as soon as the cluster is
+back online and resources become available.</p>
+<p>More info will be provided later.</p>
+</div>
+</article>
+
             </section>
         </main>
         <footer class="site-footer">
@@ -51,7 +94,7 @@
             <a href="tier2_gent.html">Tier-2 Gent</a>
             <a href="tier2_leuven.html">Tier-2 Leuven</a>
         </p>
-        <p class="generated-at">This page was last updated at <time datetime="2026-11-10T03:59:31+01:00">2026-11-10 03:59:31 CET</time></p>
+        <p class="generated-at">This page was last updated at <time datetime="2026-11-16T10:04:40+01:00">2026-11-16 10:04:40 CET</time></p>
         </nav>
         </footer>
         
