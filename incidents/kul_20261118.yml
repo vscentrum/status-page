@@ -1,16 +1,20 @@
 meta_data:
   title: Issues with Lustre storage
   start_date: 2026-11-18 11:00:00
-  end_date:
+  end_date: 2026-11-18 15:00:00
   affected: tier2_leuven
   level: high
   planned: no
 content: >
 
   <p>
+  [2026-11-18 15:00] Lustre has recovered and the reservation has been removed.
+  </p>
+
+  <p>
   [2026-11-18 11:50] Due to issues with the Lustre storage, the wICE cluster has
   been reserved so that no new jobs get to start until further notice.
 
   Mindwell remains available (but accessing Lustre storage from
-  this clusters may be affected).
+  this cluster may be affected).
   </p>
