@@ -1,0 +1,22 @@
+meta_data:
+  title: Access closed to Tier-1 Cloud OpenNebula platform
+  start_date: 2026-11-20 17:21:00
+  end_date:
+  affected: tier1_cloud
+  level: low
+  planned: no
+content: >
+  <p>
+  **Important: only pilot users of the new Tier-1 Cloud OpenNebula platform are affected.**
+
+  The current Tier-1 Cloud OpenStack platform is not affected and is operating normally.
+  </p>
+  <p>
+  Urgent maintenance needs to be performed to the Tier-1 Cloud OpenNebula infrastructure because of a recently disclosed security vulnerability.
+  Following actions are temporarily not possible:
+  - accessing the OpenNebula dashboard
+  - using OpenTofu to deploy new VMs or to make changes to existing VMs
+  - using the OpenNebula command-line client to manage cloud resources
+
+  Running VMs will not be affected and will remain accessible.
+  </p>
