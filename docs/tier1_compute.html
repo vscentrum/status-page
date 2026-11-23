@@ -45,7 +45,7 @@
     </tr>
     <tr>
         <th scope="row">Updated:</th>
-        <td>2026-11-16 10:42:19</td>
+        <td>2026-11-23 17:16:55</td>
     </tr>
     <tr>
         <th scope="row">Type:</th>
@@ -59,13 +59,21 @@
 
 <div class="incident-description">
 <p>The data center hosting Tier-1 <strong>sofia</strong> will carry out maintenance tests on 2,
-3 and 4 December. All <strong>sofia</strong> compute nodes will be shut down during this
-period. The OnDemand web portal, login nodes and Globus remain accessible.</p>
-<p>A reservation will be put in place to ensure no jobs are running when the
-shutdown starts.  Queued jobs that cannot finish before the maintenance window
-will remain in the queue and will automatically start as soon as the cluster is
-back online and resources become available.</p>
-<p>More info will be provided later.</p>
+3 and 4 December. This operation requires the shutdown of all compute nodes of
+<strong>sofia</strong>. Specifically partitions <code>zen5_dense</code>, <code>zen5_himem</code> and <code>zen4_h200</code>.</p>
+<p>We will also use this opportunity to carry out system updates on <strong>sofia</strong> and
+other maintenance tasks that cannot easily be done with the cluster online. A
+reservation is in place to ensure that no jobs will be running at the time of
+shutdown. Queued jobs will stay in the queue and will be automatically
+launched as soon as the cluster is back online.</p>
+<p>The cluster and its storage will become accessible with restrictions on Dec 2nd
+at 12:00 CET. At this time the following services will be operational:</p>
+<ul>
+<li>OnDemand web portal on visualization and login nodes</li>
+<li>SSH terminal interface on login nodes</li>
+<li>Globus service</li>
+</ul>
+<p>The remaining compute nodes will be available at the end of the maintenance.</p>
 </div>
 </article>
 
@@ -88,7 +96,7 @@ back online and resources become available.</p>
             <a href="tier2_gent.html">Tier-2 Gent</a>
             <a href="tier2_leuven.html">Tier-2 Leuven</a>
         </p>
-        <p class="generated-at">This page was last updated at <time datetime="2026-11-20T17:33:23+01:00">2026-11-20 17:33:23 CET</time></p>
+        <p class="generated-at">This page was last updated at <time datetime="2026-11-23T17:20:45+01:00">2026-11-23 17:20:45 CET</time></p>
         </nav>
         </footer>
         
