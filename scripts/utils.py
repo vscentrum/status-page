@@ -78,7 +78,7 @@ def dataframe_to_html_text(input_df, template, alt_text):
         incident_texts = []
         for _, row in df.sort_values(['end_date', 'start_date'], kind='stable').iterrows():
             row['description'] = markdown.markdown(row['content'])
-            row['type'] = 'planned' if row['planned'] else 'unplanned'
+            row['type'] = 'Planned' if row['planned'] else 'Unplanned'
             incident_texts.append(template.format(**row))
         return '\n\n'.join(incident_texts)
     else:
