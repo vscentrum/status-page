@@ -123,11 +123,6 @@ h1.page_title {
     color: var(--muted);
 }
 
-.back-link {
-    display: inline-block;
-    margin-bottom: 1rem;
-}
-
 .status-section {
     margin-top: 1rem;
     padding: 1.1rem 1.25rem;
