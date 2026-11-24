@@ -319,8 +319,14 @@ thead th a,
     font-weight: 500;
 }
 
+.incident-description p > b:first-child,
+.incident-description p > strong:first-child {
+    display: inline-block;
+    margin-bottom: 0.35rem;
+}
+
 .incident-description p {
-    margin: 1.0rem 0;
+    margin: 0.4rem 0;
 }
 
 .incident-description > :last-child {
