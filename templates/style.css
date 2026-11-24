@@ -315,7 +315,7 @@ thead th a,
 }
 
 .incident-description p {
-    margin: 0.4rem 0;
+    margin: 1.0rem 0;
 }
 
 .incident-description > :last-child {
