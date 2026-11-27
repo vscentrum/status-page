@@ -36,6 +36,32 @@ def create_service_page(service, current_incidents, planned_maintenance, config,
                             'generated_at': generated_at.strftime('%Y-%m-%d %H:%M:%S %Z')})
 
 
+def create_embed_page(service, current_incidents, planned_maintenance, config):
+    '''Minimal page for a single service, without header, footer or impact
+    levels, intended to be embedded in other sites. Sections without incidents
+    are left out; without any incidents, a single message is shown. It is rendered in the embed/ subdirectory, so links are
+    relative to the parent directory.'''
+    header_names = {'level': '<a href="../index.html#impact-levels">Impact level</a>'}
+    section_tmpl = utils.read_template(config['template_dir'] / config['embed_section_template_file'])
+    sections = []
+    for section_id, heading, incidents, columns in (
+            ('current', 'Current incidents', current_incidents, config['current_overview_columns']),
+            ('planned', 'Planned maintenance', planned_maintenance, config['planned_overview_columns'])):
+        if len(incidents) > 0:
+            table = utils.dataframe_to_html_table(incidents[columns], '', header_names)
+            sections.append(section_tmpl.format(section_id=section_id, heading=heading, table=table))
+    service_name = config['affected_display_names'].get(service, utils.format_name(service))
+    if not sections:
+        message = config['embed_no_news_message'].format(service_name=service_name)
+        sections.append(utils.read_template(config['template_dir'] / config['embed_no_news_template_file'])
+                        .format(message=message))
+    embed_dir = config['build_dir'] / 'embed'
+    embed_dir.mkdir(parents=True, exist_ok=True)
+    utils.process_template(config['template_dir'] / config['embed_template_file'], embed_dir / f'{service}.html',
+                           {'service_name': service_name,
+                            'sections': '\n'.join(sections)})
+
+
 def copy_resources(config):
     for resource in config['resource_files']:
         resource_path = config['template_dir'] / resource
@@ -96,7 +122,16 @@ def main():
         planned_service_maintenance = planned_maintenance[planned_maintenance.affected == service]
         create_service_page(service, current_service_incidents, planned_service_maintenance, config, generated_at)
 
-        
+    for service in config.get('embed_services') or []:
+        current_service_incidents = current_incidents[current_incidents.affected == service]
+        planned_service_maintenance = planned_maintenance[planned_maintenance.affected == service]
+        create_embed_page(service,
+                          utils.display_affected(utils.add_href(current_service_incidents, prefix='../'),
+                                                 config['affected_display_names']),
+                          utils.display_affected(utils.add_href(planned_service_maintenance, prefix='../'),
+                                                 config['affected_display_names']),
+                          config)
+
     copy_resources(config)
 
     return 0

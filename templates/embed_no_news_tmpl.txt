@@ -1,0 +1,5 @@
+            <section class="status-section">
+                <div class="table-region">
+                    {message}
+                </div>
+            </section>

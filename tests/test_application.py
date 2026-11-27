@@ -199,6 +199,7 @@ def test_rendered_site_contains_all_expected_files(rendered_sites, production_da
         'images/favicon.png',
         'images/vsc_logo.png',
         *(f'{service}.html' for service in config['affected']),
+        *(f'embed/{service}.html' for service in config['embed_services']),
     }
     actual_files = {
         str(path.relative_to(build_dir))
@@ -249,11 +250,25 @@ def test_rendered_incidents_match_current_production_state(
     }
     assert actual_overview_links == expected_overview_links
 
+    for service in config['embed_services']:
+        expected_embed_links = {
+            f'../{row.affected}.html#{row.id}'
+            for data_frame in visible
+            for row in data_frame[data_frame.affected == service].itertuples()
+        }
+        embed = parse_html(build_dir / 'embed' / f'{service}.html')
+        actual_embed_links = {
+            reference
+            for reference in embed.references
+            if '#incident_' in reference
+        }
+        assert actual_embed_links == expected_embed_links
+
 
 def test_rendered_html_has_unique_ids_and_resolvable_references(rendered_sites):
     build_dir, _ = rendered_sites
-    html_files = sorted(build_dir.glob('*.html'))
-    inventories = {path: parse_html(path) for path in html_files}
+    html_files = sorted(build_dir.rglob('*.html'))
+    inventories = {path.resolve(): parse_html(path) for path in html_files}
 
     for path, inventory in inventories.items():
         assert len(inventory.ids) == len(set(inventory.ids)), path.name
@@ -261,7 +276,7 @@ def test_rendered_html_has_unique_ids_and_resolvable_references(rendered_sites):
             parsed = urlsplit(reference)
             if parsed.scheme or parsed.netloc:
                 continue
-            target = path.parent / (parsed.path or path.name)
+            target = (path.parent / (parsed.path or path.name)).resolve()
             assert target.is_file(), f'{path.name}: missing {reference}'
             if parsed.fragment and target.suffix == '.html':
                 assert parsed.fragment in inventories[target].ids, (

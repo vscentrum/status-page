@@ -156,6 +156,30 @@ The filename also determines the incident's link anchor on the site (e.g.,
 digits, `_` and `-`, and do not rename an incident file once it has been
 published, since that breaks existing links to it.
 
+## Embeddable pages
+
+For the services listed in `embed_services` in `config/config.yml` (currently
+Tier-1 Compute and Tier-2 Brussel), a minimal page is rendered at
+`embed/<service>.html`, e.g., https://status.vscentrum.be/embed/tier2_brussels.html.
+It shows the current incidents and planned maintenance tables of the overview
+page, restricted to that service, in the same style, but without header, footer or impact level
+legend, so it can be embedded in other sites.  A table without incidents is
+left out; if there are neither current incidents nor planned maintenance, a
+single message is shown instead, e.g., "No current incidents or planned
+maintenance for Tier-2 Brussel." (`embed_no_news_message`).  Example:
+```html
+<iframe src="https://status.vscentrum.be/embed/tier2_brussels.html"
+        title="Tier-2 Brussel status" style="width: 100%; height: 400px; border: 0;"></iframe>
+```
+Links on these pages open in a new tab, outside the frame.  The tables use the
+same columns as the overview page (`current_overview_columns` and
+`planned_overview_columns`).
+
+To add an embed page for another service, add its name as listed under
+`affected` (e.g., `tier2_gent`, not an alias) to `embed_services` in
+`config/config.yml`, and optionally to `config/dev_config.yml` for local
+development renders.
+
 ## Development
 
 The `config/dev_config.yml` configuration file is intended for development
