@@ -27,16 +27,18 @@ def select_current_incidents(incidents, date=None):
 def format_name(tech_name):
     return tech_name.replace('_', ' ').title()
 
-def format_headers(df):
-    df.columns = [HEADER_NAMES.get(column, format_name(column)) for column in df.columns]
+def format_headers(df, header_names=None):
+    if header_names is None:
+        header_names = HEADER_NAMES
+    df.columns = [header_names.get(column, format_name(column)) for column in df.columns]
 
 def format_level(level):
     return f'<span class="level level-{level}">{level}</span>'
 
-def add_href(input_df):
+def add_href(input_df, prefix=''):
     if len(input_df) > 0:
         df = input_df.copy()
-        df['href'] = df['affected'] + '.html#' + df['id']
+        df['href'] = prefix + df['affected'] + '.html#' + df['id']
         df['title'] = '<a href="' + df['href'] + '">' + df['title'] + '</a>'
         return df
     else:
@@ -48,7 +50,7 @@ def display_affected(input_df, display_names):
     df['affected'] = df['affected'].map(lambda name: display_names.get(name, name))
     return df
 
-def dataframe_to_html_table(input_df, alt_text):
+def dataframe_to_html_table(input_df, alt_text, header_names=None):
     if len(input_df) > 0:
         df = input_df.copy()
         df['end_date'] = df['end_date'].apply(
@@ -62,7 +64,7 @@ def dataframe_to_html_table(input_df, alt_text):
         df = df.sort_values(sort_fields, kind='stable')
         if 'level' in df.columns:
             df['level'] = df['level'].apply(format_level)
-        format_headers(df)
+        format_headers(df, header_names)
         return df.to_html(index=False, escape=False)
     else:
         return alt_text

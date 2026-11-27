@@ -16,6 +16,17 @@ planned_overview_columns:
     - affected
     - title
     - level
+# services that get a minimal page (no header, footer or impact levels) at
+# embed/<service>.html, intended to be embedded in other sites; sections
+# without incidents are left out
+embed_services:
+    - tier1_compute
+    - tier2_brussels
+embed_template_file: embed_tmpl.html
+embed_section_template_file: embed_section_tmpl.txt
+embed_no_news_template_file: embed_no_news_tmpl.txt
+# shown on embed pages without current incidents and planned maintenance
+embed_no_news_message: <p>No current incidents or planned maintenance for {service_name}.</p>
 resource_files:
     - style.css
     - images/

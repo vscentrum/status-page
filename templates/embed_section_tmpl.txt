@@ -1,0 +1,6 @@
+            <section class="status-section" aria-labelledby="{section_id}-heading">
+                <h2 id="{section_id}-heading">{heading}</h2>
+                <div class="table-region" role="region" aria-label="{heading}" tabindex="0">
+                    {table}
+                </div>
+            </section>
